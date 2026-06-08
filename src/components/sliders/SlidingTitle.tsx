@@ -11,7 +11,7 @@ export default function SlidingTitle({ items }: { items: string[] }) {
           {titles.map((t, i) => (
             <span
               key={i}
-              className="marquee-item uppercase bg-dark border border-primary rounded-lg px-4 py-2 flex items-center gap-2.5"
+              className="marquee-item uppercase bg-dark border border-secondary rounded-lg px-4 py-2 flex items-center gap-2.5"
             >
               <span>{t}</span>
               {/* <span className="separator">

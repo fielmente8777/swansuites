@@ -1,7 +1,7 @@
 import LandingFooter from "@/components/footer/LandingFooter";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import type { Metadata } from "next";
-import { Cormorant, Open_Sans } from "next/font/google";
+import { Open_Sans, } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Script from "next/script";
@@ -13,12 +13,14 @@ import Call from "@/components/ContactButton/Call";
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const cormorant = Cormorant({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-});
+// const cormorant = Cormorant({
+//   variable: "--font-cormorant",
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
 
 export const metadata: Metadata = {
   title:
@@ -79,7 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${cormorant.variable} antialiased`}
+        className={`${openSans.variable} antialiased`}
       >
         <WebProvider>
           {children}

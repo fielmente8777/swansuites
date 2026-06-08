@@ -29,13 +29,13 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
         src={images[0]}
         alt={title}
         fill
-        className="object-cover"
+        className="object-cover max-lg:object-left"
         sizes="100vw"
       />
       <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80  to-black/10" />
       <div className="absolute inset-0  z-20 flex items-end pb-10 justify-center">
         <Container>
-          <p className="flex items-center mb-2 justify-center gap-2.5 px-1.75 py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
+          <p className="flex items-center mb-2 max-md:text-sm justify-center gap-2.5 px-1.75 py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
             <span>
               <Foo />
             </span>{" "}

@@ -13,7 +13,7 @@ export const contact = {
   phone: ["+91 9642244000"],
   address:
     "Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032",
-  addressLink: "",
+  addressLink: "https://maps.app.goo.gl/tXFB7KaW1XViipsy5",
   socialMedia: {
     facebook: "https://www.facebook.com/theacaciahotels",
     instagram: "https://www.instagram.com/acaciahotels",

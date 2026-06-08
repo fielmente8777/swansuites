@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #FFF9F1;
@@ -11,7 +13,7 @@
 
   /* --font-- */
   --font-body: var(--font-open-sans);
-  --font-primary: var(--font-cormorant);
+  --font-primary: "Cormorant", serif;
 }
 
 
@@ -25,7 +27,7 @@
   --color-light: #777777;
 
   --font-body: var(--font-body);
-  --font-primary: var(--font-cormorant);
+  --font-primary: "Cormorant", serif;
 }
 
 body {

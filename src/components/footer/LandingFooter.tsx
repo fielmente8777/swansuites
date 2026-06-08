@@ -41,7 +41,7 @@ const LandingFooter = () => {
                   callIcon={index === 0 && true}
                   whatsAppIcon={index === 1 && true}
                   calendarIcon={index === 2 && true}
-                  className={`rounded-sm justify-center text-nowrap max-md:w-full border-none uppercase tracking-widest text-xs bg-secondary text-white`}
+                  className={`rounded-sm justify-center text-nowrap max-md:w-full border-none uppercase tracking-widest text-xs bg-primary text-white`}
                 />
               ))}
             </div>
