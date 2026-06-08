@@ -1,0 +1,145 @@
+import { contact } from "@/utils/constent";
+import { FillCallIcon, FillLocationIcon } from "@/utils/icons";
+import { FillFaceBookIcon, OutLineInstagramIcon } from "@/utils/SocialIcon";
+import { JSX } from "react";
+
+interface FooterData {
+  logo: string;
+  cta: {
+    label: string;
+    href: string;
+  }[];
+  lists: {
+    title?: string;
+    links: {
+      title?: string;
+      icon: React.ReactNode;
+      label: string;
+      href: string;
+      label2?: string;
+      href2?: string;
+    }[];
+  }[];
+}
+
+interface WebsiteFooterData {
+  logo: string;
+  description: string;
+  cta: {
+    label: string;
+    href: string;
+  };
+  lists: {
+    title?: string;
+    links: {
+      icon?: JSX.Element;
+      label: string;
+      href: string;
+      label2?: string;
+      href2?: string;
+    }[];
+  }[];
+}
+
+export const footerData: FooterData = {
+  logo: "/logo.png",
+  cta: [
+    { label: "CALL NOW", href: contact.callCta },
+    { label: "ENQUIRE NOW", href: "#form" },
+    { label: "BOOK NOW", href: contact.WhatsappCta },
+  ],
+  lists: [
+    {
+      title: "Contact Us",
+      links: [
+        {
+          icon: <FillLocationIcon />,
+          label: "Address: " + contact.address,
+          href: contact.addressLink,
+        },
+        {
+          icon: <FillCallIcon />,
+          label: "Call Us: " + contact.phone[0],
+          href: "tel:" + contact.phone[0],
+        },
+        // {
+        //   icon: <FillMailIcon />,
+        //   label: "Email: " + contact.email,
+        //   href: "mailto:" + contact.email,
+        // },
+      ],
+    },
+  ],
+};
+
+export const websiteFooterData: WebsiteFooterData = {
+  logo: "/footerlogo2.png",
+  description: "Reserve Himalayan escape!",
+  cta: {
+    label: "Book stay",
+    href: contact.WhatsappCta,
+  },
+  lists: [
+    {
+      title: "QUICK LINKS",
+      links: [
+        { label: "Home", href: "/" },
+        { label: "About us", href: "/about-us" },
+        { label: "Accommodations", href: "/refined-living-spaces" },
+        { label: "Experiences", href: "/experiences" },
+        { label: "Contact us", href: "/contact-us" },
+      ],
+    },
+    {
+      title: "EXPLORE",
+      links: [
+        { label: "Wellness", href: "/holistic-wellness" },
+        { label: "Dining", href: "/farm-to-table" },
+        { label: "Host your retreat", href: "/host-your-retreat" },
+        { label: "Blogs", href: "/blogs" },
+      ],
+    },
+    {
+      title: "Policies",
+      links: [
+        { label: "Privacy Policy", href: "#" },
+        { label: "Terms & conditions", href: "#" },
+      ],
+    },
+    {
+      title: "Contact",
+      links: [
+        {
+          label: "Address: " + contact.address,
+          href: contact.addressLink,
+          icon: <FillLocationIcon />,
+        },
+        {
+          label: "Call Us: " + contact.phone[0],
+          href: "tel:" + contact.phone[0],
+          icon: <FillCallIcon />,
+        },
+        // {
+        //   label: "Email: " + contact.email,
+        //   href: "mailto:" + contact.email,
+        //   icon: <FillMailIcon />,
+        // },
+      ],
+    },
+    {
+      title: "Follow Us",
+      links: [
+        {
+          label: "Facebook",
+          href: contact.socialMedia.facebook,
+          icon: <FillFaceBookIcon />,
+        },
+        {
+          label: "instagram",
+          href: contact.socialMedia.instagram,
+          icon: <OutLineInstagramIcon />,
+        },
+      ],
+    },
+  ],
+};
