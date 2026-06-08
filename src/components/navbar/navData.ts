@@ -1,7 +1,7 @@
 import { contact } from "@/utils/constent";
 
 export const navData = {
-  logo: "/Logo.png",
+  logo: "/logo.png",
 
   buttons: [
     { label: "BOOK NOW", href: contact.WhatsappCta },
