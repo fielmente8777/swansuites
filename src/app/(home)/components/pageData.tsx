@@ -5,6 +5,7 @@ import {
   DailyHousekeepingIcon,
   MiniBarIcon,
   TelevisionIcon,
+  WifiIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
 
@@ -68,12 +69,12 @@ export const swanSuitesPageData = {
     title: "Explore Our  <i class='text-primary'>Rooms</i>",
     rooms: [
       {
-        images: ["/room-1.png"],
+        images: ["/room-2.png"],
         title: "Premium - King",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <MiniBarIcon /> },
+          { name: "Wifi", icon: <WifiIcon /> },
         ],
         description:
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
@@ -84,12 +85,12 @@ export const swanSuitesPageData = {
         ],
       },
       {
-        images: ["/room-2.png"],
+        images: ["/room-3.jpg"],
         title: "Premium - Twin",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <MiniBarIcon /> },
+          { name: "Wifi", icon: <WifiIcon /> },
         ],
         description:
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
