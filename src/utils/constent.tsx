@@ -7,10 +7,10 @@ Please share room availability and best offers.
 Thank you.`);
 
 export const contact = {
-  email: "",
+  email: ["bookings@swansuites.com ", " swansuites@gmail.com"],
   mapUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1658189756754!2d78.3666466!3d17.43535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9397d994815f%3A0x6f1af95f92b4b017!2sSwan%20Suites%20Gachibowli!5e1!3m2!1sen!2sin!4v1780822837324!5m2!1sen!2sin",
-  phone: ["+91 9642244000"],
+  phone: ["+91 888 6135 000 ", "+91 96422 44000"],
   address:
     "Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032",
   addressLink: "https://maps.app.goo.gl/tXFB7KaW1XViipsy5",

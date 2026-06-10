@@ -12,18 +12,18 @@ export const swanSuitesPageData = {
   hero: {
     images: ["/banner.png"],
     badge: "Award-winning · Hyderabad",
-    title: "Your Corporate Stay, <i class='text-secondary'>Perfected</i>",
+    title: "A Smart Way to Stay in <i class='text-secondary font-italic'>Gachibowli</i>",
     description:
-      "Spacious 2,800 sq.ft serviced apartments in the heart of Hitech City & Gachibowli, for the business traveller who refuses to compromise.",
+      "Modern rooms, thoughtful amenities, and the warmth of Swan hospitality designed for business and leisure travelers.",
     bookingBenefits:
       "<span class='text-primary'>Save 15%</span> when you book direct · No prepayment · Free cancellation",
   },
 
   valueProposition: {
-    tag: "Spacious · Central · Value",
-    title: "More space. More serenity. <i class='text-primary'>Less spend.</i>",
+    tag: "SWANSUITES GACHIBOWLI HOTEL",
+    title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
     description:
-      "The most luxurious apartments in Hitech City, located on the main road of the Central Business District. Walking distance to malls, multiplexes, restaurants and supermarkets. 5-star comfort at a fraction of the price.",
+      "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",
     image: "/about-img.png",
     actions: [
       { label: "CALL NOW", href: contact.callCta },
@@ -34,9 +34,9 @@ export const swanSuitesPageData = {
 
   features: {
     title: "Why Swan Suites",
-    subtitle: "Luxury that lives like home",
+    subtitle: "Luxury that Lives like <i class='text-primary'>Home!</i>",
     description:
-      "Every detail, from the linen to the lounge, designed for travellers who stay longer and expect more.",
+      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
     items: [
       {
         icon: <WorkAbodeLoungeIcon />,
@@ -65,18 +65,18 @@ export const swanSuitesPageData = {
   },
 
   accommodations: {
-    title: "Our <i>Accommodations</i>",
+    title: "Explore Our  <i class='text-primary'>Rooms</i>",
     rooms: [
       {
         images: ["/room-1.png"],
-        title: "Executive Room",
+        title: "Premium - King",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Mini Bar", icon: <MiniBarIcon /> },
+          { name: "Wifi", icon: <MiniBarIcon /> },
         ],
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+          "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
           { label: "CALL NOW", href: contact.callCta },
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
@@ -85,14 +85,14 @@ export const swanSuitesPageData = {
       },
       {
         images: ["/room-2.png"],
-        title: "Luxury Room",
+        title: "Premium - Twin",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Mini Bar", icon: <MiniBarIcon /> },
+          { name: "Wifi", icon: <MiniBarIcon /> },
         ],
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+          "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
           { label: "CALL NOW", href: contact.callCta },
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
@@ -105,12 +105,23 @@ export const swanSuitesPageData = {
   gallery: {
     title: "A look inside",
     subtitle: "Crafted for comfort",
+    listTitle: "Locations & <i class='text-primary'>Attractions</i>",
+    list: [
+      "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
+      "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
+      "200 m to Airport ORR (Outer Ring Road access)",
+      "On the Gachibowli Main Road and besides the Gachibowli Flyover",
+      "400m to Multiplex and Malls",
+      "200m to CARE Hospitals",
+      "300m to Cyberabad Police Commissionerate",
+      "1.5 km to IKEA",
+    ],
     images: [
       "/gallery-1.png",
       "/gallery-2.png",
       "/gallery-3.png",
-      "/gallery-4.png",
-      "/gallery-5.png",
+      // "/gallery-4.png",
+      // "/gallery-5.png",
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
@@ -122,25 +133,32 @@ export const swanSuitesPageData = {
   clients: {
     title: "Trusted by India's Leading Organisations",
     logos: [
-      "THOMSON",
-      "amazon",
-      "DELOITTE",
-      "TCS",
-      "CGI1",
-      "THOMAS-COOK",
-      "HITEX",
-      "HICC",
-      "MICROSOFT",
-      "NOVARTIS",
-      "KLAY",
-      "DIVIS",
-      "HCL",
-      "MAHINDRA",
-      "CSC",
-      "ORACLE",
+      "/clients/amazon1.png",
+      "/clients/CGI1.jpeg",
+      "/clients/CSC.jpeg",
+      "/clients/DELOITTE.jpeg",
+      "/clients/DIVIS.jpeg",
+      "/clients/HCL.jpeg",
+      "/clients/HICC.jpeg",
+      "/clients/HITEX.jpeg",
+      "/clients/KLAY.jpeg",
+      "/clients/MAHINDRA.jpeg",
+      "/clients/MICROSOFT.jpeg",
+      "/clients/NOVARTIS.jpeg",
+      "/clients/ORACLE.jpeg",
+      "/clients/TCS.jpeg",
+      "/clients/THOMAS-COOK.jpeg",
+      "/clients/THOMSON.jpeg",
     ],
   },
 
+  titles:[
+    "Business Conference/ Meetings Facilities",
+    "Coffee Shop",
+    "1000 mbps internet access points throughout the property",
+    "Complimentary Breakfast",
+    "WORABODE Co Working space (Optional)",
+  ],
   testimonials: {
     title: "Guest stories",
     subtitle: "Loved by long-stay travellers",

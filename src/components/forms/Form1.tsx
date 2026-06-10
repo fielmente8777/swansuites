@@ -1,19 +1,18 @@
 "use client";
 import { getDateInputLimits } from "@/hooks/getDateInputLimits";
 import useBookingForm from "@/hooks/useBookingForm";
-
-import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { countries } from "../../utils/constent";
 import {
   CalendarIcon,
   CallIcon,
   MailIcon,
-  UserIcon,
-  FromDropDown,
+  UserIcon
 } from "@/utils/formIcons";
 import { BookingCalenderIcon } from "@/utils/icons";
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { IoIosArrowDown } from "react-icons/io";
+import { countries } from "../../utils/constent";
 
 interface Props {
   gridView?: boolean;
@@ -151,7 +150,7 @@ const Form1 = ({ gridView }: Props) => {
                   ))}
                 </select>
                 <span className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
-                  <FromDropDown  />
+                  <IoIosArrowDown  />
                 </span>
               </div>
               <input

@@ -1,7 +1,7 @@
 import LandingFooter from "@/components/footer/LandingFooter";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import type { Metadata } from "next";
-import { Open_Sans, } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Script from "next/script";
@@ -80,9 +80,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${openSans.variable} antialiased`}
-      >
+      <body className={`${openSans.variable} antialiased`}>
         <WebProvider>
           {children}
           <LandingFooter />
@@ -90,6 +88,20 @@ export default function RootLayout({
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
         </WebProvider>
+
+        {/* <Script id="whatsapp-config" strategy="afterInteractive">
+          {`window.eazbotConfig = {
+              ndid: "5617a084-5783-4bac-b299-bdb6e8e471bb",
+              hid: "41913874",
+              phoneNumber: "+919759349941",
+              message: "Hello",
+              // position: "right",
+              // top: 100
+            };`}
+        </Script>
+
+        <Script src="https://whatsapp-widget-tau.vercel.app/widget/whatsapp.js"></Script> */}
+
         {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">
           {`

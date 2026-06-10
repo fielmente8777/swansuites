@@ -36,7 +36,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
         <div className="flex lg:hidden flex-wrap  gap-8 mt-2 lg:justify-between border-[0.1px] border-primary py-2 px-4 rounded-2xl">
           <Amenities items={amenities} />
         </div>
-        <p className="">{description}</p>
+        <p className="lg:text-lg">{description}</p>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {actions.map((button, i) => (
             <li key={i}>

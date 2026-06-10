@@ -59,7 +59,7 @@ const LandingFooter = () => {
               <ul className={`flex flex-col md:gap-2 gap-4`}>
                 {list.links.map((item, suIndex) => (
                   <li
-                    className={`flex gap-2 ${suIndex === 1 ? "flex-wrap" : ""}`}
+                    className={`grid grid-cols-[auto_1fr] md:gap-4 gap-2`}
                     key={suIndex}
                   >
                     <span
@@ -83,39 +83,41 @@ const LandingFooter = () => {
                         {item.title}
                       </span>
                     )} */}
-                    <Link
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={item.href}
-                      className="flex gap-2"
-                    >
-                      <span
-                        className={`${
-                          index === 1
-                            ? " font-mont text-2xl my-auto"
-                            : "  inline-block"
-                        }`}
-                      >
-                        {item.label}
-                      </span>
-                    </Link>
-                    {item.label2 && <span className=" -ml-1">,</span>}
-                    {item.label2 && item.href2 && (
+                    <span className="flex max-lg:flex-col gap-2">
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={item.href2}
-                        className="flex gap-2 max-md:ml-0"
+                        href={item.href}
+                        className="flex gap-2 "
                       >
                         <span
                           className={`${
-                            index === 1 ? " font-aboreto text-2xl my-auto" : " "
+                            index === 1
+                              ? " font-mont text-2xl my-auto"
+                              : "  inline-block"
                           }`}
                         >
-                          {item.label2}
+                          {item.label}
                         </span>
                       </Link>
-                    )}
+                      {item.label2 && <span className=" -ml-1 max-lg:hidden">|</span>}
+                      {item.label2 && item.href2 && (
+                        <Link
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={item.href2}
+                          className="flex gap-2 max-md:ml-0 break-all"
+                        >
+                          <span
+                            className={`${
+                              index === 1 ? " break-all text-2xl my-auto" : " "
+                            }`}
+                          >
+                            {item.label2}
+                          </span>
+                        </Link>
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>

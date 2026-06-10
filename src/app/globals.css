@@ -38,5 +38,8 @@ body {
 }
 
 
-
+.font-italic {
+  font-style: italic;
+  font-family: "Cormorant", serif;
+}
 
