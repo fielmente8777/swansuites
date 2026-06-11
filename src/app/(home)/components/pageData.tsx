@@ -65,7 +65,7 @@ export const swanSuitesPageData = {
   },
 
   accommodations: {
-    title: "Explore Our  <i class='text-primary'>Rooms</i>",
+    title: "Our Accommodation",
     rooms: [
       {
         images: ["/room-2.png"],
