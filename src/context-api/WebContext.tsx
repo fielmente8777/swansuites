@@ -7,8 +7,7 @@ interface OpenGalleryProps {
   index?: number;
 }
 interface OpenAmenityModalArray {
-  amenityType: string;
-  amenities: string[];
+  name: string;
 }
 interface WebContextType {
   current: number;
@@ -35,6 +34,7 @@ interface WebContextType {
   amenityModalArray: OpenAmenityModalArray[];
   setAmenityModalArray: (array: OpenAmenityModalArray[]) => void;
 
+  
   openGallery: ({ images, index }: OpenGalleryProps) => void;
 
   closeGallery: () => void;

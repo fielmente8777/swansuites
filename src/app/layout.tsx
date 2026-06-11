@@ -9,6 +9,7 @@ import { WebProvider } from "@/context-api/WebContext";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import Call from "@/components/ContactButton/Call";
+import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -20,7 +21,7 @@ const cormorant_garamond = Cormorant_Garamond({
   variable: "--font-cormorant_garamond",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-})
+});
 
 // const cormorant = Cormorant({
 //   variable: "--font-cormorant",
@@ -86,13 +87,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${cormorant_garamond.variable} antialiased`}>
+      <body
+        className={`${openSans.variable} ${cormorant_garamond.variable} antialiased`}
+      >
         <WebProvider>
           {children}
           <LandingFooter />
           <ImagePopup />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
+          <AmenitiesPopup />
         </WebProvider>
 
         {/* <Script id="whatsapp-config" strategy="afterInteractive">

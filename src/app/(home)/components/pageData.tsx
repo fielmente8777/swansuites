@@ -5,14 +5,15 @@ import {
   DailyHousekeepingIcon,
   TelevisionIcon,
   WifiIcon,
-  WorkAbodeLoungeIcon
+  WorkAbodeLoungeIcon,
 } from "@/utils/icons";
 
 export const swanSuitesPageData = {
   hero: {
     images: ["/banner.png"],
     badge: "Award-winning HOTEL",
-    title: "A Smart Way to Stay in Gachibowli, <i class='text-secondary'>Hyderabad</i>",
+    title:
+      "A Smart Way to Stay in Gachibowli, <i class='text-secondary'>Hyderabad</i>",
     description:
       "Modern rooms, thoughtful amenities, and the warmth of Swan hospitality designed for business and leisure travelers.",
     bookingBenefits:
@@ -75,6 +76,35 @@ export const swanSuitesPageData = {
           { name: "Television", icon: <TelevisionIcon /> },
           { name: "Wifi", icon: <WifiIcon /> },
         ],
+        popUpAmenities: [
+          { name: "Air Conditioning (Split ACs - COVID Safe)" },
+          { name: "Large Screen SMART/Android LED TV" },
+          { name: "24 Hrs Hot/Cold Water" },
+          { name: "Packaged Drinking Water (Complimentary)" },
+          { name: "Electronic Key Card" },
+          { name: "Housekeeping Service (Once Daily)" },
+          { name: "Onsite Laundrette (Complimentary)" },
+          { name: "Intercom" },
+          { name: "Ergonomic Chair with Study Desk" },
+          { name: "Lobby Seating Area" },
+          { name: "Public Telephone with Operator Assistance" },
+          { name: "Mini Fridge" },
+          { name: "Iron and Iron Board" },
+          { name: "Hair Dryer" },
+          { name: "Modern Wardrobe and Storage" },
+          { name: "8 Charging Points" },
+          { name: "Mobility Accessible Rooms" },
+          { name: "First Aid Supplies" },
+          { name: "Valet Dry-Cleaning (Outsourced)" },
+          { name: "Anti-Allergic Pillows" },
+          { name: "CCTV Surveillance" },
+          { name: "24-Hour Security" },
+          { name: "Newspaper (On Request)" },
+          { name: "Luggage Assistance (On Request)" },
+          { name: "Thermal Screening" },
+          { name: "Personal Hand Sanitizers" },
+          { name: "Doctor on Call" },
+        ],
         description:
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
@@ -90,6 +120,35 @@ export const swanSuitesPageData = {
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
           { name: "Wifi", icon: <WifiIcon /> },
+        ],
+        popUpAmenities: [
+          { name: "Air Conditioning (Split ACs - COVID Safe)" },
+          { name: "Large Screen SMART/Android LED TV" },
+          { name: "24 Hrs Hot/Cold Water" },
+          { name: "Packaged Drinking Water (Complimentary)" },
+          { name: "Electronic Key Card" },
+          { name: "Housekeeping Service (Once Daily)" },
+          { name: "Onsite Laundrette (Complimentary)" },
+          { name: "Intercom" },
+          { name: "Ergonomic Chair with Study Desk" },
+          { name: "Lobby Seating Area" },
+          { name: "Public Telephone with Operator Assistance" },
+          { name: "Mini Fridge" },
+          { name: "Iron and Iron Board" },
+          { name: "Hair Dryer" },
+          { name: "Modern Wardrobe and Storage" },
+          { name: "8 Charging Points" },
+          { name: "Mobility Accessible Rooms" },
+          { name: "First Aid Supplies" },
+          { name: "Valet Dry-Cleaning (Outsourced)" },
+          { name: "Anti-Allergic Pillows" },
+          { name: "CCTV Surveillance" },
+          { name: "24-Hour Security" },
+          { name: "Newspaper (On Request)" },
+          { name: "Luggage Assistance (On Request)" },
+          { name: "Thermal Screening" },
+          { name: "Personal Hand Sanitizers" },
+          { name: "Doctor on Call" },
         ],
         description:
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
@@ -152,7 +211,7 @@ export const swanSuitesPageData = {
     ],
   },
 
-  titles:[
+  titles: [
     "Business Conference/ Meetings Facilities",
     "Coffee Shop",
     "1000 mbps internet access points throughout the property",

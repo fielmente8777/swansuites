@@ -31,19 +31,14 @@ const AmenitiesPopup = () => {
         >
           <MdClose />
         </button>
-        <div className="max-md:overflow-y-scroll hide-scroll max-md:h-[90dvh]">
-          {amenityModalArray.map((amenity, index) => (
-            <div key={index} className="flex flex-col gap-5 p-5">
-              <h2 className="text-2xl font-semibold">{amenity.amenityType}</h2>
-              <ul className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-2 ">
-                {amenity.amenities.map((amenity, index) => (
-                  <li key={index} className="text-lg flex md:items-center gap-2">
-                    <FaStar /> {amenity}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="max-md:overflow-y-scroll hide-scroll max-md:h-[90dvh] mt-6">
+          <ul className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-2 lg:p-6 px-7 pb-8">
+            {amenityModalArray.map((amenity, index) => (
+              <li key={index} className="flex md:items-center gap-2">
+                <FaStar /> {amenity.name}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { AccommodationsProps } from "@/@types/type";
 import LinkButton from "@/components/buttons/LinkButton";
+import AmenityPopUpButton from "@/components/pop-up/AmenityPopUpButton";
 import Amenities from "@/components/sliders/Amenities";
 import Image from "next/image";
 
@@ -9,6 +10,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
   description,
   images,
   title,
+  popUpAmenities,
 }) => {
   return (
     <div className="group rounded-2xl overflow-hidden">
@@ -22,9 +24,12 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
         />
       </div>
       <div className="py-5 px-4 group-hover:bg-background shadow-2xl bg-white transition-all duration-300 ease-in-out flex flex-col gap-4">
-        <h3 className="text-2xl lg:text-3xl font-semibold font-primary">
-          {title}
-        </h3>
+        <div className="flex items-center justify-between">
+          <h3 className="text-2xl lg:text-3xl font-semibold font-primary">
+            {title}
+          </h3>
+          <AmenityPopUpButton amenities={popUpAmenities} label="Amenities" />
+        </div>
         <ul className="lg:flex hidden flex-wrap  gap-8 mt-2 lg:justify-between border-[0.1px] border-primary py-2 px-4 rounded-2xl">
           {amenities.map((amenity, i) => (
             <li key={i} className="flex items-center gap-1">

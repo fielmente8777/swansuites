@@ -9,6 +9,9 @@ export interface AccommodationsProps {
       name: string;
       icon: JSX.Element;
     }[];
+    popUpAmenities: {
+      name: string;
+    }[];
     description: string;
     actions: {
       label: string;
