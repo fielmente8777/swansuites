@@ -35,14 +35,14 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
       <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80  to-black/10" />
       <div className="absolute inset-0  z-20 flex items-end pb-10 justify-center">
         <Container>
-          <p className="flex items-center mb-2 max-md:text-sm justify-center gap-2.5 px-1.75 py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
+          <p className="flex items-center mb-2 max-md:text-sm justify-center gap-2.5 px-3.75 tracking-widest py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
             <span>
               <Foo />
             </span>{" "}
             {badge}
           </p>
           <h1
-            className="text-white font-primary lg:text-6xl text-4xl max-w-2xl mx-auto  text-center"
+            className="text-white font-primary font-light lg:text-6xl text-4xl max-w-2xl mx-auto  text-center"
             dangerouslySetInnerHTML={{ __html: title }}
           />
           <p className="text-white/70 md:text-xl mt-3 max-w-3xl text-center mx-auto">

@@ -37,11 +37,11 @@ const Gallery: React.FC<GalleryProps> = ({
 
   return (
     <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
-      <div className="space-y-3">
+      {/* <div className="space-y-3">
         <p className="text-sm text-primary uppercase">{title}</p>
         <SectionHeading title={subtitle} />
-      </div>
-      <div className="md:space-y-12 space-y-6">
+      </div> */}
+      <div className="md:space-y-12 space-y-6 py-8">
         <div className="grid relative lg:grid-cols-6 grid-cols-1  gap-[.55rem]">
           <div className="grid lg:col-span-4 relative lg:grid-cols-4 grid-cols-2 md:auto-rows-[18rem] auto-rows-[12rem] grid-flow-row gap-[.55rem]">
             {images.slice(0, 5).map((src, index) => (
@@ -68,9 +68,9 @@ const Gallery: React.FC<GalleryProps> = ({
             ))}
           </div>
 
-          <div className="lg:col-span-2 w-full space-y-4 bg-[#333333] p-6 rounded-2xl text-white">
+          <div className="lg:col-span-2 w-full space-y-4 bg-[#121212] p-6 rounded-2xl text-white">
             <h2
-              className="text-3xl "
+              className="text-3xl lg:text-4xl font-primary"
               dangerouslySetInnerHTML={{ __html: listTitle }}
             />
             <ul className="flex flex-col gap-4 lg:text-[1.1rem]">

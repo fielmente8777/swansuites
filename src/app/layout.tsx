@@ -1,7 +1,7 @@
 import LandingFooter from "@/components/footer/LandingFooter";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Script from "next/script";
@@ -15,6 +15,12 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
+
+const cormorant_garamond = Cormorant_Garamond({
+  variable: "--font-cormorant_garamond",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+})
 
 // const cormorant = Cormorant({
 //   variable: "--font-cormorant",
@@ -80,7 +86,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>
+      <body className={`${openSans.variable} ${cormorant_garamond.variable} antialiased`}>
         <WebProvider>
           {children}
           <LandingFooter />

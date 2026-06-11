@@ -18,7 +18,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
       containerClassName="md:space-y-10 space-y-5 "
     >
       <div>
-        <p className="uppercase text-secondary text-sm text-center">{title}</p>
+        <p className="uppercase text-secondary tracking-widest text-sm text-center">{title}</p>
         <SectionHeading title={subtitle} textCenter titleColor="white" />
       </div>
       <div className="flex flex-col gap-10">

@@ -1,6 +1,7 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
+import { Foo } from "@/utils/icons";
 import Image from "next/image";
 
 interface ValuePropositionProps {
@@ -34,9 +35,15 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
           />
         </div>
         <div className="flex flex-col gap-4 lg:gap-8">
-          <div className="">
-            <p className="uppercase text-primary text-sm">{tag}</p>
-            <SectionHeading title={title} wrapperClassName="max-w-md" />
+          <div className="space-y-2">
+            <p className="uppercase text-primary tracking-widest text-sm flex items-center gap-2">
+              {" "}
+              <span>
+                <Foo />
+              </span>
+              {tag}
+            </p>
+            <SectionHeading title={title} />
           </div>
           <p className="">{description}</p>
           <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center">

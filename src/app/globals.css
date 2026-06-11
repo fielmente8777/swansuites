@@ -13,7 +13,8 @@
 
   /* --font-- */
   --font-body: var(--font-open-sans);
-  --font-primary: "Cormorant", serif;
+  --font-primary: var(--font-cormorant_garamond);
+  /* --font-primary: "Cormorant", serif; */
 }
 
 
@@ -27,7 +28,7 @@
   --color-light: #777777;
 
   --font-body: var(--font-body);
-  --font-primary: "Cormorant", serif;
+  --font-primary: var(--font-cormorant_garamond);
 }
 
 body {

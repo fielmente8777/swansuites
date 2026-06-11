@@ -1,6 +1,7 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
+import { Foo } from "@/utils/icons";
 import { JSX } from "react/jsx-runtime";
 
 interface FeaturesProps {
@@ -27,7 +28,12 @@ const Features: React.FC<FeaturesProps> = ({
   return (
     <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
       <div className="space-y-3">
-        <p className="text-sm text-center text-primary uppercase">{title}</p>
+        <p className="text-sm text-center tracking-widest text-primary uppercase flex items-center justify-center gap-2">
+          <span>
+            <Foo />
+          </span>
+          {title}
+        </p>
         <SectionHeading title={subtitle} textCenter />
         <p className="text-lg text-center max-w-2xl text-light mx-auto">
           {description}
@@ -42,7 +48,7 @@ const Features: React.FC<FeaturesProps> = ({
             <div className="w-10 aspect-square rounded-lg bg-primary flex items-center justify-center">
               {item.icon}
             </div>
-            <p className="text-xl font-semibold font-primary lg:text-3xl">
+            <p className="text-xl font-semibold text-dark font-primary lg:text-3xl">
               {item.title}
             </p>
             <p className="text-light">{item.description}</p>

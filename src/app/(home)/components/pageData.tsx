@@ -3,17 +3,16 @@ import {
   AllDayDinningIcon,
   CoffeeIcon,
   DailyHousekeepingIcon,
-  MiniBarIcon,
   TelevisionIcon,
   WifiIcon,
-  WorkAbodeLoungeIcon,
+  WorkAbodeLoungeIcon
 } from "@/utils/icons";
 
 export const swanSuitesPageData = {
   hero: {
     images: ["/banner.png"],
-    badge: "Award-winning · Hyderabad",
-    title: "A Smart Way to Stay in <i class='text-secondary font-italic'>Gachibowli</i>",
+    badge: "Award-winning HOTEL",
+    title: "A Smart Way to Stay in Gachibowli, <i class='text-secondary'>Hyderabad</i>",
     description:
       "Modern rooms, thoughtful amenities, and the warmth of Swan hospitality designed for business and leisure travelers.",
     bookingBenefits:
@@ -21,7 +20,7 @@ export const swanSuitesPageData = {
   },
 
   valueProposition: {
-    tag: "SWANSUITES GACHIBOWLI HOTEL",
+    tag: "ABOUT SWAN SUITES",
     title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
     description:
       "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",

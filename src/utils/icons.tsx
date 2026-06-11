@@ -495,3 +495,105 @@ export const WifiIcon = () => (
     />
   </svg>
 )
+
+export const Foo = () => (
+  <svg
+    width={20}
+    height={20}
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_128_4)">
+      <path
+        d="M14.0426 10.7684C14.8824 10.9825 15.6605 11.2355 16.1512 11.5191C17.7342 12.4329 18.4563 13.7159 18.326 14.8126C17.4412 15.4738 15.9692 15.4899 14.3862 14.576C13.8951 14.292 13.286 13.7441 12.6804 13.1236"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.3595 6.11305C11.5924 5.28195 11.7611 4.48539 11.7611 3.92059C11.7611 2.09285 11.0112 0.825977 9.99608 0.390625C8.981 0.825977 8.23108 2.09285 8.23108 3.92059C8.23108 4.48535 8.39971 5.28195 8.63268 6.11305"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5.94825 10.7628C5.112 10.9765 4.33782 11.2288 3.84872 11.5112C2.26583 12.425 1.54368 13.7079 1.67415 14.8047C2.55872 15.4661 4.03083 15.4821 5.61368 14.5682C6.10278 14.2858 6.70833 13.7415 7.31157 13.1242"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.6806 13.1242C13.2839 13.7415 13.8894 14.2858 14.3785 14.5682C15.9614 15.4821 17.4335 15.4661 18.318 14.8047C18.4485 13.7079 17.7263 12.425 16.1435 11.5112C15.6544 11.2288 14.8802 10.9765 14.0439 10.7628"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5.94838 9.23713C5.11217 9.02338 4.33792 8.7712 3.84885 8.48878C2.26585 7.57491 1.54378 6.29194 1.67397 5.1953C2.55881 4.53401 4.03081 4.51795 5.61381 5.43182C6.10331 5.7142 6.70889 6.25901 7.31213 6.87635"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.42882 7.94048L4.73132 6.96033"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.3594 13.8869C11.5924 14.718 11.7611 15.5146 11.7611 16.0794C11.7611 17.9071 11.0112 19.174 9.99608 19.6094C8.981 19.174 8.23108 17.9071 8.23108 16.0794C8.23108 15.5146 8.39975 14.718 8.63272 13.8869"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.99609 16.0794V14.1183"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.6801 6.87634C13.2833 6.25899 13.8889 5.71419 14.3784 5.43181C15.9614 4.51794 17.4334 4.53403 18.3182 5.19528C18.4485 6.29192 17.7263 7.57489 16.1434 8.48876C15.6543 8.77114 14.8801 9.02337 14.0438 9.23712"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.2609 6.96033L13.5634 7.94048"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.3106 11.3363C12.0934 10.5256 11.5775 9.87481 10.9132 9.47013C10.8945 8.69278 10.5894 7.92067 9.99607 7.32739C9.40279 7.92067 9.09713 8.69274 9.07865 9.47032C8.41447 9.87505 7.89869 10.5257 7.68158 11.3363C8.49205 11.5532 9.31357 11.4322 9.99627 11.0593C10.4497 11.307 10.9645 11.4438 11.4967 11.4438C11.7654 11.4437 12.0388 11.4092 12.3106 11.3363Z"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.99613 14.1183C12.2706 14.1183 14.1144 12.2745 14.1144 9.99997C14.1144 7.72549 12.2706 5.88165 9.99613 5.88165C7.72164 5.88165 5.87781 7.72549 5.87781 9.99997C5.87781 12.2745 7.72164 14.1183 9.99613 14.1183Z"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_128_4">
+        <rect width={20} height={20} fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+)
