@@ -1,6 +1,6 @@
 export const enCodeText = encodeURIComponent(`Hello Team,
 
-I would like to enquire about booking a stay at The Acacia Morjim Goa.
+I would like to enquire about booking a stay at swan suites.
 
 Please share room availability and best offers.
 
