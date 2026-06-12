@@ -45,8 +45,8 @@ export const footerData: FooterData = {
   logo: "/logo.png",
   cta: [
     { label: "CALL NOW", href: contact.callCta },
-    { label: "ENQUIRE NOW", href: "#form" },
-    { label: "BOOK NOW", href: contact.WhatsappCta },
+    { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+    { label: "BOOK  NOW", href: "#form" },
   ],
   lists: [
     {

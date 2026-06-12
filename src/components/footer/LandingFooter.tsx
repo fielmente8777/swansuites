@@ -36,7 +36,7 @@ const LandingFooter = () => {
                   label={item.label}
                   href={item.href}
                   key={index}
-                  target="_blank"
+                  target={index !== 2 ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   callIcon={index === 0 && true}
                   whatsAppIcon={index === 1 && true}

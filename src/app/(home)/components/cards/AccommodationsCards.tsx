@@ -48,7 +48,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
               <LinkButton
                 {...button}
                 {...button}
-                target="_blank"
+                target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="bg-primary border-none rounded-lg py-3 justify-center w-full px-4"
                 whatsAppIcon={i === 1}

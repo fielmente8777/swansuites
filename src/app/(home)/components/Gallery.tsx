@@ -91,7 +91,7 @@ const Gallery: React.FC<GalleryProps> = ({
             <li key={i} className="">
               <LinkButton
                 {...button}
-                target="_blank"
+                target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="bg-primary border-none rounded-lg py-3 w-full justify-center gap-2"
                 whatsAppIcon={i === 1}

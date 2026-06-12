@@ -19,8 +19,8 @@ export const contact = {
     instagram: "https://www.instagram.com/acaciahotels",
     linkedin: "",
   },
-  callCta: `tel:+919642244000`,
-  WhatsappCta: `https://wa.me/+919642244000?text=${enCodeText}`,
+  callCta: `tel:+918886135000`,
+  WhatsappCta: `https://wa.me/+918886135000?text=${enCodeText}`,
   formDomain: "swansuites",
   // formDomain: "testmulti", //for testing
   formHid: "",
