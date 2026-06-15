@@ -50,7 +50,8 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
             {actions.map((button, i) => (
               <li key={i} className="max-md:w-full">
                 <LinkButton
-                  {...button}
+                  href={button.href}
+                  label={button.label}
                   target={i !== 2 ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   className="bg-primary border-none max-md:w-full justify-center rounded-lg py-3 px-4"

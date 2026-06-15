@@ -10,6 +10,7 @@ import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import Call from "@/components/ContactButton/Call";
 import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
+import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -123,6 +124,7 @@ export default function RootLayout({
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
           <AmenitiesPopup />
+          <PopUpForm />
         </WebProvider>
 
         {/* <Script id="whatsapp-config" strategy="afterInteractive">

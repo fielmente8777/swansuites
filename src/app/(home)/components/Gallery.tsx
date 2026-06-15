@@ -90,7 +90,8 @@ const Gallery: React.FC<GalleryProps> = ({
           {actions.map((button, i) => (
             <li key={i} className="">
               <LinkButton
-                {...button}
+                href={button.href}
+                label={button.label}
                 target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="bg-primary border-none rounded-lg py-3 w-full justify-center gap-2"

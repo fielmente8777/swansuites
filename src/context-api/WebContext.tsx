@@ -16,6 +16,9 @@ interface WebContextType {
   setCurrent: (current: number) => void;
   setTotal: (total: number) => void;
 
+  isOpenFormPopUp: boolean;
+  setIsOpenFormPopUp: (open: boolean) => void;
+
   isOpenNavBar: boolean;
   setIsOpenNavBar: (open: boolean) => void;
 
@@ -59,6 +62,9 @@ const WebContext = createContext<WebContextType>({
   amenityModalArray: [],
   setAmenityModalArray: () => {},
 
+  isOpenFormPopUp: false,
+  setIsOpenFormPopUp: () => {},
+
   openGallery: () => {},
 
   closeGallery: () => {},
@@ -79,6 +85,8 @@ export const WebProvider = ({ children }: WebProviderProps) => {
   const [current, setCurrent] = useState(0);
   const [total, setTotal] = useState(0);
   const [openImageModal, setOpenImageModal] = useState(false);
+
+  const [isOpenFormPopUp, setIsOpenFormPopUp] = useState(false);
 
   const [passImagesArray, setPassImagesArray] = useState<string[]>([]);
 
@@ -113,6 +121,9 @@ export const WebProvider = ({ children }: WebProviderProps) => {
         setTotal,
         isOpenNavBar,
         setIsOpenNavBar,
+
+        isOpenFormPopUp,
+        setIsOpenFormPopUp,
 
         openImageModal,
         setOpenImageModal,
