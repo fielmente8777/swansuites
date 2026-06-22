@@ -1,3 +1,6 @@
-export default function Gallery() {
-    return <div>gallery</div>;
+import Gallery from "./component/Gallery";
+import { pageData } from "./pageData";
+
+export default function GalleryPage() {
+  return <Gallery data={pageData.gallery} />;
 }

@@ -32,3 +32,80 @@ export interface TestimonialsProps {
     href: string;
   }[];
 }
+
+export interface AboutIntroProps {
+  icon?: JSX.Element;
+
+  tag: string;
+
+  title: {
+    first: string;
+    highlightOne: string;
+    middle: string;
+    highlightTwo: string;
+  };
+
+  topDescription: string[];
+
+  image: string;
+
+  bottomDescription: string[];
+}
+
+export interface WhyUsProps {
+  icon?: JSX.Element;
+  
+  topText: string;
+
+  image: string;
+
+  tag: string;
+
+  title: {
+    first: string;
+    highlight: string;
+    last: string;
+  };
+
+  description: string[];
+
+  action: {
+    label: string;
+    href: string;
+  };
+}
+
+export interface AwardsProps {
+  title: {
+    first: string;
+    highlight: string;
+  };
+
+  leftImage: string;
+
+  achievements: {
+    description: string;
+  }[];
+
+  rightImage: string;
+}
+export interface AboutPageProps {
+  aboutIntro: AboutIntroProps;
+  whyUs: WhyUsProps;
+   awards: AwardsProps;
+}
+
+export interface GalleryPageProps {
+  gallery: GalleryProps;
+}
+
+export interface GalleryPageProps {
+  gallery: GalleryProps;
+}
+
+export interface GalleryProps {
+  images: {
+    src: string;
+    alt: string;
+  }[];
+}
