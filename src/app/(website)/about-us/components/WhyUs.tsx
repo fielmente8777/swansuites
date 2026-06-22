@@ -11,21 +11,21 @@ interface Props {
 
 export default function WhyUs({ data }: Props) {
   return (
-    <section className="bg-background">
+    <section className="bg-background py-20">
       <div className="max_width">
         {/* Top Heading */}
-        <div className="text-center">
-          <div className="w-72 h-px bg-secondary mx-auto mb-8"></div>
+        <div className="text-center ">
+          <div className="w-72 h-px bg-secondary mx-auto "></div>
 
-          <p className="font-primary font-italic text-[46px] text-secondary">
+          <p className="font-primary font-italic text-[46px] text-secondary md: py-16">
             {data.topText}
           </p>
 
-          <div className="w-72 h-px bg-secondary mx-auto mt-8"></div>
+          <div className="w-72 h-px bg-secondary mx-auto"></div>
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-[2fr_3fr] gap-10 items-center">
+        <div className="grid lg:grid-cols-[2fr_3fr] gap-10 items-center mt-12">
           <div className="relative w-full aspect-[3/2.5] overflow-hidden rounded-2xl">
             <Image
               src={data.image}

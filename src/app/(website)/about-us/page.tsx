@@ -9,6 +9,9 @@ export default function AboutPage() {
       <AboutIntro data={pageData.aboutIntro} />
       <WhyUs data={pageData.whyUs} />
       <Awards data={pageData.awards} />
+      <div className=" h-[200px]">
+
+      </div>
     </>
   );
 }
