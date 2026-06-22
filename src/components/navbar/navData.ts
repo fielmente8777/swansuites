@@ -3,9 +3,7 @@ import { contact } from "@/utils/constent";
 export const navData = {
   logo: "/logo.png",
 
-  buttons: [
-    { label: "BOOK NOW", href: contact.WhatsappCta },
-  ],
+  buttons: [{ label: "BOOK NOW", href: contact.WhatsappCta }],
 };
 
 export const WebsiteNavData = {
@@ -13,10 +11,9 @@ export const WebsiteNavData = {
   links: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
-    { label: "Accommodations", href: "/refined-living-spaces/" },
-    { label: "Wellness", href: "/holistic-wellness/" },
-    { label: "Dining", href: "/farm-to-table/" },
-    { label: "Experiences", href: "/experiences/" },
+    { label: "Locations", href: "/locations/" },
+    { label: "Gallery", href: "/gallery/" },
     { label: "Contact", href: "/contact-us/" },
   ],
+  buttons: [{ label: "BOOK NOW", href: contact.WhatsappCta }],
 };

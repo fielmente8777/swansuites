@@ -1,16 +1,15 @@
-import LandingFooter from "@/components/footer/LandingFooter";
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 import ImagePopup from "@/components/pop-up/ImagePopup";
+import PopUpForm from "@/components/pop-up/PopUpForm";
+import { WebProvider } from "@/context-api/WebContext";
+import { contact } from "@/utils/constent";
 import type { Metadata } from "next";
-import { Open_Sans, Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Open_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
-import Script from "next/script";
-import { WebProvider } from "@/context-api/WebContext";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
-import { contact } from "@/utils/constent";
-import Call from "@/components/ContactButton/Call";
-import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
-import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -119,7 +118,6 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <WebProvider>
           {children}
-          <LandingFooter />
           <ImagePopup />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />
