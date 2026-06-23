@@ -73,7 +73,7 @@ export const swanSuitesPageData = {
 
     rooms: [
       {
-        images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg"],
+        images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg","/King4.jpg"],
         title: "Premium - King",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
@@ -118,7 +118,7 @@ export const swanSuitesPageData = {
         ],
       },
       {
-        images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg"],
+        images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg","/Twin4.jpg"],
         title: "Premium - Twin",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
