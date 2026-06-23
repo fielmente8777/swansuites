@@ -94,7 +94,7 @@ const Gallery: React.FC<GalleryProps> = ({
                 label={button.label}
                 target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="bg-primary border-none rounded-lg py-3 w-full justify-center gap-2"
+                className="bg-primary text-white border-none rounded-lg py-3 w-full justify-center gap-2"
                 whatsAppIcon={i === 1}
                 callIcon={i === 0}
                 calendarIcon={i === 2}

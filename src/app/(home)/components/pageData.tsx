@@ -66,10 +66,13 @@ export const swanSuitesPageData = {
   },
 
   accommodations: {
-    title: "Our Accommodation",
+     title: "OUR ACCOMMODATION",
+    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+    description:
+      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
     rooms: [
       {
-        images: ["/room-2.png"],
+         images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg"],
         title: "Premium - King",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
@@ -114,7 +117,7 @@ export const swanSuitesPageData = {
         ],
       },
       {
-        images: ["/room-3.jpg"],
+       images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg"],
         title: "Premium - Twin",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
