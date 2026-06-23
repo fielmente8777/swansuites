@@ -726,3 +726,63 @@ export const StarIcon = () => (
 </svg>
 
 );
+export const BtnNextIcon = () => (
+  <svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_380_541"
+      style={{ maskType: "alpha" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={32}
+      height={32}
+    >
+      <rect width={32} height={32} fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_380_541)">
+      <path
+        d="M17.2603 15.9999L11.127 9.86661L12.532 8.46161L20.0703 15.9999L12.532 23.5383L11.127 22.1333L17.2603 15.9999Z"
+        fill="#9C533E"
+      />
+    </g>
+  </svg>
+);
+
+export const BtnPrevIcon = () => (
+  <svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_272_702"
+      style={{ maskType: "alpha" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={32}
+      height={32}
+    >
+      <rect
+        width={32}
+        height={32}
+        transform="matrix(-1 0 0 1 32 0)"
+        fill="#D9D9D9"
+      />
+    </mask>
+    <g mask="url(#mask0_272_702)">
+      <path
+        d="M14.7387 16L20.8721 9.86667L19.4671 8.46167L11.9287 16L19.4671 23.5383L20.8721 22.1333L14.7387 16Z"
+        fill="#9C533E"
+      />
+    </g>
+  </svg>
+);

@@ -2,6 +2,8 @@ import { JSX } from "react";
 
 export interface AccommodationsProps {
   title: string;
+  subtitle: string;
+  description: string;
   rooms: {
     images: string[];
     title: string;
@@ -54,7 +56,7 @@ export interface AboutIntroProps {
 
 export interface WhyUsProps {
   icon?: JSX.Element;
-  
+
   topText: string;
 
   image: string;
@@ -92,7 +94,7 @@ export interface AwardsProps {
 export interface AboutPageProps {
   aboutIntro: AboutIntroProps;
   whyUs: WhyUsProps;
-   awards: AwardsProps;
+  awards: AwardsProps;
 }
 
 export interface GalleryPageProps {
