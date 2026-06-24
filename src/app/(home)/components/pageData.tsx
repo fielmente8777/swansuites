@@ -69,7 +69,7 @@ export const swanSuitesPageData = {
      title: "OUR ACCOMMODATION",
     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
     description:
-      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
+      "Swan Suites offers all the conveniences of a modern design.",
     rooms: [
       {
          images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg"],
