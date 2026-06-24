@@ -5,16 +5,16 @@ export default function SlidingTitle({ items }: { items: string[] }) {
   const titles = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden py-6 text-white max_screen_width bg-background2/40">
+    <div className="relative overflow-hidden text-white max_screen_width bg-background2/40">
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (
             <span
               key={i}
               aria-hidden={i >= items.length}
-              className="marquee-item uppercase w-28 relative aspect-4/2.75 bg-white border border-secondary rounded-lg overflow-hidden flex items-center gap-2.5"
+              className="marquee-item uppercase w-28 relative aspect-4/2.75 bg-white  rounded-lg overflow-hidden flex items-center gap-2.5"
             >
-              <Image src={t} alt={t} fill className="object-cover p-2" />
+              <Image src={t} alt={t} fill className="object-contain p-1" />
               {/* <span>{t}</span> */}
               {/* <span className="separator">
                 <ICon />

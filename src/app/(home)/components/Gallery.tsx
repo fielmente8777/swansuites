@@ -1,47 +1,55 @@
 "use client";
-import LinkButton from "@/components/buttons/LinkButton";
-import { SectionWithContainer } from "@/components/sectionComponants";
-import { SectionHeading } from "@/components/typography";
+import { Section } from '@/components/sectionComponants';
 import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 
 interface GalleryProps {
-  title: string;
-  subtitle: string;
-  listTitle: string;
-  list: string[];
+  title?: string;
+  subtitle?: string;
+  listTitle?: string;
+  list?: string[];
   images: string[];
-  actions: {
+  actions?: {
     label: string;
     href: string;
   }[];
 }
 
-const Gallery: React.FC<GalleryProps> = ({
-  title,
-  subtitle,
-  images,
-  actions,
-  listTitle,
-  list,
-}) => {
+const Gallery: React.FC<GalleryProps> = ({ images }) => {
   const { openGallery } = useWebContext();
 
-  const gridPattern = [
-    "lg:col-span-2 col-span-2 lg:row-span-2 row-span-2",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-  ];
+  // const gridPattern = [
+  //   "lg:col-span-2 col-span-2 lg:row-span-2 row-span-2",
+  //   "col-span-2 row-span-1",
+  //   "col-span-2 row-span-1",
+  //   "col-span-2 row-span-1",
+  //   "col-span-2 row-span-1",
+  // ];
 
   return (
-    <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
+    <Section>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-1">
+        {images?.map((src, index) => (
+          <div
+            key={index}
+            className={` overflow-hidden w-full aspect-4/3 relative cursor-pointer`}
+          >
+            <Image
+              src={src}
+              alt={`Gallery Image ${index + 1}`}
+              fill
+              sizes="100vw"
+              className="object-cover duration-1000 transition ease-in-out hover:scale-105"
+              onClick={() => openGallery({ images, index })}
+            />
+          </div>
+        ))}
+      </div>
       {/* <div className="space-y-3">
         <p className="text-sm text-primary uppercase">{title}</p>
         <SectionHeading title={subtitle} />
       </div> */}
-      <div className="md:space-y-12 space-y-6 py-8">
+      {/* <div className="md:space-y-12 space-y-6 py-8">
         <div className="grid relative lg:grid-cols-6 grid-cols-1  gap-[.55rem]">
           <div className="grid lg:col-span-4 relative lg:grid-cols-4 grid-cols-2 md:auto-rows-[18rem] auto-rows-[12rem] grid-flow-row gap-[.55rem]">
             {images.slice(0, 5).map((src, index) => (
@@ -102,8 +110,8 @@ const Gallery: React.FC<GalleryProps> = ({
             </li>
           ))}
         </ul>
-      </div>
-    </SectionWithContainer>
+      </div> */}
+    </Section>
   );
 };
 

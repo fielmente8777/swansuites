@@ -48,7 +48,7 @@
 
     @media (min-width: 1280px) {
       /* xl */
-      max-width: 1140px;
+      max-width: 1250px;
     }
 
     @media (min-width: 1536px) {
@@ -75,6 +75,28 @@
   }
 }
 
+.background-color-1 {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-background);
+    z-index: -3;
+  }
+}
+
+.bg-image{
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    height: 800px;
+    background-image: url("/group.png");
+    z-index: -1;
+  }
+}
 
 .room-card {
   .swiper-button-next,
@@ -89,7 +111,7 @@
     align-items: center;
     cursor: pointer;
     svg {
-      color: #EF6C22;
+      color: #ef6c22;
       width: 20px;
       height: 20px;
     }

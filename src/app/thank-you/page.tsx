@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ThankYou() {
   return (
-    <main>
+    <main className="background-color-1">
       <SectionWithContainer>
         <div className="flex flex-col gap-6 items-center justify-center">
           <div className="max-w-sm w-full relative aspect-4/2 bg-background rounded-md">

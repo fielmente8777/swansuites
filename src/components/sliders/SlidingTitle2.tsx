@@ -1,10 +1,19 @@
 import "./sliding.title.scss";
 
-export default function SlidingTitle2({ items }: { items: string[] }) {
+export default function SlidingTitle2({
+  items,
+  ariaHidden = false,
+}: {
+  items: string[];
+  ariaHidden?: boolean;
+}) {
   const titles = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden py-3 bg-white text-secondary border-y border-[#777] max_screen_width bg-background2/40">
+    <div
+      aria-hidden={ariaHidden}
+      className="relative overflow-hidden py-3 bg-white text-secondary border-y border-[#777] max_screen_width bg-background2/40"
+    >
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (

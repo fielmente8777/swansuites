@@ -35,9 +35,10 @@ export const swanSuitesPageData = {
 
   features: {
     title: "Why Swan Suites",
-    subtitle: "Luxury that Lives like <i class='text-primary'>Home!</i>",
+    subtitle:
+      "Everything You Need for a <i class='text-primary'>Comfortable</i> Stay!",
     description:
-      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
+      "Carefully designed to make every stay productive and stress-free.",
     items: [
       {
         icon: <WorkAbodeLoungeIcon />,
@@ -66,13 +67,12 @@ export const swanSuitesPageData = {
   },
 
   accommodations: {
-     title: "OUR ACCOMMODATION",
+    title: "OUR ACCOMMODATION",
     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
-    description:
-      "Swan Suites offers all the conveniences of a modern design.",
+    description: "Swan Suites offers all the conveniences of a modern design.",
     rooms: [
       {
-         images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg"],
+        images: ["/room-2.png", "/King1.jpg", "/King2.jpg", "/King3.jpg"],
         title: "Premium - King",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
@@ -117,7 +117,7 @@ export const swanSuitesPageData = {
         ],
       },
       {
-       images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg"],
+        images: ["/room-3.jpg", "/Twin1.jpg", "/Twin2.jpg", "/Twin3.jpg"],
         title: "Premium - Twin",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
@@ -164,10 +164,43 @@ export const swanSuitesPageData = {
     ],
   },
 
-  gallery: {
-    title: "A look inside",
-    subtitle: "Crafted for comfort",
-    listTitle: "Locations & <i class='text-primary'>Attractions</i>",
+  comesWithYourStay: {
+    title: "What Comes With Your <i class='text-primary'>Stay!</i>",
+    description:
+      "Discover premium amenities, modern conveniences, and warm hospitality included with every stay.",
+    image: "/avtar.png",
+    images: [
+      {
+        name: "Complimentary Breakfast",
+        src: "/Complimentary-Breakfast.jpg",
+      },
+      {
+        name: "Coffee Shop",
+        src: "/Coffee Shop.jpg",
+      },
+      {
+        name: "Lounge Area",
+        src: "/banner.png",
+      },
+      {
+        name: "In house Car Parking (Complimentary)",
+        src: "/In-house-Car-Parking.png",
+      },
+    ],
+    actions: [
+      { label: "CALL NOW", href: contact.callCta },
+      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+      { label: "BOOK NOW", href: "#form" },
+    ],
+  },
+
+  images: ["/1.png", "/2.png", "/3.png", "/4.png"],
+
+  attractions: {
+    title: "Gachibowli, Hyderabad",
+    subtitle: "Locations & <i class='text-primary'>Attractions!</i>",
+    description:
+      "Discover Hyderabad's finest attractions and vibrant neighborhoods, all conveniently close to Swan Suites.",
     list: [
       "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
       "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
@@ -177,13 +210,6 @@ export const swanSuitesPageData = {
       "200m to CARE Hospitals",
       "300m to Cyberabad Police Commissionerate",
       "1.5 km to IKEA",
-    ],
-    images: [
-      "/gallery-1.png",
-      "/gallery-2.png",
-      "/gallery-3.png",
-      // "/gallery-4.png",
-      // "/gallery-5.png",
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
@@ -223,7 +249,8 @@ export const swanSuitesPageData = {
   ],
   testimonials: {
     title: "Guest stories",
-    subtitle: "Loved by long-stay travellers",
+    subtitle:
+      "What our Guest say about Swan Suites <i class='text-primary'>Gachibowli Hotel</i>",
     testimonials: [
       {
         review:
