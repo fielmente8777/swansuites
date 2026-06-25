@@ -2,6 +2,8 @@ import { JSX } from "react";
 
 export interface AccommodationsProps {
   title: string;
+  subtitle: string;
+  description: string;
   rooms: {
     images: string[];
     title: string;

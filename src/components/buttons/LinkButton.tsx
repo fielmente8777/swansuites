@@ -34,7 +34,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           {...props}
           aria-label={label}
           onClick={() => setIsOpenFormPopUp(true)}
-          className={`flex items-center gap-2 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
+          className={`flex items-center max-2xl:text-sm gap-2 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
         >
           {whatsAppIcon && <WhatsAppIcon />}
           {callIcon && <CallIcon />}
@@ -52,7 +52,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       ) : (
         <Link
           href={href}
-          className={`flex items-center gap-2 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
+          className={`flex items-center max-2xl:text-sm gap-2 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
           {...props}
         >
           {whatsAppIcon && <WhatsAppIcon />}

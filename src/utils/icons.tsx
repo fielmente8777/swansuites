@@ -110,6 +110,47 @@ export const CoffeeIcon = () => (
   </svg>
 );
 
+
+export const TrustedIcon = () => (
+  <svg
+    width={20}
+    height={20}
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0_2087_1036)">
+      <path
+        d="M3.7684 11.8734L1.47113 15.654C1.0559 16.3373 1.51453 17.2129 2.31957 17.2738L3.91062 17.3942L4.76765 18.7226C5.20129 19.3947 6.20008 19.3814 6.61531 18.6981L8.7614 15.1663"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.3131 8.0725C17.3133 8.04793 17.314 8.02348 17.314 7.99887C17.314 4.01269 14.0395 0.78125 10.0001 0.78125C5.96081 0.78125 2.68628 4.01269 2.68628 7.99887C2.68628 11.985 5.96081 15.2164 10.0001 15.2164C12.6028 15.2164 14.8876 13.8746 16.1839 11.854L18.5291 15.654C18.9443 16.3373 18.4857 17.213 17.6807 17.2739L16.0896 17.3943L15.2326 18.7226C14.7989 19.3947 13.8001 19.3814 13.3849 18.6981L11.2692 15.2164"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.98047 7.94595L9.16137 9.17657C9.45777 9.48548 9.96031 9.45552 10.2179 9.11356L12.4685 6.12622"
+        stroke="#EF6C22"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_2087_1036">
+        <rect width={20} height={20} fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+)
+
+
 export const TelevisionIcon = () => (
   <svg
     width={30}
