@@ -786,3 +786,16 @@ export const BtnPrevIcon = () => (
     </g>
   </svg>
 );
+
+export const FillDropDownIcon = () => (
+  <svg
+    width={25}
+    height={24}
+    viewBox="0 0 25 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12.5 15L7.5 10H17.5L12.5 15Z" fill="#184B56" />
+  </svg>
+);
+

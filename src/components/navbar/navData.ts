@@ -9,9 +9,25 @@ export const navData = {
 export const WebsiteNavData = {
   logo: "/images/logo.png",
   links: [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/home/" },
     { label: "About", href: "/about-us/" },
-    { label: "Locations", href: "/locations/" },
+    {
+      label: "Locations",
+      href: "/locations/",
+      subLinks: [
+        {
+          location: "Hyderabad",
+          label: "Gachibowli Hotel",
+          href: "/locations/gachibowli-hotel/",
+          // sub: "Boutique stays in the heart of the world’s oldest living city",
+        },
+        {
+          label: " Madhapur Apartment",
+          href: "/locations/madhapur-apartment/",
+          // sub: "Boutique stays in the heart of the world’s oldest living city",
+        },
+      ],
+    },
     { label: "Gallery", href: "/gallery/" },
     { label: "Contact", href: "/contact-us/" },
   ],

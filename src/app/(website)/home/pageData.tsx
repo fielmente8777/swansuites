@@ -7,8 +7,9 @@ import {
   WifiIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
+import { title } from "process";
 
-export const swanSuitesPageData = {
+export const HomePageData = {
   hero: {
     images: ["/banner.png"],
     badge: "Award-winning HOTEL",
@@ -65,16 +66,116 @@ export const swanSuitesPageData = {
     ],
   },
 
-  accommodations: {
-    title: "Our Accommodation",
-    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
-    description:
-      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
+  // accommodations: {
 
-    rooms: [
+  //   title: "Our Accommodation",
+  //   subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+  //   description:
+  //     "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
+
+  //   rooms: [
+  //     {
+  //       images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg","/King.jpg"],
+  //       title: "Premium - King",
+  //       amenities: [
+  //         { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
+  //         { name: "Television", icon: <TelevisionIcon /> },
+  //         { name: "Wifi", icon: <WifiIcon /> },
+  //       ],
+  //       popUpAmenities: [
+  //         { name: "Air Conditioning (Split ACs - COVID Safe)" },
+  //         { name: "Large Screen SMART/Android LED TV" },
+  //         { name: "24 Hrs Hot/Cold Water" },
+  //         { name: "Packaged Drinking Water (Complimentary)" },
+  //         { name: "Electronic Key Card" },
+  //         { name: "Housekeeping Service (Once Daily)" },
+  //         { name: "Onsite Laundrette (Complimentary)" },
+  //         { name: "Intercom" },
+  //         { name: "Ergonomic Chair with Study Desk" },
+  //         { name: "Lobby Seating Area" },
+  //         { name: "Public Telephone with Operator Assistance" },
+  //         { name: "Mini Fridge" },
+  //         { name: "Iron and Iron Board" },
+  //         { name: "Hair Dryer" },
+  //         { name: "Modern Wardrobe and Storage" },
+  //         { name: "8 Charging Points" },
+  //         { name: "Mobility Accessible Rooms" },
+  //         { name: "First Aid Supplies" },
+  //         { name: "Valet Dry-Cleaning (Outsourced)" },
+  //         { name: "Anti-Allergic Pillows" },
+  //         { name: "CCTV Surveillance" },
+  //         { name: "24-Hour Security" },
+  //         { name: "Newspaper (On Request)" },
+  //         { name: "Luggage Assistance (On Request)" },
+  //         { name: "Thermal Screening" },
+  //         { name: "Personal Hand Sanitizers" },
+  //         { name: "Doctor on Call" },
+  //       ],
+  //       description:
+  //         "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
+  //       actions: [
+  //         { label: "CALL NOW", href: contact.callCta },
+  //         { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+  //         { label: "BOOK NOW", href: "#form" },
+  //       ],
+  //     },
+  //     {
+  //       images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg","/Twin4.jpg"],
+  //       title: "Premium - Twin",
+  //       amenities: [
+  //         { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
+  //         { name: "Television", icon: <TelevisionIcon /> },
+  //         { name: "Wifi", icon: <WifiIcon /> },
+  //       ],
+  //       popUpAmenities: [
+  //         { name: "Air Conditioning (Split ACs - COVID Safe)" },
+  //         { name: "Large Screen SMART/Android LED TV" },
+  //         { name: "24 Hrs Hot/Cold Water" },
+  //         { name: "Packaged Drinking Water (Complimentary)" },
+  //         { name: "Electronic Key Card" },
+  //         { name: "Housekeeping Service (Once Daily)" },
+  //         { name: "Onsite Laundrette (Complimentary)" },
+  //         { name: "Intercom" },
+  //         { name: "Ergonomic Chair with Study Desk" },
+  //         { name: "Lobby Seating Area" },
+  //         { name: "Public Telephone with Operator Assistance" },
+  //         { name: "Mini Fridge" },
+  //         { name: "Iron and Iron Board" },
+  //         { name: "Hair Dryer" },
+  //         { name: "Modern Wardrobe and Storage" },
+  //         { name: "8 Charging Points" },
+  //         { name: "Mobility Accessible Rooms" },
+  //         { name: "First Aid Supplies" },
+  //         { name: "Valet Dry-Cleaning (Outsourced)" },
+  //         { name: "Anti-Allergic Pillows" },
+  //         { name: "CCTV Surveillance" },
+  //         { name: "24-Hour Security" },
+  //         { name: "Newspaper (On Request)" },
+  //         { name: "Luggage Assistance (On Request)" },
+  //         { name: "Thermal Screening" },
+  //         { name: "Personal Hand Sanitizers" },
+  //         { name: "Doctor on Call" },
+  //       ],
+  //       description:
+  //         "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
+  //       actions: [
+  //         { label: "CALL NOW", href: contact.callCta },
+  //         { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+  //         { label: "BOOK NOW", href: "#form" },
+  //       ],
+  //     },
+  //   ],
+  // },
+
+  accommodations:{
+    title:"EXPLORE OUR LOCATIONS",
+     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+     description:"Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+
+     rooms: [
       {
-        images: ["/room-2.png","/King1.jpg","/King2.jpg","/King3.jpg","/King.jpg"],
-        title: "Premium - King",
+        images: ["/1st.jpg"],
+        title: "Gachibowli Hotel",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
@@ -112,14 +213,14 @@ export const swanSuitesPageData = {
         description:
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "EXPLORE HOTEL", href: "#" },
+          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          // { label: "BOOK NOW", href: "#form" },
         ],
       },
       {
-        images: ["/room-3.jpg","/Twin1.jpg","/Twin2.jpg","/Twin3.jpg","/Twin4.jpg"],
-        title: "Premium - Twin",
+        images: ["/2nd.jpg"],
+        title: "Madhapur Apartment",
         amenities: [
           { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
           { name: "Television", icon: <TelevisionIcon /> },
@@ -157,28 +258,28 @@ export const swanSuitesPageData = {
         description:
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "EXPLORE APARTMENT", href: "#" },
+          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          // { label: "BOOK NOW", href: "#form" },
         ],
       },
     ],
-  },
 
+  },
   gallery: {
-    title: "A look inside",
-    subtitle: "Crafted for comfort",
-    listTitle: "Locations & <i class='text-primary'>Attractions</i>",
-    list: [
-      "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
-      "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
-      "200 m to Airport ORR (Outer Ring Road access)",
-      "On the Gachibowli Main Road and besides the Gachibowli Flyover",
-      "400m to Multiplex and Malls",
-      "200m to CARE Hospitals",
-      "300m to Cyberabad Police Commissionerate",
-      "1.5 km to IKEA",
-    ],
+    // title: "A look inside",
+    // subtitle: "Crafted for comfort",
+    // listTitle: "Locations & <i class='text-primary'>Attractions</i>",
+    // list: [
+    //   "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
+    //   "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
+    //   "200 m to Airport ORR (Outer Ring Road access)",
+    //   "On the Gachibowli Main Road and besides the Gachibowli Flyover",
+    //   "400m to Multiplex and Malls",
+    //   "200m to CARE Hospitals",
+    //   "300m to Cyberabad Police Commissionerate",
+    //   "1.5 km to IKEA",
+    // ],
     images: [
       "/gallery-1.png",
       "/gallery-2.png",
