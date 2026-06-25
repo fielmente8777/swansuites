@@ -32,7 +32,9 @@ const Accommodations: React.FC<AccommodationsProps> = ({
         <div className="">
           <AccommodationsCards {...rooms[0]} />
         </div>
-        <div className="">voooooooo</div>
+        <div className="">
+          <AccommodationsCards {...rooms[1]} />
+        </div>
         {/* <p className="text-sm text-center tracking-widest text-primary uppercase flex items-center justify-center gap-2">
           <span>
             <Foo />

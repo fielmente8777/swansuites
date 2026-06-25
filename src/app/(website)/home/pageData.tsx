@@ -1,9 +1,12 @@
 import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
+  BedIcon,
   CoffeeIcon,
   DailyHousekeepingIcon,
+  InternetIcon,
   TelevisionIcon,
+  TreeIcon,
   WifiIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
@@ -60,9 +63,9 @@ export const HomePageData = {
       },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      // { label: "CALL NOW", href: contact.callCta },
+      { label: "CHAT WITH US", href: contact.WhatsappCta },
+      // { label: "BOOK NOW", href: "#form" },
     ],
   },
 
@@ -177,9 +180,9 @@ export const HomePageData = {
         images: ["/1st.jpg"],
         title: "Gachibowli Hotel",
         amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
         popUpAmenities: [
           { name: "Air Conditioning (Split ACs - COVID Safe)" },
@@ -210,10 +213,10 @@ export const HomePageData = {
           { name: "Personal Hand Sanitizers" },
           { name: "Doctor on Call" },
         ],
-        description:
-          "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
+        // description:
+        //   "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
-          { label: "EXPLORE HOTEL", href: "#" },
+          { label: "EXPLORE HOTEL", href: "/locations/gachibowli-hotel/" },
           // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           // { label: "BOOK NOW", href: "#form" },
         ],
@@ -221,10 +224,10 @@ export const HomePageData = {
       {
         images: ["/2nd.jpg"],
         title: "Madhapur Apartment",
-        amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+         amenities: [
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
         popUpAmenities: [
           { name: "Air Conditioning (Split ACs - COVID Safe)" },
@@ -255,10 +258,10 @@ export const HomePageData = {
           { name: "Personal Hand Sanitizers" },
           { name: "Doctor on Call" },
         ],
-        description:
-          "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
+        // description:
+        //   "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
-          { label: "EXPLORE APARTMENT", href: "#" },
+          { label: "EXPLORE APARTMENT", href: "/locations/madhapur-apartment/" },
           // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           // { label: "BOOK NOW", href: "#form" },
         ],

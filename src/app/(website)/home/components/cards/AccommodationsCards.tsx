@@ -55,21 +55,21 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           <h3 className="text-2xl lg:text-3xl font-semibold font-primary">
             {title}
           </h3>
-          <AmenityPopUpButton amenities={popUpAmenities} label="Amenities" />
+          {/* <AmenityPopUpButton amenities={popUpAmenities} label="Amenities" /> */}
         </div>
-        <ul className="lg:flex hidden flex-wrap  gap-8 mt-2 lg:justify-between border-[0.1px] border-primary py-2 px-4 rounded-2xl">
+        {/* <ul className="lg:flex hidden flex-wrap  gap-8 mt-2 lg:justify-between border-[0.1px] border-primary py-2 px-4 rounded-2xl">
           {amenities?.map((amenity, i) => (
             <li key={i} className="flex items-center gap-1">
               <span className="">{amenity.icon}</span>
               <span className="text-sm text-light">{amenity.name}</span>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div className="flex lg:hidden flex-wrap  gap-8 mt-2 lg:justify-between border-[0.1px] border-primary py-2 px-4 rounded-2xl">
           {/* <Amenities items={amenities} /> */}
         </div>
-        <p className="lg:text-lg">{description}</p>
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <p className="lg:text-lg">{description}</p> */}
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
           {actions?.map((button, i) => (
             <li key={i}>
               <LinkButton
@@ -77,9 +77,9 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
                 {...button}
                 target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="bg-primary border-none rounded-lg py-3 justify-center w-full px-4"
+                className=" border-primary text-primary rounded-lg py-3 justify-center w-full px-4"
                 whatsAppIcon={i === 1}
-                callIcon={i === 0}
+                // callIcon={i === 0}
                 calendarIcon={i === 2}
               />
             </li>

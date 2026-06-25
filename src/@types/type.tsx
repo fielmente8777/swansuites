@@ -14,7 +14,7 @@ export interface AccommodationsProps {
     popUpAmenities: {
       name: string;
     }[];
-    description: string;
+    description?: string;
     // actions: {
     //   label: string;
     //   href: string;

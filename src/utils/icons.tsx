@@ -799,3 +799,280 @@ export const FillDropDownIcon = () => (
   </svg>
 );
 
+export const TreeIcon = () => (
+  <svg
+  width={24}
+  height={24}
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0.351562 22.8416H23.6484"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M7.47478 18.8343L6.58594 18.4439C5.98031 18.1779 5.28998 18.1827 4.68811 18.4571L0.351562 20.4337"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M23.6484 21.2194L19.3172 20.0072C18.8897 19.8719 18.4322 19.8633 17.9998 19.9823L14.1332 21.0465C13.4886 21.2239 12.8025 21.174 12.1903 20.9052L8.97095 19.4912"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M3.64304 1.52026L3.1585 2.00481L2.67395 1.52026"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M6.02767 1.52026L5.54313 2.00481L5.05853 1.52026"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M4.8856 3.2937L4.40105 3.77825L3.9165 3.2937"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M18.9372 16.6148L21.1793 16.6146C21.6275 16.6146 21.9219 16.1463 21.7274 15.7423L20.7461 13.704L21.5584 13.1731C21.8689 12.9703 21.9272 12.5392 21.6816 12.2611L20.3958 10.8054L21.1554 10.379C21.5068 10.1817 21.5727 9.70334 21.2877 9.41834L18.0606 6.19116L17.2655 6.98621"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M14.8424 14.8101L14.3937 15.7423C14.1992 16.1462 14.4936 16.6146 14.9418 16.6146L17.1839 16.6148"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M17.1838 20.2069V13.3734C17.1838 12.8893 17.5763 12.4968 18.0604 12.4968C18.5446 12.4968 18.9371 12.8893 18.9371 13.3734V19.9215"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M9.15754 14.8101L9.6066 15.7424C9.80066 16.146 9.50675 16.6147 9.05816 16.6147H6.81622"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M5.06301 16.6148H2.82097C2.37284 16.6148 2.07846 16.1461 2.27299 15.7425L3.25409 13.7039L2.44175 13.1732C2.13143 12.9703 2.07284 12.539 2.31846 12.261L3.60425 10.8056L2.84487 10.379C2.49331 10.1817 2.42721 9.70353 2.71222 9.41853L5.23645 6.89429L5.93958 6.19116L8.00757 8.25916"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M6.81621 18.5449V13.3734C6.81621 12.8893 6.42372 12.4968 5.9396 12.4968C5.45547 12.4968 5.06299 12.8893 5.06299 13.3734V18.3237"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M13.1482 14.8101L16.0847 14.8101C16.6718 14.8101 17.0572 14.1967 16.8026 13.6677L15.5174 10.998L16.5813 10.3028C16.988 10.037 17.0642 9.47243 16.7427 9.10831L15.0586 7.20165L16.0534 6.64323C16.5137 6.38481 16.6 5.75832 16.2268 5.38505L12.0001 1.15845L7.77341 5.3851C7.40014 5.75836 7.48648 6.3849 7.9468 6.64328L8.94154 7.2017L7.2575 9.10835C6.93593 9.47243 7.0122 10.0371 7.41884 10.3028L8.48277 10.998L7.19759 13.6677C6.94292 14.1967 7.32842 14.8101 7.91549 14.8101H10.8519"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M10.8519 10.7386V10.5651C10.8519 9.93103 11.366 9.41699 12 9.41699C12.6341 9.41699 13.1482 9.93103 13.1482 10.5651V21.1432"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M10.8519 20.3173V12.428"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M1.59235 19.7336V17.9009"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M15.2657 20.7347V18.2476"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>
+
+);
+
+export const BedIcon = () => (
+  <svg
+  width={24}
+  height={24}
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M20.1954 9.89768V4.1046C20.1954 3.79958 19.9481 3.5523 19.643 3.5523C19.338 3.5523 19.0907 3.79958 19.0907 4.1046C15.6204 4.1046 15.6204 3 12.15 3C8.67961 3 8.67961 4.1046 5.20924 4.1046C5.20924 3.79958 4.96195 3.5523 4.65693 3.5523C4.3519 3.5523 4.10461 3.79958 4.10461 4.1046V9.89768"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M10.493 9.14911C11.1031 9.14911 11.5977 8.65458 11.5977 8.04451V7.41857C11.5977 6.80849 11.1031 6.31396 10.493 6.31396H6.31386C5.70377 6.31396 5.20923 6.80849 5.20923 7.41857V8.04451C5.20923 8.65458 5.70377 9.14911 6.31386 9.14911"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M17.9861 9.14911C18.5962 9.14911 19.0908 8.65458 19.0908 8.04451V7.41857C19.0908 6.80849 18.5962 6.31396 17.9861 6.31396H13.807C13.1969 6.31396 12.7023 6.80849 12.7023 7.41857V8.04451C12.7023 8.65458 13.1969 9.14911 13.807 9.14911"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M20.7477 14.1199V11.3584C20.7477 10.1383 19.7586 9.14917 18.5384 9.14917H5.76156C4.54143 9.14917 3.55231 10.1383 3.55231 11.3584V14.1199"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M20.7477 13.5669C20.7477 12.3468 19.7586 11.3577 18.5384 11.3577H5.76156C4.54143 11.3577 3.55231 12.3468 3.55231 13.5669"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M5.20923 19.0901H21.3"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M20.1954 19.0909V21.3001H21.3V14.6725C21.3 14.3675 21.0527 14.1202 20.7477 14.1202C20.4427 14.1202 20.1954 14.3675 20.1954 14.6725C16.1727 14.6725 16.1727 13.5679 12.15 13.5679C8.12731 13.5679 8.12731 14.6725 4.10463 14.6725C4.10463 14.3675 3.85734 14.1202 3.55231 14.1202C3.24729 14.1202 3 14.3675 3 14.6725V21.3001H4.10463V19.0909H3"
+    stroke="#303030"
+    strokeWidth="0.5"
+    strokeMiterlimit={10}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>
+
+);
+
+export const InternetIcon = () => (
+  <svg
+  width={18}
+  height={18}
+  viewBox="0 0 18 18"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <mask
+    id="mask0_2004_377"
+    style={{ maskType: "luminance" }}
+    maskUnits="userSpaceOnUse"
+    x={0}
+    y={0}
+    width={18}
+    height={18}
+  >
+    <path d="M18 0H0V18H18V0Z" fill="white" />
+  </mask>
+  <g mask="url(#mask0_2004_377)">
+    <mask
+      id="mask1_2004_377"
+      style={{ maskType: "luminance" }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={18}
+      height={18}
+    >
+      <path d="M0 1.90735e-06H18V18H0V1.90735e-06Z" fill="white" />
+    </mask>
+    <g mask="url(#mask1_2004_377)">
+      <path
+        d="M2.22184 0.527383C1.28602 0.527383 0.527344 1.28602 0.527344 2.22191C0.527344 3.1577 1.28602 3.91644 2.22184 3.91644C8.77307 3.91644 14.0836 9.22669 14.0836 15.7781C14.0836 16.714 14.8422 17.4727 15.7782 17.4727C16.7139 17.4727 17.4727 16.714 17.4727 15.7781C17.4727 7.35483 10.6448 0.527383 2.22184 0.527383Z"
+        stroke="#303030"
+        strokeWidth="0.5"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.22184 7.30523C1.28602 7.30523 0.527344 8.0639 0.527344 8.99976C0.527344 9.93558 1.28602 10.6943 2.22184 10.6943C5.02952 10.6943 7.3055 12.9702 7.3055 15.7779C7.3055 16.7137 8.0641 17.4724 9 17.4724C9.93589 17.4724 10.6945 16.7137 10.6945 15.7779C10.6945 11.0983 6.90128 7.30523 2.22184 7.30523Z"
+        stroke="#303030"
+        strokeWidth="0.5"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.22184 14.0836C1.28602 14.0836 0.527344 14.8423 0.527344 15.7781C0.527344 16.714 1.28602 17.4727 2.22184 17.4727C3.15773 17.4727 3.91641 16.714 3.91641 15.7781C3.91641 14.8423 3.15773 14.0836 2.22184 14.0836Z"
+        stroke="#303030"
+        strokeWidth="0.5"
+        strokeMiterlimit={10}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </g>
+</svg>
+
+);
