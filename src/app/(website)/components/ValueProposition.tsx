@@ -9,6 +9,8 @@ interface ValuePropositionProps {
   title: string;
   description: string;
   image: string;
+  paragraph:string;
+  location:string;
   actions: {
     label: string;
     href: string;
@@ -21,6 +23,8 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
   description,
   image,
   actions,
+  paragraph,
+  location,
 }) => {
   return (
     <SectionWithContainer>
@@ -64,7 +68,18 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
           </ul>
         </div>
       </div>
+            <div className="text-center">
+        <div className="w-72 h-px bg-secondary mx-auto mb-8 mt-8"></div>
+
+        <p className="font-primary font-italic text-[46px] text-secondary">
+          {paragraph}
+        </p>
+
+        <div className="w-72 h-px bg-secondary mx-auto mt-8"></div>
+      </div>
     </SectionWithContainer>
+    
+    
   );
 };
 

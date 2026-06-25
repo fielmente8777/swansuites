@@ -15,8 +15,8 @@ const Accommodations: React.FC<AccommodationsProps> = ({
     return null;
   }
   return (
-    <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
-      <div className="grid grid-cols-3">
+    <SectionWithContainer containerClassName="md:space-y-10 space-y-5 bg-[#FFF5E6]">
+      <div className="grid grid-cols-3 ">
         <div className="">
           <p className="text-sm text-center tracking-widest text-primary uppercase flex items-center justify-center gap-2">
             <span>

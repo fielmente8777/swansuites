@@ -25,17 +25,27 @@ export const HomePageData = {
   },
 
   valueProposition: {
-    tag: "ABOUT SWAN SUITES",
+    tag: "WELCOME TO SWAN SUITES",
     title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
-    description:
-      "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",
+    description: [
+      "Since the last 15 years Swan Suites is one of the biggest provider of Suites to the Corporates in the Hitech City, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
+
+      "We offer you great choices to stay. A premium Business Hotel in Gachibowli, a luxurious and spacious Serviced Apartment in Madhapur or simply a private Room.",
+
+      "Swan Suites is a professionally managed company, offering temporary housing, extended stay, and short long term accommodation. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel business. Companies and individuals save upto 50% on their hotel bill by choosing to accommodate their guests at Swan Suites.",
+
+      "Easily accessible, both the properties are prominently located in the IT hub of Hyderabad.",
+    ],
     image: "/about-img.png",
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "KNOW MORE ABOUT US", href: "/about-us" },
+      // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+      // { label: "BOOK NOW", href: "#form" },
     ],
+     paragraph:
+    "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
   },
+ 
 
   features: {
     title: "Why Swan Suites",
@@ -69,13 +79,15 @@ export const HomePageData = {
     ],
   },
 
-  accommodations:{
-    title:"EXPLORE OUR LOCATIONS",
-     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
-     description:"Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+  accommodations: {
+    title: "EXPLORE OUR LOCATIONS",
+    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+    description:
+      "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
 
-     rooms: [
+    rooms: [
       {
+        location: "Gachibowli, Hyderabad",
         images: ["/1st.jpg"],
         title: "Gachibowli Hotel",
         amenities: [
@@ -121,6 +133,7 @@ export const HomePageData = {
         ],
       },
       {
+        location: "Madhapur, Hyderabad",
         images: ["/2nd.jpg"],
         title: "Madhapur Apartment",
          amenities: [
@@ -160,13 +173,15 @@ export const HomePageData = {
         // description:
         //   "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
-          { label: "EXPLORE APARTMENT", href: "/locations/madhapur-apartment/" },
+          {
+            label: "EXPLORE APARTMENT",
+            href: "/locations/madhapur-apartment/",
+          },
           // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           // { label: "BOOK NOW", href: "#form" },
         ],
       },
     ],
-
   },
   gallery: {
     // title: "A look inside",
