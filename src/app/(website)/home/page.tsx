@@ -1,11 +1,12 @@
 import ImageBanner from "@/components/banners/ImageBanner";
-import Accommodations from "./components/Accommodations";
-import Clients from "./components/Clients";
-import Features from "./components/Features";
-import Gallery from "./components/Gallery";
-import Testimonials from "./components/Testimonials";
-import ValueProposition from "./components/ValueProposition";
-import { HomePageData } from "./components/pageData";
+import ValueProposition from "../components/ValueProposition";
+import Features from "../components/Features";
+import Accommodations from "../components/Accommodations";
+import Gallery from "../components/Gallery";
+import Testimonials from "../components/Testimonials";
+import Clients from "../components/Clients";
+import { HomePageData } from "../components/pageData";
+
 
 export default function Home() {
   return (

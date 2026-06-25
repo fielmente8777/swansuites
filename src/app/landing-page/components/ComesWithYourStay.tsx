@@ -1,7 +1,6 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
-import { Foo } from "@/utils/icons";
 import Image from "next/image";
 
 interface ComesWithYourStayProps {
