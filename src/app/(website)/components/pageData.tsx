@@ -1,14 +1,18 @@
 import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
+  BedIcon,
   CoffeeIcon,
   DailyHousekeepingIcon,
+  InternetIcon,
   TelevisionIcon,
+  TreeIcon,
   WifiIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
+import { title } from "process";
 
-export const swanSuitesPageData = {
+export const HomePageData = {
   hero: {
     images: ["/banner.png"],
     badge: "Award-winning HOTEL",
@@ -35,10 +39,9 @@ export const swanSuitesPageData = {
 
   features: {
     title: "Why Swan Suites",
-    subtitle:
-      "Everything You Need for a <i class='text-primary'>Comfortable</i> Stay!",
+    subtitle: "Luxury that Lives like <i class='text-primary'>Home!</i>",
     description:
-      "Carefully designed to make every stay productive and stress-free.",
+      "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
     items: [
       {
         icon: <WorkAbodeLoungeIcon />,
@@ -60,24 +63,25 @@ export const swanSuitesPageData = {
       },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      // { label: "CALL NOW", href: contact.callCta },
+      { label: "CHAT WITH US", href: contact.WhatsappCta },
+      // { label: "BOOK NOW", href: "#form" },
     ],
   },
 
-  accommodations: {
-    title: "OUR ACCOMMODATION",
-    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
-    description: "Swan Suites offers all the conveniences of a modern design.",
-    rooms: [
+  accommodations:{
+    title:"EXPLORE OUR LOCATIONS",
+     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+     description:"Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+
+     rooms: [
       {
-        images: ["/room-2.png", "/King1.jpg", "/King2.jpg", "/King3.jpg"],
-        title: "Premium - King",
+        images: ["/1st.jpg"],
+        title: "Gachibowli Hotel",
         amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
         popUpAmenities: [
           { name: "Air Conditioning (Split ACs - COVID Safe)" },
@@ -108,21 +112,21 @@ export const swanSuitesPageData = {
           { name: "Personal Hand Sanitizers" },
           { name: "Doctor on Call" },
         ],
-        description:
-          "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
+        // description:
+        //   "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "EXPLORE HOTEL", href: "/locations/gachibowli-hotel/" },
+          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          // { label: "BOOK NOW", href: "#form" },
         ],
       },
       {
-        images: ["/room-3.jpg", "/Twin1.jpg", "/Twin2.jpg", "/Twin3.jpg"],
-        title: "Premium - Twin",
-        amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+        images: ["/2nd.jpg"],
+        title: "Madhapur Apartment",
+         amenities: [
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
         popUpAmenities: [
           { name: "Air Conditioning (Split ACs - COVID Safe)" },
@@ -153,63 +157,37 @@ export const swanSuitesPageData = {
           { name: "Personal Hand Sanitizers" },
           { name: "Doctor on Call" },
         ],
-        description:
-          "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
+        // description:
+        //   "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "EXPLORE APARTMENT", href: "/locations/madhapur-apartment/" },
+          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+          // { label: "BOOK NOW", href: "#form" },
         ],
       },
     ],
-  },
 
-  comesWithYourStay: {
-    title: "What Comes With Your <i class='text-primary'>Stay!</i>",
-    description:
-      "Discover premium amenities, modern conveniences, and warm hospitality included with every stay.",
-    image: "/avtar.png",
+  },
+  gallery: {
+    // title: "A look inside",
+    // subtitle: "Crafted for comfort",
+    // listTitle: "Locations & <i class='text-primary'>Attractions</i>",
+    // list: [
+    //   "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
+    //   "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
+    //   "200 m to Airport ORR (Outer Ring Road access)",
+    //   "On the Gachibowli Main Road and besides the Gachibowli Flyover",
+    //   "400m to Multiplex and Malls",
+    //   "200m to CARE Hospitals",
+    //   "300m to Cyberabad Police Commissionerate",
+    //   "1.5 km to IKEA",
+    // ],
     images: [
-      {
-        name: "Complimentary Breakfast",
-        src: "/Complimentary-Breakfast.jpg",
-      },
-      {
-        name: "Coffee Shop",
-        src: "/Coffee Shop.jpg",
-      },
-      {
-        name: "Lounge Area",
-        src: "/banner.png",
-      },
-      {
-        name: "In house Car Parking (Complimentary)",
-        src: "/In-house-Car-Parking.png",
-      },
-    ],
-    actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
-    ],
-  },
-
-  images: ["/1.png", "/2.png", "/3.png", "/4.png"],
-
-  attractions: {
-    title: "Gachibowli, Hyderabad",
-    subtitle: "Locations & <i class='text-primary'>Attractions!</i>",
-    description:
-      "Discover Hyderabad's finest attractions and vibrant neighborhoods, all conveniently close to Swan Suites.",
-    list: [
-      "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
-      "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
-      "200 m to Airport ORR (Outer Ring Road access)",
-      "On the Gachibowli Main Road and besides the Gachibowli Flyover",
-      "400m to Multiplex and Malls",
-      "200m to CARE Hospitals",
-      "300m to Cyberabad Police Commissionerate",
-      "1.5 km to IKEA",
+      "/gallery-1.png",
+      "/gallery-2.png",
+      "/gallery-3.png",
+      // "/gallery-4.png",
+      // "/gallery-5.png",
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
@@ -249,8 +227,7 @@ export const swanSuitesPageData = {
   ],
   testimonials: {
     title: "Guest stories",
-    subtitle:
-      "What our Guest say about Swan Suites <i class='text-primary'>Gachibowli Hotel</i>",
+    subtitle: "Loved by long-stay travellers",
     testimonials: [
       {
         review:

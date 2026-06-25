@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/typography";
 import AccommodationsCards from "./cards/AccommodationsCards";
 import { Foo } from "@/utils/icons";
 
-const Accommodations: React.FC<AccommodationsProps> = ({ title, rooms ,subtitle,description }) => {
+const Accommodations: React.FC<AccommodationsProps> = ({ title, rooms , subtitle, description}) => {
   return (
     <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
       <div className="space-y-3">

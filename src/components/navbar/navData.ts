@@ -6,25 +6,39 @@ export const navData = {
   buttons: [{ label: "BOOK NOW", href: contact.WhatsappCta }],
 };
 
-export const WebsiteNavData = {
+
+interface websiteNavLink {
+  logo: string;
+  links: {
+    label: string;
+    href: string;
+    subLinks?: {
+      label: string;
+      href: string;
+    }[];
+  }[];
+  buttons: {
+    label: string;
+    href: string;
+  }[];
+}
+
+export const WebsiteNavData: websiteNavLink = {
   logo: "/images/logo.png",
   links: [
-    { label: "Home", href: "/home/" },
+    { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
     {
       label: "Locations",
       href: "/locations/",
       subLinks: [
         {
-          location: "Hyderabad",
           label: "Gachibowli Hotel",
           href: "/locations/gachibowli-hotel/",
-          // sub: "Boutique stays in the heart of the world’s oldest living city",
         },
         {
           label: " Madhapur Apartment",
           href: "/locations/madhapur-apartment/",
-          // sub: "Boutique stays in the heart of the world’s oldest living city",
         },
       ],
     },

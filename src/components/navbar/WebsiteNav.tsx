@@ -40,48 +40,12 @@ const WebsiteNav = () => {
                         className="relative group nav-2"
                         key={subIndex + "sub"}
                       >
-                        {subLink.location && (
-                          <span className="ps-4 py-2 font-semibold block uppercase">
-                            {subLink.location}
-                          </span>
-                        )}
                         <Link
                           href={subLink.href ? subLink.href : "#"}
                           className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group font-bold text-sm text-dark ${pathName === subLink.href ? "bg-secondary !text-white" : ""}`}
                         >
                           <span className="uppercase"> {subLink.label}</span>
-                          {subLink.sub && (
-                            <span className="text-sm">{subLink.sub}</span>
-                          )}
-                          {subLink.subLinks && (
-                            <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
-                              <FillDropDownIcon />
-                            </span>
-                          )}
                         </Link>
-
-                        {subLink.subLinks && (
-                          <span className="nav-link">
-                            {subLink.subLinks?.map(
-                              (nestedSubLink, nestedIndex) => {
-                                return (
-                                  <span className="" key={nestedIndex + 2}>
-                                    <Link
-                                      href={
-                                        nestedSubLink.href
-                                          ? nestedSubLink.href
-                                          : "#"
-                                      }
-                                      className={`w-full text-nowrap py-2 px-4 flex items-center text-light gap-1 group uppercase font-bold text-sm hover:bg-gray-200 ${pathName === nestedSubLink.href ? "bg-primary !text-white" : ""}`}
-                                    >
-                                      {nestedSubLink.label}
-                                    </Link>
-                                  </span>
-                                );
-                              }
-                            )}
-                          </span>
-                        )}
                       </span>
                     );
                   })}

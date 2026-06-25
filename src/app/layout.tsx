@@ -34,18 +34,7 @@ export const metadata: Metadata = {
     "Luxury Serviced Apartments in Hitech City & Gachibowli Hyderabad | Swan Suites",
   description:
     "Stay at award-winning serviced apartments in Hitech City & Gachibowli, Hyderabad. Spacious accommodations, work-friendly amenities, daily housekeeping, free cancellation, and direct booking discounts.",
-  keywords: [
-    "serviced apartments Hyderabad",
-    "serviced apartments Hitech City",
-    "serviced apartments Gachibowli",
-    "corporate stay Hyderabad",
-    "business hotel Hyderabad",
-    "long stay accommodation Hyderabad",
-    "luxury apartments Hyderabad",
-    "executive accommodation Hyderabad",
-    "corporate housing Hyderabad",
-    "extended stay Hyderabad",
-  ],
+  
   openGraph: {
     title: "Your Corporate Stay, Perfected | Swan Suites Hyderabad",
     description:

@@ -1,32 +1,4 @@
-// import React from "react";
-// import { LocationPageData } from "./pageData";
-// import ValueProposition from "./components/ValueProposition";
 
-// interface Params {
-//   params: Promise<{
-//     slug: string;
-//   }>;
-// }
-
-// export async function generateStaticParams() {
-//   const paths = await LocationPageData?.map((data) => ({ slug: data.slug }));
-//   return paths;
-// }
-
-// export default async function Page({ params }: Params) {
-//   const resolvedParams = await params;
-
-//  const Location= LocationPageData?.find((data)=>data.slug===resolvedParams.slug)
-
-//   return (
-//       <main>
-//        {/* <ImageBanner {...Location.bannerData} /> */}
-//        <ValueProposition {...}
-
-//     </main>
-//   );
-//   <div>{Location?.slug}</div>;
-// }
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -37,12 +9,11 @@ import Accommodation from "./components/Accommodations";
 // import Location from "./components/Location";
 import Testimonials from "./components/Testimonials";
 
-import { LocationPageData } from "./pageData";
-import ValueProposition from "./components/ValueProposition";
 import SlidingTitle2 from "@/components/sliders/SlidingTitle2";
 import Gallery from "./components/Gallery";
-import ImageBanner from "@/components/banners/ImageBanner";
 import Hero from "./components/Hero";
+import ValueProposition from "./components/ValueProposition";
+import { LocationPageData } from "./pageData";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -83,6 +54,15 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     robots: {
       index: true,
       follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
   };
 }

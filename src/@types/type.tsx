@@ -4,7 +4,7 @@ export interface AccommodationsProps {
   title: string;
   subtitle: string;
   description: string;
-  rooms?: {
+  rooms: {
     images: string[];
     title: string;
     amenities: {
@@ -15,10 +15,10 @@ export interface AccommodationsProps {
       name: string;
     }[];
     description?: string;
-    // actions: {
-    //   label: string;
-    //   href: string;
-    // }[];
+    actions?: {
+      label: string;
+      href: string;
+    }[];
   }[];
 }
 
