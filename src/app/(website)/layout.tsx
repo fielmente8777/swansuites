@@ -1,4 +1,4 @@
-import WebSiteFooter from "../../components/footer/WebSiteFooter";
+import WebsiteFooter from "@/components/footer/WebsiteFooter";
 import WebsiteNav from "@/components/navbar/WebsiteNav";
 import { Metadata } from "next";
 
@@ -36,7 +36,7 @@ export default function WebLayout({ children }: { children: React.ReactNode }) {
     <>
       <WebsiteNav />
       {children}
-      <WebSiteFooter />
+      <WebsiteFooter />
     </>
   );
 }

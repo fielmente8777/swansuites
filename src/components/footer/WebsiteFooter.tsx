@@ -4,7 +4,7 @@ import { Container } from "../sectionComponants";
 import { contactInfos, webSiteFooterData } from "./footerdata";
 import AccordionLinks from "./AccordionLinks";
 
-const WebSiteFooter = () => {
+const WebsiteFooter = () => {
   return (
     <footer className="max_screen_width background-color-1">
       <Container>
@@ -108,4 +108,4 @@ const WebSiteFooter = () => {
   );
 };
 
-export default WebSiteFooter;
+export default WebsiteFooter;
