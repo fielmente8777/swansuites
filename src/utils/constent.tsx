@@ -19,6 +19,24 @@ export const contact = {
     instagram: "https://www.instagram.com/acaciahotels",
     linkedin: "",
   },
+  locations: {
+    gachibowli: {
+      location: "Swan Suites Gachibowli",
+      address:
+        "Swan Suites – Gachibowli Hotel, Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1658189756754!2d78.3666466!3d17.43535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9397d994815f%3A0x6f1af95f92b4b017!2sSwan%20Suites%20Gachibowli!5e1!3m2!1sen!2sin!4v1782390592306!5m2!1sen!2sin",
+      addressLink: "https://maps.app.goo.gl/8U9jMJgbVS5GgVij9",
+    },
+    madhapur: {
+      location: "Swan Suites Madhapur",
+      address:
+        "Swan Suites – No. 2D, Nivee, Ten Madhapur, near to Ratna Deep Super Market, HUDA Techno Enclave, Madhapur, Hyderabad, Telangana 500081",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.96551441069!2d78.384846!3d17.445446999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb916007eb2bf1%3A0x4f6ee70506a24a14!2sSwan%20Suites!5e1!3m2!1sen!2sin!4v1782390540915!5m2!1sen!2sin",
+      addressLink: "https://maps.app.goo.gl/zxyGThZCvNRLRX8p7",
+    },
+  },
   callCta: `tel:+919642244000`,
   WhatsappCta: `https://wa.me/+919642244000?text=${enCodeText}`,
   formDomain: "swansuites",

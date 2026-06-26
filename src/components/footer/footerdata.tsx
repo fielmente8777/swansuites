@@ -76,74 +76,151 @@ export const footerData: FooterData = {
   ],
 };
 
-export const websiteFooterData: WebsiteFooterData = {
-  logo: "/footerlogo2.png",
-  description: "Reserve Himalayan escape!",
-  cta: {
-    label: "Book stay",
+export const SocialLinks = [
+  {
+    label: Object.keys(contact.socialMedia)[0],
+    href: contact.socialMedia.facebook,
+    icon: <FillFaceBookIcon />,
+  },
+  {
+    label: Object.keys(contact.socialMedia)[2],
+    href: contact.socialMedia.instagram,
+    icon: <OutLineInstagramIcon />,
+  },
+  // {
+  //   label: Object.keys(contact.socialMedia)[4],
+  //   href: contact.socialMedia.linkedin,
+  //   icon: <LinkedinIcon />,
+  // },
+  // {
+  //   label: Object.keys(contact.socialMedia)[5],
+  //   href: contact.socialMedia.twitter,
+  //   icon: <TwitterIcon />,
+  // },
+];
+
+interface WebSiteFooterData {
+  logo: string;
+  description: string;
+  link: {
+    label: string;
+    href: string;
+  };
+  lists: {
+    title?: string;
+    links: {
+      title?: string;
+      icon?: React.ReactNode;
+      label: string;
+      href: string;
+      label2?: string;
+      href2?: string;
+    }[];
+  }[];
+}
+
+export const webSiteFooterData: WebSiteFooterData = {
+  logo: "/logo.png",
+  description: "Reserve your luxury holiday!",
+  link: {
+    label: "Book Now",
     href: contact.WhatsappCta,
   },
   lists: [
     {
-      title: "QUICK LINKS",
-      links: [
-        { label: "Home", href: "/" },
-        { label: "About us", href: "/about-us" },
-        { label: "Accommodations", href: "/refined-living-spaces" },
-        { label: "Experiences", href: "/experiences" },
-        { label: "Contact us", href: "/contact-us" },
-      ],
+      links: SocialLinks,
     },
     {
-      title: "EXPLORE",
-      links: [
-        { label: "Wellness", href: "/holistic-wellness" },
-        { label: "Dining", href: "/farm-to-table" },
-        { label: "Host your retreat", href: "/host-your-retreat" },
-        { label: "Blogs", href: "/blogs" },
-      ],
-    },
-    {
-      title: "Policies",
-      links: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms & conditions", href: "#" },
-      ],
-    },
-    {
-      title: "Contact",
+      title: "Quick Links",
       links: [
         {
-          label: "Address: " + contact.address,
-          href: contact.addressLink,
-          icon: <FillLocationIcon />,
+          label: "Home",
+          href: "/",
         },
         {
-          label: "Call Us: " + contact.phone[0],
-          href: "tel:" + contact.phone[0],
-          icon: <FillCallIcon />,
+          label: "About Us",
+          href: "/about-us",
         },
-        // {
-        //   label: "Email: " + contact.email,
-        //   href: "mailto:" + contact.email,
-        //   icon: <FillMailIcon />,
-        // },
+        {
+          label: "Gallery",
+          href: "/gallery",
+        },
+        {
+          label: "Contact Us",
+          href: "/contact",
+        },
       ],
     },
     {
-      title: "Follow Us",
+      title: "Explore",
       links: [
         {
-          label: "Facebook",
-          href: contact.socialMedia.facebook,
-          icon: <FillFaceBookIcon />,
+          label: "Superior Rooms",
+          href: "/accommodation/#superior-rooms",
         },
         {
-          label: "instagram",
-          href: contact.socialMedia.instagram,
-          icon: <OutLineInstagramIcon />,
+          label: "Classic Cottages",
+          href: "/accommodation/#classic-cottages",
         },
       ],
     },
   ],
 };
+
+export interface ContactInfo {
+  title: string;
+  links: {
+    label: string;
+    href: string;
+    label2?: string;
+    href2?: string;
+    icon: React.ReactNode;
+  }[];
+}
+
+export const contactInfos: ContactInfo[] = [
+  {
+    title: contact.locations.gachibowli.location,
+    links: [
+      {
+        label: contact.locations.gachibowli.address,
+        href: contact.locations.gachibowli.addressLink,
+        icon: <FillLocationIcon />,
+      },
+      {
+        label: contact.phone[0],
+        href: "tel:" + contact.phone[0],
+        icon: <FillCallIcon />,
+      },
+      {
+        label: contact.email[0],
+        href: "mailto:" + contact.email[0],
+        label2: contact.email[1],
+        href2: "mailto:" + contact.email[1],
+        icon: <FillMailIcon />,
+      },
+    ],
+  },
+  {
+    title: contact.locations.gachibowli.location,
+    links: [
+      {
+        label: contact.locations.madhapur.address,
+        href: contact.locations.madhapur.addressLink,
+        icon: <FillLocationIcon />,
+      },
+      {
+        label: contact.phone[0],
+        href: "tel:" + contact.phone[0],
+        icon: <FillCallIcon />,
+      },
+      {
+        label: contact.email[0],
+        href: "mailto:" + contact.email[0],
+        label2: contact.email[1],
+        href2: "mailto:" + contact.email[1],
+        icon: <FillMailIcon />,
+      },
+    ],
+  },
+];

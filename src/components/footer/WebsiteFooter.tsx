@@ -1,69 +1,35 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../sectionComponants";
-import Image from "next/image";
-import { websiteFooterData } from "./footerdata";
-import LinkButton from "../buttons/LinkButton";
+import { contactInfos, webSiteFooterData } from "./footerdata";
+import AccordionLinks from "./AccordionLinks";
 
-const WebsiteFooter = () => {
+const WebSiteFooter = () => {
   return (
-    <footer className="max_screen_width bg-secondary text-white">
+    <footer className="max_screen_width">
       <Container>
-        <div className="flex max-md:flex-col gap-6 items-center justify-between py-6 md:py-10 border-b border-primary">
-          {/* social media links */}
-          <div className="flex flex-col gap-4 items-start">
-            <p className="text-xl">Follow Us</p>
-            <ul className="flex items-center gap-4 max-md:order-2">
-              {websiteFooterData.lists[4].links.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={item.label}
-                    className="w-10 aspect-square rounded-sm flex items-center justify-center bg-white text-primary transition-all"
-                  >
-                    {item.icon}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1fr_1.8fr] gap-4 md:gap-4">
           {/* logo */}
-          <Link
-            href="/"
-            className="md:w-50 lg:ml-18 w-full relative max-md:order-1 md:aspect-[4/2.45] aspect-3/1.25"
+          <div
+            className={`relative w-full lg:max-w-52 aspect-4/1 md:aspect-[4/1.7]`}
           >
             <Image
-              src={websiteFooterData.logo}
+              src={webSiteFooterData.logo}
               alt="logo"
               fill
+              sizes="280px"
               className="object-contain"
             />
-          </Link>
-          {/* call contact */}
-          <div className="flex flex-col gap-4 max-md:order-3">
-            <p className="max-md:text-center">
-              {websiteFooterData.description}
-            </p>
-            <div className="md:ml-auto max-md:mx-auto w-fit flex items-center">
-              <LinkButton
-                href={websiteFooterData.cta.href}
-                label={websiteFooterData.cta.label}
-                className="text-sm md:text-base rounded-sm uppercase"
-              />
-            </div>
           </div>
-        </div>
-        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.1fr_1.1fr_1.1fr_1.4fr] gap-4 md:gap-4">
-          {websiteFooterData.lists.slice(0, 4).map((list, index) => (
+          {webSiteFooterData.lists.slice(1, 4).map((list, index) => (
             <div key={index}>
-              <h2 className="md:text-lg tracking-widest uppercase text-2xl mb-4">
+              <h2 className="md:text-2xl font-primary font-light uppercase text-xl mb-4">
                 {list.title}
               </h2>
               <ul className={`flex flex-col gap-2`}>
                 {list.links.map((item, suIndex) => (
                   <li
-                    className={`flex gap-2 ${index === 3 && suIndex === 1 ? "flex-wrap" : ""}`}
+                    className={`flex gap-2 md:text-[1.1rem]  ${index === 3 && suIndex === 1 ? "flex-wrap" : ""}`}
                     key={suIndex}
                   >
                     {item.icon && (
@@ -79,15 +45,18 @@ const WebsiteFooter = () => {
                       </span>
                     )}
 
+                    {item?.title && (
+                      <span className="md:text-lg inline-block capitalize">
+                        {item.title}
+                      </span>
+                    )}
                     <Link
                       target={item.href.includes("https") ? "_blank" : "_self"}
                       rel="noopener noreferrer"
                       href={item.href}
                       className="flex gap-2"
                     >
-                      <span className={`  ${index === 3 ? "" : "capitalize"}`}>
-                        {item.label}
-                      </span>
+                      <span className="">{item.label}</span>
                     </Link>
                     {item.label2 && <span className="-ml-1">,</span>}
                     {item.label2 && item.href2 && (
@@ -97,13 +66,7 @@ const WebsiteFooter = () => {
                         href={item.href2}
                         className="flex gap-2 max-md:ml-8"
                       >
-                        <span
-                          className={`${
-                            index === 1 ? " my-auto" : "md:text-lg text-white"
-                          }`}
-                        >
-                          {item.label2}
-                        </span>
+                        <span>{item.label2}</span>
                       </Link>
                     )}
                   </li>
@@ -111,17 +74,32 @@ const WebsiteFooter = () => {
               </ul>
             </div>
           ))}
+          <div className="">
+            {contactInfos.map((list, index) => (
+              <AccordionLinks key={index} {...list} />
+            ))}
+          </div>
         </div>
       </Container>
-      <div className="w-full  bg-primary">
+      <div className="border-t border-white bg-dark">
         <Container className="py-4">
-          <div className="flex max-md:flex-col items-center justify-between gap-2 text-white ">
+          <div className="flex max-md:flex-col items-center justify-center gap-2 text-white">
             {" "}
+            <p className="">© {new Date().getFullYear()} Corbett The Grand</p>
+            <span className="md:block hidden">|</span>
+            <p className="">All Rights Reserved</p>
+            <span className="md:block hidden">|</span>
             <p className="">
-              © {new Date().getFullYear()} The Rudraksh Retreat. All rights
-              reserved.
+              Powered by{" "}
+              <Link
+                href="https://fielmente.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold"
+              >
+                Fielmente
+              </Link>
             </p>
-            <p className="">Powered by Fielmente</p>
           </div>
         </Container>
       </div>
@@ -129,4 +107,4 @@ const WebsiteFooter = () => {
   );
 };
 
-export default WebsiteFooter;
+export default WebSiteFooter;

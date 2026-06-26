@@ -4,14 +4,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { WebsiteNavData } from "./navData";
 import { FillDropDownIcon } from "@/utils/icons";
-import { relative } from "path";
+import MobileNav from "./MobileNav";
+import { IoMdMenu } from "react-icons/io";
+import { useWebContext } from "@/context-api/WebContext";
 
 const WebsiteNav = () => {
   const pathName = usePathname();
+  const {setIsOpenNavBar} = useWebContext();
   return (
     <header className={`max_screen_width  `}>
       <nav className="flex items-center justify-between py-4 max_width">
-        <Link href="/" className="block relative md:w-50 w-40  aspect-4/1.25">
+        <Link href="/" className="block relative md:w-40 w-40  aspect-[4/1.4]">
           <Image
             src={WebsiteNavData.logo}
             alt="logo"
@@ -24,13 +27,15 @@ const WebsiteNav = () => {
             <li className=" relative nav" key={index}>
               <Link
                 href={item.href}
-                className={`text-primary p-2 border-b text-lg duration-300 ease-in-out hover:border-secondary ${
-                  pathName === item.href
-                    ? "border-secondary"
-                    : "border-transparent"
-                }`}
+                className={`text-dark font-semibold flex items-center gap-2 p-2 uppercase `}
               >
                 {item.label}
+                <span className={`bg-primary ${pathName === item.href ? "w-full" : "span-border"}`}></span>
+                {item.subLinks && (
+                  <span className="icon duration-300 transition-all ease-in-out">
+                    <FillDropDownIcon />
+                  </span>
+                )}
               </Link>
               {item.subLinks && (
                 <span className="nav-1 backdrop-blur-md">
@@ -42,11 +47,11 @@ const WebsiteNav = () => {
                       >
                         <Link
                           href={subLink.href ? subLink.href : "#"}
-                          className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group font-bold text-sm text-dark ${pathName === subLink.href ? "bg-secondary !text-white" : ""}`}
+                          className={`w-full tracking-wider py-2 px-4 flex flex-col gap-1 group uppercase text-sm text-dark ${pathName === subLink.href ? "bg-secondary text-white" : ""}`}
                         >
                           <span className="uppercase"> {subLink.label}</span>
                         </Link>
-                      </span>
+                      </span> 
                     );
                   })}
                 </span>
@@ -55,12 +60,12 @@ const WebsiteNav = () => {
           ))}
         </ul>
 
-        {/* <button className="lg:hidden" onClick={() => setIsMobileNavOpen(true)}>
+        <button className="lg:hidden" onClick={() => setIsOpenNavBar(true)}>
           <IoMdMenu className="text-3xl" />
           <span className="sr-only">menu</span>
-        </button> */}
+        </button>
       </nav>
-      {/* <MobileNav /> */}
+      <MobileNav />
     </header>
   );
 };

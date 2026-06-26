@@ -24,7 +24,7 @@ interface websiteNavLink {
 }
 
 export const WebsiteNavData: websiteNavLink = {
-  logo: "/images/logo.png",
+  logo: "/logo.png",
   links: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },

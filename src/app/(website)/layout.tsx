@@ -1,3 +1,4 @@
+import WebSiteFooter from "@/components/footer/WebSiteFooter";
 import WebsiteNav from "@/components/navbar/WebsiteNav";
 
 export default function WebLayout({ children }: { children: React.ReactNode }) {
@@ -5,6 +6,7 @@ export default function WebLayout({ children }: { children: React.ReactNode }) {
     <>
       <WebsiteNav />
       {children}
+      <WebSiteFooter />
     </>
   );
 }
