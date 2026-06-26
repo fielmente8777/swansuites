@@ -1,4 +1,4 @@
-import WebSiteFooter from "@/components/footer/WebSiteFooter";
+import WebSiteFooter from "../../components/footer/WebSiteFooter";
 import WebsiteNav from "@/components/navbar/WebsiteNav";
 import { Metadata } from "next";
 
