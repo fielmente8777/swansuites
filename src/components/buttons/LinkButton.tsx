@@ -26,7 +26,6 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   ...props
 }) => {
   const { setIsOpenFormPopUp } = useWebContext();
-  console.log("href", href);
   return (
     <>
       {href === "#form" && label === "BOOK NOW" ? (

@@ -3,10 +3,10 @@ import WebsiteNav from "@/components/navbar/WebsiteNav";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://swansuites.com"),
   title: "Swan Suites | Hotel in Gachibowlis",
   description:
     "Hotel near AIG HOSPITAL GACHIBOWLI, hotel in Gachibowli, Serviced apartments Madhapur, guest house Madhapur.",
-
   openGraph: {
     title: "Swan Suites | Hotel in Gachibowli",
     description:
@@ -16,11 +16,6 @@ export const metadata: Metadata = {
     siteName: "Swan Suites",
   },
 
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   robots: {
     index: true,
     follow: true,

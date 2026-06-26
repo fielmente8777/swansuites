@@ -20,15 +20,17 @@ interface Params {
 }
 
 export async function generateStaticParams() {
-  return LocationPageData.map((page) => ({
+ const paths = await LocationPageData;
+
+  return paths.map((page) => ({
     slug: page.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { slug } = await params;
+  const path = await params;
 
-  const page = LocationPageData.find((item) => item.slug === slug);
+  const page = LocationPageData.find((item) => item.slug === path.slug);
 
   if (!page) {
     return {
@@ -37,12 +39,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   }
 
   return {
+     metadataBase: new URL("https://swansuites.com"),
     title: page.metaData.title,
     description: page.metaData.description,
     keywords: page.metaData.keyWords,
 
     alternates: {
-      canonical: `https://yourdomain.com/location/${page.slug}`,
+      canonical: `https://swansuites.com/location/${page.slug}`,
     },
 
     openGraph: {
@@ -68,10 +71,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Params) {
-  const { slug } = await params;
+  const path = await params;
 
-  console.log(slug, LocationPageData[0].slug);
-  const pageData = LocationPageData.find((item) => item.slug === slug);
+  const pageData = LocationPageData.find((item) => item.slug === path.slug);
 
   if (!pageData) return notFound();
 

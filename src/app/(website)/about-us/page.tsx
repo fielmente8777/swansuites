@@ -18,11 +18,6 @@ export const metadata: Metadata = {
     siteName: "Swan Suites",
   },
 
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   robots: {
     index: true,
     follow: true,

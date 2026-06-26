@@ -21,11 +21,7 @@ export const metadata: Metadata = {
     description:
       "Stay smarter in Hitech City & Gachibowli. Spacious apartments, premium amenities, flexible booking, and exceptional value for business travelers.",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  
   robots: {
     index: true,
     follow: true,
