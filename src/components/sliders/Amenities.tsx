@@ -3,7 +3,7 @@ import { JSX } from "react/jsx-runtime";
 import "./sliding.title.scss";
 
 interface Props {
-  items: { name: string; icon: JSX.Element }[];
+  items: { name?: string; icon: JSX.Element }[];
 }
 export default function Amenities({ items }: Props) {
   const titles = [...items, ...items];

@@ -1,3 +1,4 @@
+import Form2 from "@/components/forms/Form2";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import Link from "next/link";
@@ -19,7 +20,7 @@ interface Props {
 
 const ContactInfoSection: React.FC<Props> = ({ title, contacts }) => {
   return (
-    <SectionWithContainer sectionClassName="background-color-1">
+    <SectionWithContainer sectionClassName="background-color-2">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16">
         <div className="space-y-5">
           <SectionHeading title={title} />
@@ -59,7 +60,10 @@ const ContactInfoSection: React.FC<Props> = ({ title, contacts }) => {
             </div>
           ))}
         </div>
-        <div className=""></div>
+        <div className="border border-secondary rounded-2xl p-6 space-y-4">
+          <p className="font-primary text-3xl text-dark">Enquire Now</p>
+          <Form2 />
+        </div>
       </div>
     </SectionWithContainer>
   );

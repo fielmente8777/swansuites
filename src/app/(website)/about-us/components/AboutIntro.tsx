@@ -1,4 +1,5 @@
 import { AboutIntroProps } from "@/@types/type";
+import { Section } from "@/components/sectionComponants";
 import Image from "next/image";
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 
 export default function AboutIntro({ data }: Props) {
   return (
-    <section className="py-20 bg-background">
+    <Section className="bg-background">
       <div className="max_width">
         {/* Tag */}
 
@@ -55,60 +56,6 @@ export default function AboutIntro({ data }: Props) {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
-
-// import { AboutIntroProps } from "@/@types/type";
-// import Image from "next/image";
-
-// interface Props {
-//   data: AboutIntroProps;
-// }
-
-// export default function AboutIntro({ data }: Props) {
-//   return (
-//     <section className="bg-background">
-//       <div className="max_width">
-//         {/* Tag */}
-//         <p className="text-primary font-body uppercase">
-//           {data.tag}
-//         </p>
-
-//         {/* Heading */}
-//         <h2 className="font-primary text-dark">
-//           {data.title.first}{" "}
-//           <span className="text-primary font-italic">
-//             {data.title.highlightOne}
-//           </span>{" "}
-//           {data.title.middle}{" "}
-//           <span className="text-primary font-italic">
-//             {data.title.highlightTwo}
-//           </span>
-//         </h2>
-
-//         {/* Top Description */}
-//         {data.topDescription.map((item, index) => (
-//           <p key={index} className="font-body text-light">
-//             {item}
-//           </p>
-//         ))}
-
-//         {/* Image */}
-//         <Image
-//           src={data.image}
-//           alt="Swan Suites"
-//           width={1320}
-//           height={700}
-//         />
-
-//         {/* Bottom Description */}
-//         {data.bottomDescription.map((item, index) => (
-//           <p key={index} className="font-body text-light">
-//             {item}
-//           </p>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }

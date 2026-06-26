@@ -5,16 +5,17 @@ export interface AccommodationsProps {
   subtitle: string;
   description: string;
   rooms: {
+    location?: string;
     images: string[];
     title: string;
     amenities: {
-      name: string;
+      name?: string;
       icon: JSX.Element;
     }[];
-    popUpAmenities: {
+    popUpAmenities?: {
       name: string;
     }[];
-    description: string;
+    description?: string;
     actions?: {
       label: string;
       href: string;
@@ -63,11 +64,7 @@ export interface WhyUsProps {
 
   tag: string;
 
-  title: {
-    first: string;
-    highlight: string;
-    last: string;
-  };
+  title: string;
 
   description: string[];
 
@@ -109,5 +106,20 @@ export interface GalleryProps {
   images: {
     src: string;
     alt: string;
+  }[];
+}
+
+export interface FeaturesProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  items: {
+    icon: JSX.Element;
+    title: string;
+    description: string;
+  }[];
+  actions: {
+    label: string;
+    href: string;
   }[];
 }

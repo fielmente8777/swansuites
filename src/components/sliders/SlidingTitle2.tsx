@@ -12,7 +12,7 @@ export default function SlidingTitle2({
   return (
     <div
       aria-hidden={ariaHidden}
-      className="relative overflow-hidden py-3 bg-white text-secondary border-y border-[#777] max_screen_width bg-background2/40"
+      className="relative overflow-hidden py-3 bg-white text-secondary border-y border-secondary max_screen_width bg-background2/40"
     >
       <div className="marquee-wrapper">
         <div className="marquee-track">

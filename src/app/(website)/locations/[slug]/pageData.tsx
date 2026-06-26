@@ -5,24 +5,26 @@ export const LocationPageData = [
   {
     slug: "gachibowli-hotel",
 
-     metaData: {
-      title: "gachibowli-hotel",
+    metaData: {
+      title: "Gachibowli Hotel - Swan Suites",
       description:
-        "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
       keyWords: "",
     },
 
     hero: {
       images: ["/aboutbg.jpg"],
+      bookingBenefits:
+        "<span class='text-primary'>Save 15%</span> when you book direct · No prepayment · Free cancellation",
     },
 
     valueProposition: {
-      tag: "ABOUT SWAN SUITES",
+      tag: "ABOUT SWAN SUITES Gachibowli Hotel",
       title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
       description:
         "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",
       image: "/about-img.png",
-      actions: [{ label: "CHAT WITH US", href: "#" }],
+      actions: [{ label: "CHAT WITH US", href: contact.WhatsappCta }],
     },
 
     description:
@@ -81,7 +83,6 @@ export const LocationPageData = [
           ],
           description:
             "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
-          
         },
         {
           images: [
@@ -128,7 +129,6 @@ export const LocationPageData = [
           ],
           description:
             "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
-          
         },
       ],
     },
@@ -139,17 +139,15 @@ export const LocationPageData = [
       "Complimentary Breakfast",
       "WORABODE Co Working space (Optional)",
     ],
-    
-    Gallery: {
 
+    Gallery: {
       images: [
-      "/gallery-1.png",
-      "/gallery-2.png",
-      "/gallery-3.png",
-      // "/gallery-4.png",
-      // "/gallery-5.png",
-    ],
-     actions: [{ label: "CONTACT US", href: "#" }],
+        "/gallery-1.png",
+        "/gallery-2.png",
+        "/King2.jpg",
+        "/gallery-3.png",
+      ],
+      actions: [{ label: "Contact Us", href: "/contact-us/" }],
 
       // title: "A look inside",
       subtitle: "Gachibowli, Hyderabad",
@@ -157,9 +155,8 @@ export const LocationPageData = [
       description:
         "Discover Hyderabad's finest attractions and vibrant neighborhoods, all conveniently close to Swan Suites.",
 
-     
-
       list: [
+        "20 minutes from US Consulate",
         "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
         "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
         "200 m to Airport ORR (Outer Ring Road access)",
@@ -173,7 +170,8 @@ export const LocationPageData = [
 
     testimonials: {
       title: "Guest stories",
-      subtitle: "Loved by long-stay travellers",
+      subtitle:
+        "What our Guest say about <i class='text-primary'>Gachibowli Hotel</i>",
       testimonials: [
         {
           review:
@@ -215,24 +213,26 @@ export const LocationPageData = [
   {
     slug: "madhapur-apartment",
 
-         metaData: {
-      title: "madhapur-apartment",
+    metaData: {
+      title: "Madhapur Apartment - Swan Suites",
       description:
-        "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
       keyWords: "",
     },
 
     hero: {
-      images: [],
+      images: ["/aboutbg.jpg"],
+      bookingBenefits:
+        "<span class='text-primary'>Save 15%</span> when you book direct · No prepayment · Free cancellation",
     },
 
     valueProposition: {
-      tag: "ABOUT SWAN SUITES",
+      tag: "ABOUT SWAN SUITES Madhapur Apartment",
       title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
       description:
-        "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",
+        "Swan Suites Ten Madhapur can be rated as one of the most luxurious in the Hitech City area. The apartment is a spacious 2,800 sq feet 3 bedroom, 4 baths, 2 large open balconies, a spacious open kitchen with separate living and lounge areas. Luxurious interiors with Italian marble flooring, noise cancelling french doors and windows, veneered interiors with unbelievable location.",
       image: "/about-img.png",
-      actions: [{ label: "CHAT WITH US", href: "#" }],
+      actions: [{ label: "CHAT WITH US", href: contact.WhatsappCta }],
     },
 
     description:
@@ -247,13 +247,7 @@ export const LocationPageData = [
 
       rooms: [
         {
-          images: [
-            "/room-2.png",
-            "/King1.jpg",
-            "/King2.jpg",
-            "/King3.jpg",
-            "/King.jpg",
-          ],
+          images: ["/room-2.png", "/King1.jpg", "/King2.jpg", "/King3.jpg"],
           title: "Premium Room",
           amenities: [
             { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
@@ -291,7 +285,6 @@ export const LocationPageData = [
           ],
           description:
             "Tastefully designed air-conditioned interiors with Italian marble flooring, veneered wardrobes, and spacious attached bathrooms. The 280 sq feet premium rooms with multiple bedding King, Twin and Queen in 8’/ 10” pocketed spring mattresses with protectors and top quality high TC 100 % cotton linen are the perfect place to stay and and enjoy the ‘SERVICE WITH A SMILE‘ that is Swan’s hallmark.",
-          
         },
         {
           images: [
@@ -338,7 +331,6 @@ export const LocationPageData = [
           ],
           description:
             "As the name suggests a spacious Club Room, with wooden flooring, excusive veneered wardrobes large size LED TV. The 400 sq feet bedroom has a 100 sft attched spacious bath . A  8’/ 10” pocketed spring mattresses with protectors and top quality high TC 100 % cotton linen are the perfect place to stay and and enjoy the ‘SERVICE WITH A SMILE ‘ that is Swan’s hallmark.",
-         
         },
       ],
     },
@@ -349,23 +341,21 @@ export const LocationPageData = [
       "Complimentary Breakfast",
       "WORABODE Co Working space (Optional)",
     ],
-    
-    Gallery: {
-       images: [
-      "/gallery-1.png",
-      "/gallery-2.png",
-      "/gallery-3.png",
-      // "/gallery-4.png",
-      // "/gallery-5.png",
-    ],
-     actions: [{ label: "CONTACT US", href: "#" }],
 
-      // title: "A look inside",     
-      subtitle: "Gachibowli, Hyderabad",
+    Gallery: {
+      images: [
+        "/gallery-1.png",
+        "/gallery-2.png",
+        "/gallery-3.png",
+        "/gallery-4.png",
+      ],
+      actions: [{ label: "Contact Us", href: "/contact-us/" }],
+
+      // title: "A look inside",
+      subtitle: "Madhapur, Hyderabad",
       title: "Locations & <i class='text-primary'>Attractions!</i>",
       description:
         "Discover Hyderabad's finest attractions and vibrant neighborhoods, all conveniently close to Swan Suites.",
-
 
       list: [
         "On the Madhapur main road, besides AUDI and HONDA showroom",
@@ -375,13 +365,13 @@ export const LocationPageData = [
         "Raheja Mindspace SEZ – 400m",
         "Image Hospitals – 300m",
         "In the midst of eateries, restaurants and offices",
-        
       ],
     },
 
     testimonials: {
       title: "Guest stories",
-      subtitle: "Loved by long-stay travellers",
+      subtitle:
+        "What our Guest say about <i class='text-primary' >Madhapur Apartment</i>",
       testimonials: [
         {
           review:

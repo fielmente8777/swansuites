@@ -63,7 +63,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
         </div>
         {/* <p className="lg:text-lg">{description}</p> */}
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {actions.map((button, i) => (
+          {actions?.map((button, i) => (
             <li key={i}>
               <LinkButton
                 {...button}

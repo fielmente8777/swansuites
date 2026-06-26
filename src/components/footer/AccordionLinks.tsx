@@ -90,7 +90,7 @@ export const DropDownIcon = () => (
       fillRule="evenodd"
       clipRule="evenodd"
       d="M5 8L12 16L19 8H5Z"
-      fill="white"
+      fill="currentcolor"
     />
   </svg>
 );

@@ -25,6 +25,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
           title={subtitle}
           textCenter
           titleColor="white"
+          titleClassName="capitalize"
           wrapperClassName="max-w-5xl mx-auto"
         />
         {/* start icon */}

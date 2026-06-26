@@ -1,20 +1,19 @@
 import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
-  CoffeeIcon,
+  BedIcon,
   DailyHousekeepingIcon,
-  TelevisionIcon,
-  WifiIcon,
+  InternetIcon,
+  TreeIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
-import { title } from "process";
 
 export const HomePageData = {
   hero: {
     images: ["/banner.png"],
     badge: "Award-winning HOTEL",
     title:
-      "A Smart Way to Stay in Gachibowli, <i class='text-secondary'>Hyderabad</i>",
+      "All <i class='text-primary'>Amenities</i> You Need From A Home Away From <i class='text-primary'>Home!</i>",
     description:
       "Modern rooms, thoughtful amenities, and the warmth of Swan hospitality designed for business and leisure travelers.",
     bookingBenefits:
@@ -22,16 +21,25 @@ export const HomePageData = {
   },
 
   valueProposition: {
-    tag: "ABOUT SWAN SUITES",
+    tag: "WELCOME TO SWAN SUITES",
     title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
-    description:
-      "With an experience of 20 years focussed on giving the best in guest services, Swan Suites Gachibowli is a professionally managed business and premium hotel in Hyderabad. The rooms are appointed in moderness, with ultra high speed dedicated internet of 1000 mbps, Smart / Android TV’s, high thread count white linen for smoothness, and all the trappings of a luxurious stay in Gachibowli. The WORKABODE concept of co-working space is unique to SwanSuites and futuristic business hotel concept. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel.",
+    description: [
+      "Since the last 15 years Swan Suites is one of the biggest provider of Suites to the Corporates in the Hitech City, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
+
+      "We offer you great choices to stay. A premium Business Hotel in Gachibowli, a luxurious and spacious Serviced Apartment in Madhapur or simply a private Room.",
+
+      "Swan Suites is a professionally managed company, offering temporary housing, extended stay, and short long term accommodation. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel business. Companies and individuals save upto 50% on their hotel bill by choosing to accommodate their guests at Swan Suites.",
+
+      "Easily accessible, both the properties are prominently located in the IT hub of Hyderabad.",
+    ],
     image: "/about-img.png",
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "KNOW MORE ABOUT US", href: "/about-us" },
+      // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
+      // { label: "BOOK NOW", href: "#form" },
     ],
+    paragraph:
+      "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
   },
 
   features: {
@@ -58,134 +66,65 @@ export const HomePageData = {
         description:
           "Professional housekeeping with our signature service-with-a-smile, every single day.",
       },
+      {
+        icon: <DailyHousekeepingIcon />,
+        title: "Spacious Apartment",
+        description:
+          "Experience 2800 sq. ft. of thoughtfully designed living with all the comforts of home.",
+      },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "CHAT WITH US", href: contact.WhatsappCta },
     ],
   },
 
- 
-  accommodations:{
-    title:"EXPLORE OUR LOCATIONS",
-     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
-     description:"Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+  accommodations: {
+    title: "EXPLORE OUR LOCATIONS",
+    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+    description:
+      "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
 
-     rooms: [
+    rooms: [
       {
+        location: "Gachibowli, Hyderabad",
         images: ["/1st.jpg"],
         title: "Gachibowli Hotel",
         amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
-        popUpAmenities: [
-          { name: "Air Conditioning (Split ACs - COVID Safe)" },
-          { name: "Large Screen SMART/Android LED TV" },
-          { name: "24 Hrs Hot/Cold Water" },
-          { name: "Packaged Drinking Water (Complimentary)" },
-          { name: "Electronic Key Card" },
-          { name: "Housekeeping Service (Once Daily)" },
-          { name: "Onsite Laundrette (Complimentary)" },
-          { name: "Intercom" },
-          { name: "Ergonomic Chair with Study Desk" },
-          { name: "Lobby Seating Area" },
-          { name: "Public Telephone with Operator Assistance" },
-          { name: "Mini Fridge" },
-          { name: "Iron and Iron Board" },
-          { name: "Hair Dryer" },
-          { name: "Modern Wardrobe and Storage" },
-          { name: "8 Charging Points" },
-          { name: "Mobility Accessible Rooms" },
-          { name: "First Aid Supplies" },
-          { name: "Valet Dry-Cleaning (Outsourced)" },
-          { name: "Anti-Allergic Pillows" },
-          { name: "CCTV Surveillance" },
-          { name: "24-Hour Security" },
-          { name: "Newspaper (On Request)" },
-          { name: "Luggage Assistance (On Request)" },
-          { name: "Thermal Screening" },
-          { name: "Personal Hand Sanitizers" },
-          { name: "Doctor on Call" },
-        ],
-        description:
-          "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
+
         actions: [
-          { label: "EXPLORE HOTEL", href: "#" },
-          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          // { label: "BOOK NOW", href: "#form" },
+          { label: "EXPLORE HOTEL", href: "/locations/gachibowli-hotel/" },
         ],
       },
       {
+        location: "Madhapur, Hyderabad",
         images: ["/2nd.jpg"],
         title: "Madhapur Apartment",
         amenities: [
-          { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
-          { name: "Television", icon: <TelevisionIcon /> },
-          { name: "Wifi", icon: <WifiIcon /> },
+          { icon: <TreeIcon /> },
+          { icon: <BedIcon /> },
+          { icon: <InternetIcon /> },
         ],
-        popUpAmenities: [
-          { name: "Air Conditioning (Split ACs - COVID Safe)" },
-          { name: "Large Screen SMART/Android LED TV" },
-          { name: "24 Hrs Hot/Cold Water" },
-          { name: "Packaged Drinking Water (Complimentary)" },
-          { name: "Electronic Key Card" },
-          { name: "Housekeeping Service (Once Daily)" },
-          { name: "Onsite Laundrette (Complimentary)" },
-          { name: "Intercom" },
-          { name: "Ergonomic Chair with Study Desk" },
-          { name: "Lobby Seating Area" },
-          { name: "Public Telephone with Operator Assistance" },
-          { name: "Mini Fridge" },
-          { name: "Iron and Iron Board" },
-          { name: "Hair Dryer" },
-          { name: "Modern Wardrobe and Storage" },
-          { name: "8 Charging Points" },
-          { name: "Mobility Accessible Rooms" },
-          { name: "First Aid Supplies" },
-          { name: "Valet Dry-Cleaning (Outsourced)" },
-          { name: "Anti-Allergic Pillows" },
-          { name: "CCTV Surveillance" },
-          { name: "24-Hour Security" },
-          { name: "Newspaper (On Request)" },
-          { name: "Luggage Assistance (On Request)" },
-          { name: "Thermal Screening" },
-          { name: "Personal Hand Sanitizers" },
-          { name: "Doctor on Call" },
-        ],
-        description:
-          "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
+
         actions: [
-          { label: "EXPLORE APARTMENT", href: "#" },
-          // { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          // { label: "BOOK NOW", href: "#form" },
+          {
+            label: "EXPLORE APARTMENT",
+            href: "/locations/madhapur-apartment/",
+          },
         ],
       },
     ],
-
   },
   gallery: {
-    // title: "A look inside",
-    // subtitle: "Crafted for comfort",
-    // listTitle: "Locations & <i class='text-primary'>Attractions</i>",
-    // list: [
-    //   "Close to Financial District, Raidurg IT Zone, Kondapur & IKEA",
-    //   "100m to restaurants, eateries, continental bakeries, departmental stores and shopping",
-    //   "200 m to Airport ORR (Outer Ring Road access)",
-    //   "On the Gachibowli Main Road and besides the Gachibowli Flyover",
-    //   "400m to Multiplex and Malls",
-    //   "200m to CARE Hospitals",
-    //   "300m to Cyberabad Police Commissionerate",
-    //   "1.5 km to IKEA",
-    // ],
+    
     images: [
       "/gallery-1.png",
       "/gallery-2.png",
       "/gallery-3.png",
-      // "/gallery-4.png",
-      // "/gallery-5.png",
+      "/gallery-4.png",
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
@@ -225,7 +164,7 @@ export const HomePageData = {
   ],
   testimonials: {
     title: "Guest stories",
-    subtitle: "Loved by long-stay travellers",
+    subtitle: "Loved by long-stay <i class='text-primary'>travellers</i>",
     testimonials: [
       {
         review:

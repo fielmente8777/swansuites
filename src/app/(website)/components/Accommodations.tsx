@@ -10,47 +10,24 @@ const Accommodations: React.FC<AccommodationsProps> = ({
   subtitle,
   description,
 }) => {
-  console.log(rooms);
-  if (!rooms) {
-    return null;
-  }
   return (
-    <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
-      <div className="grid grid-cols-3">
-        <div className="">
-          <p className="text-sm text-center tracking-widest text-primary uppercase flex items-center justify-center gap-2">
+    <SectionWithContainer sectionClassName="bg-[#FFF5E6] border-y border-secondary">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-6">
+        <div className="lg:col-span-1 md:col-span-2 col-span-1">
+          <p className="text-sm tracking-widest text-primary uppercase gap-2 flex items-center">
             <span>
               <Foo />
             </span>
             {title}
           </p>
-          <SectionHeading title={subtitle} textCenter />
-          <p className="text-lg text-center max-w-2xl text-light mx-auto">
-            {description}
-          </p>
+          <SectionHeading title={subtitle} />
+          <p className="text-lg text-light">{description}</p>
         </div>
-        <div className="">
-          <AccommodationsCards {...rooms[0]} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:col-span-2 col-span-1">
+          {rooms.map((room, i) => (
+            <AccommodationsCards key={i} {...room} />
+          ))}
         </div>
-        <div className="">
-          <AccommodationsCards {...rooms[1]} />
-        </div>
-        {/* <p className="text-sm text-center tracking-widest text-primary uppercase flex items-center justify-center gap-2">
-          <span>
-            <Foo />
-          </span>
-          {title}
-        </p>
-        <SectionHeading title={subtitle} textCenter />
-        <p className="text-lg text-center max-w-2xl text-light mx-auto">
-          {description}
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-        {rooms.map((room, i) => (
-          <AccommodationsCards key={i} {...room} />
-        ))}
-      </div> */}
       </div>
     </SectionWithContainer>
   );

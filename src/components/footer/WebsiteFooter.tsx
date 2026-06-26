@@ -6,20 +6,26 @@ import AccordionLinks from "./AccordionLinks";
 
 const WebSiteFooter = () => {
   return (
-    <footer className="max_screen_width">
+    <footer className="max_screen_width background-color-1">
       <Container>
         <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1fr_1.8fr] gap-4 md:gap-4">
           {/* logo */}
-          <div
-            className={`relative w-full lg:max-w-52 aspect-4/1 md:aspect-[4/1.7]`}
-          >
-            <Image
-              src={webSiteFooterData.logo}
-              alt="logo"
-              fill
-              sizes="280px"
-              className="object-contain"
-            />
+          <div className="lg:max-w-70  space-y-4">
+            <div
+              className={`relative w-full mx-auto lg:max-w-52 aspect-4/1 md:aspect-[4/1.7]`}
+            >
+              <Image
+                src={webSiteFooterData.logo}
+                alt="logo"
+                fill
+                sizes="280px"
+                className="object-contain"
+              />
+            </div>
+            <p className="text-center text-dark">
+              Experience premium comfort, spacious living, and warm hospitality
+              at Swan Suites, Hyderabad.
+            </p>
           </div>
           {webSiteFooterData.lists.slice(1, 4).map((list, index) => (
             <div key={index}>
@@ -82,25 +88,20 @@ const WebSiteFooter = () => {
         </div>
       </Container>
       <div className="border-t border-white bg-dark">
-        <Container className="py-4">
-          <div className="flex max-md:flex-col items-center justify-center gap-2 text-white">
-            {" "}
-            <p className="">© {new Date().getFullYear()} Corbett The Grand</p>
-            <span className="md:block hidden">|</span>
-            <p className="">All Rights Reserved</p>
-            <span className="md:block hidden">|</span>
-            <p className="">
-              Powered by{" "}
-              <Link
-                href="https://fielmente.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold"
-              >
-                Fielmente
-              </Link>
-            </p>
+        <Container className="py-4 flex max-md:flex-col items-center gap-3.5 justify-between">
+          <div className="md:flex max-md:space-x-2 text-center flex-wrap items-center justify-center gap-2 text-white text-sm">
+            <p className="">© 2026 Swan Suites | All rights reserved</p>
           </div>
+          <p className="text-white!">
+            Powered by{" "}
+            <Link
+              href="https://www.fielmente.com/"
+              className="font-bold"
+              target="_blank"
+            >
+              Fielmente
+            </Link>
+          </p>
         </Container>
       </div>
     </footer>

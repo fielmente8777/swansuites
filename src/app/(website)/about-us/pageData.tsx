@@ -1,7 +1,7 @@
-import { AboutPageProps } from "@/@types/type";
+import { contact } from "@/utils/constent";
 import { AboutIcon } from "@/utils/icons";
 
-export const pageData: AboutPageProps = {
+export const pageData = {
   aboutIntro: {
     icon: <AboutIcon />,
 
@@ -39,11 +39,8 @@ export const pageData: AboutPageProps = {
 
     tag: "WHY US",
 
-    title: {
-      first: "15 Years of",
-      highlight: "Hospitality",
-      last: "Excellence",
-    },
+    title: "15 Years of <i class='text-primary'>Hospitality</i> Excellence",
+
     description: [
       "Since the past 15 years Swan Suites is one of the largest provider of Suites to the Corporates in Hitech City, Gachibowli and Madhapur, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
 
@@ -54,7 +51,7 @@ export const pageData: AboutPageProps = {
 
     action: {
       label: "Chat With Us",
-      href: "/contact-us",
+      href: contact.WhatsappCta,
     },
   },
   awards: {

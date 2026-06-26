@@ -18,7 +18,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
   popUpAmenities,
 }) => {
   return (
-    <div className="group rounded-2xl overflow-hidden">
+    <div className="rounded-2xl overflow-hidden box-shadow">
       <div className="w-full relative md:aspect-4/2 aspect-3/2.25">
         <div className="w-full relative">
           <SwiperCarousel
@@ -50,7 +50,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           </div>
         </div>
       </div>
-      <div className="py-5 px-4 group-hover:bg-background shadow-2xl bg-white transition-all duration-300 ease-in-out flex flex-col gap-4">
+      <div className="py-5 px-4  flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <h3 className="text-2xl lg:text-3xl font-semibold font-primary">
             {title}

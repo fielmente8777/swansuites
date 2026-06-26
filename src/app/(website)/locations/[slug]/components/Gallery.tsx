@@ -1,14 +1,15 @@
 "use client";
 import LinkButton from "@/components/buttons/LinkButton";
-import { SectionWithContainer } from "@/components/sectionComponants";
+import { Section, SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { useWebContext } from "@/context-api/WebContext";
+import { Foo } from "@/utils/icons";
 import Image from "next/image";
 
 interface GalleryProps {
   title: string;
   subtitle: string;
-  description:string;
+  description: string;
   list: string[];
   images: string[];
   actions: {
@@ -23,144 +24,48 @@ const Gallery: React.FC<GalleryProps> = ({
   description,
   images,
   actions,
- 
+
   list,
 }) => {
   const { openGallery } = useWebContext();
 
-  const gridPattern = [
-    "lg:col-span-2 col-span-2 lg:row-span-2 row-span-2",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-    "col-span-2 row-span-1",
-  ];
-
   return (
-    <section className="md:space-y-10 space-y-5 max_screen_width">
-      {/* <div className="space-y-3">
-        <p className="text-sm text-primary uppercase">{title}</p>
-        <SectionHeading title={subtitle} />
-      </div> */}
-      <div className="md:space-y-12 space-y-6 py-8">
-        <div className="grid relative lg:grid-cols-4 grid-cols-1 gap-[2px]">
-          <div className="grid lg:col-span-4 relative lg:grid-cols-4 grid-cols-2 md:auto-rows-[18rem] auto-rows-[12rem] grid-flow-row gap-[5px]">
-            {images.slice(0, 5).map((src, index) => (
-              <button
-                key={index}
-                onClick={() =>
-                  openGallery({
-                    images,
-                    index,
-                  })
-                }
-                className={`
-                
-                 overflow-hidden hover:border-4 border-white w-full h-full hover:shadow-3xl hover:-translate-y-1 hover:shadow-gray-600 duration-1000 transition ease-in-out relative aspect-auto`}
-              >
-                <Image
-                  src={src}
-                  alt={`Gallery Image ${index + 1}`}
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </button>
-            ))}
+    <Section defaultPadding={false} className="">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-1">
+        {images?.map((src, index) => (
+          <div
+            key={index}
+            className={` overflow-hidden w-full aspect-4/3 relative cursor-pointer`}
+          >
+            <Image
+              src={src}
+              alt={`Gallery Image ${index + 1}`}
+              fill
+              sizes="100vw"
+              className="object-cover duration-1000 transition ease-in-out hover:scale-105"
+              onClick={() => openGallery({ images, index })}
+            />
           </div>
-        </div>
+        ))}
       </div>
-      {/* <div className="md:space-y-12 space-y-6 py-8">
-        <div className="grid relative lg:grid-cols-6 grid-cols-1  gap-[.55rem]">
-          <div className="grid lg:col-span-4 relative lg:grid-cols-4 grid-cols-2 md:auto-rows-[18rem] auto-rows-[12rem] grid-flow-row gap-[.55rem]">
-            {images.slice(0, 5).map((src, index) => (
-              <button
-                key={index}
-                onClick={() =>f
-                  openGallery({
-                    images,
-                    index,
-                  })
-                }
-                className={`${
-                  gridPattern[index % gridPattern.length]
-                } overflow-hidden hover:border-4 border-white w-full h-full rounded-xl hover:shadow-3xl hover:-translate-y-1 hover:shadow-gray-600 duration-1000 transition ease-in-out relative aspect-auto`}
-              >
-                <Image
-                  src={src}
-                  alt={`Gallery Image ${index + 1}`}
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </button>
-            ))}
-          </div>
-
-          <div className="lg:col-span-2 w-full space-y-4 bg-[#121212] p-6 rounded-2xl text-white">
-            <h2
-              className="text-3xl lg:text-4xl font-primary"
-              dangerouslySetInnerHTML={{ __html: listTitle }}
-            />
-            <ul className="flex flex-col gap-4 lg:text-[1.1rem]">
-              {list.map((item, index) => (
-                <li key={index} className="flex  gap-2">
-                  <span>
-                    <Foo />
-                  </span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {actions.map((button, i) => (
-            <li key={i} className="">
-              <LinkButton
-                href={button.href}
-                label={button.label}
-                target={i !== 2 ? "_blank" : "_self"}
-                rel="noopener noreferrer"
-                className="bg-primary border-none rounded-lg py-3 w-full justify-center gap-2"
-                whatsAppIcon={i === 1}
-                callIcon={i === 0}
-                calendarIcon={i === 2}
-              />
-            </li>
-          ))}
-        </ul>
-      </div> */}
-
-      <SectionWithContainer sectionClassName="">
-        <div className="max_screen_width grid grid-cols-2">
+      <SectionWithContainer sectionClassName="bg-[#FFF5E6]">
+        <div className="max_screen_width grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col gap-5">
-           
             <div className="flex items-center gap-1 text-primary">
-               <Foo/>
-              <p>{subtitle}</p>
-             </div>
-             
-             <h2
-              className="text-3xl lg:text-4xl font-primary"
-              dangerouslySetInnerHTML={{ __html: title }}
-            />
+              <Foo />
+              <p className="uppercase">{subtitle}</p>
+            </div>
+
+            <SectionHeading title={title} />
             <p>{description}</p>
 
             {actions.map((button, i) => (
-              
-                <LinkButton
-                  href={button.href}
-                  label={button.label}
-                  target={i !== 2 ? "_blank" : "_self"}
-                  rel="noopener noreferrer"
-                  className=" border border-primary max-md:w-full justify-center rounded-lg py-3 px-4"
-                  whatsAppIcon={i === 1}
-                  // callIcon={i === 0}
-                  calendarIcon={i === 2}
-                />
-              
+              <LinkButton
+                key={i}
+                href={button.href}
+                label={button.label}
+                className=" border border-primary capitalize text-primary max-md:w-full justify-center rounded-lg py-2 px-4"
+              />
             ))}
           </div>
 
@@ -169,7 +74,7 @@ const Gallery: React.FC<GalleryProps> = ({
               {list.map((item, index) => (
                 <li key={index} className="flex  gap-2">
                   <span>
-                    <Foo />
+                    <Tick />
                   </span>
                   {item}
                 </li>
@@ -178,24 +83,31 @@ const Gallery: React.FC<GalleryProps> = ({
           </div>
         </div>
       </SectionWithContainer>
-    </section>
+    </Section>
   );
 };
 
 export default Gallery;
 
-export const Foo = () => (
+export const Tick = () => (
   <svg
-    width={28}
-    height={28}
-    viewBox="0 0 28 28"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M14 20.7084L6.79932 24.4942L8.17482 16.4757L2.34149 10.7975L10.3915 9.63086L13.9918 2.33569L17.5922 9.63086L25.6422 10.7975L19.8088 16.4757L21.1843 24.4942L14 20.7084Z"
+      d="M21.3749 13.125C20.6249 16.875 17.7975 20.4055 13.8289 21.1949C9.86018 21.9843 5.83286 20.1383 3.84031 16.6164C1.84775 13.0947 2.33966 8.69184 5.06035 5.69661C7.78103 2.70136 12.3749 1.87504 16.1249 3.37504"
       stroke="#E8AA4E"
-      strokeWidth={2}
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.625 11.625L12.375 15.375L21.375 5.625"
+      stroke="#E8AA4E"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

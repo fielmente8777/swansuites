@@ -1,18 +1,19 @@
 "use client";
+import { useWebContext } from "@/context-api/WebContext";
+import { contact } from "@/utils/constent";
+import { BookingCalenderIcon, FillDropDownIcon } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { WebsiteNavData } from "./navData";
-import { FillDropDownIcon } from "@/utils/icons";
-import MobileNav from "./MobileNav";
 import { IoMdMenu } from "react-icons/io";
-import { useWebContext } from "@/context-api/WebContext";
+import MobileNav from "./MobileNav";
+import { WebsiteNavData } from "./navData";
 
 const WebsiteNav = () => {
   const pathName = usePathname();
-  const {setIsOpenNavBar} = useWebContext();
+  const { setIsOpenNavBar } = useWebContext();
   return (
-    <header className={`max_screen_width  `}>
+    <header className={`max_screen_width  background-color-1`}>
       <nav className="flex items-center justify-between py-4 max_width">
         <Link href="/" className="block relative md:w-40 w-40  aspect-[4/1.4]">
           <Image
@@ -30,7 +31,9 @@ const WebsiteNav = () => {
                 className={`text-dark font-semibold flex items-center gap-2 p-2 uppercase `}
               >
                 {item.label}
-                <span className={`bg-primary ${pathName === item.href ? "w-full" : "span-border"}`}></span>
+                <span
+                  className={`bg-primary ${pathName === item.href ? "w-full" : "span-border"}`}
+                ></span>
                 {item.subLinks && (
                   <span className="icon duration-300 transition-all ease-in-out">
                     <FillDropDownIcon />
@@ -51,7 +54,7 @@ const WebsiteNav = () => {
                         >
                           <span className="uppercase"> {subLink.label}</span>
                         </Link>
-                      </span> 
+                      </span>
                     );
                   })}
                 </span>
@@ -59,7 +62,15 @@ const WebsiteNav = () => {
             </li>
           ))}
         </ul>
-
+        <Link
+          href={contact.WhatsappCta}
+          className="lg:flex items-center gap-2 rounded-lg bg-white border px-4 md:px-6 py-2 md:py-3  text-primary transition-all hover:scale-x-105  xl hidden "
+        >
+          <span>
+            <BookingCalenderIcon />
+          </span>
+          Book Now
+        </Link>
         <button className="lg:hidden" onClick={() => setIsOpenNavBar(true)}>
           <IoMdMenu className="text-3xl" />
           <span className="sr-only">menu</span>

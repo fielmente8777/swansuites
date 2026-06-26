@@ -155,12 +155,12 @@ export const webSiteFooterData: WebSiteFooterData = {
       title: "Explore",
       links: [
         {
-          label: "Superior Rooms",
-          href: "/accommodation/#superior-rooms",
+          label: "Gachibowli Hotel",
+          href: "/locations/gachibowli-hotel/",
         },
         {
-          label: "Classic Cottages",
-          href: "/accommodation/#classic-cottages",
+          label: " Madhapur Apartment",
+          href: "/locations/madhapur-apartment/",
         },
       ],
     },

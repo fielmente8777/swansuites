@@ -11,7 +11,7 @@ const Clients: React.FC<ClientsProps> = ({
     logos
 }) => {
     return (
-        <SectionWithContainer sectionClassName="bg-[#121212]" containerClassName="space-y-8">
+        <SectionWithContainer sectionClassName="bg-[#121212] border-t border-white" containerClassName="space-y-8">
             <h2 className="text-sm tracking-widest uppercase text-center text-secondary">{title}</h2>
             <SlidingTitle items={logos} />
         </SectionWithContainer>

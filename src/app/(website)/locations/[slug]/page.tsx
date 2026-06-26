@@ -1,5 +1,3 @@
-
-
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -14,6 +12,8 @@ import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import ValueProposition from "./components/ValueProposition";
 import { LocationPageData } from "./pageData";
+import { SectionWithContainer } from "@/components/sectionComponants";
+import Form1 from "@/components/forms/Form1";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -78,13 +78,31 @@ export default async function Page({ params }: Params) {
   return (
     <main>
       <Hero {...pageData.hero} />
-
+      <SectionWithContainer
+        sectionClassName="lg:hidden"
+        defaultPadding={false}
+        containerClassName="bg-dark py-4"
+      >
+        <div
+          className="bg-background py-5  px-1.5  flex flex-col gap-5 max-w-6xl w-full mx-auto"
+          id="form"
+        >
+          <Form1 />
+          <p
+            className="text-sm text-light max-w-3xl text-center mx-auto"
+            dangerouslySetInnerHTML={{
+              __html: pageData.hero.bookingBenefits,
+            }}
+          />
+        </div>
+      </SectionWithContainer>
       <ValueProposition
         {...pageData.valueProposition}
         paragraph={pageData.description}
       />
 
       <Accommodation {...pageData.accommodations} />
+
       <SlidingTitle2 items={pageData.titles} />
 
       <Gallery {...pageData.Gallery} />

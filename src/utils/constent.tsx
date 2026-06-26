@@ -15,8 +15,8 @@ export const contact = {
     "Sri Shyam Nagar, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032",
   addressLink: "https://maps.app.goo.gl/tXFB7KaW1XViipsy5",
   socialMedia: {
-    facebook: "https://www.facebook.com/theacaciahotels",
-    instagram: "https://www.instagram.com/acaciahotels",
+    facebook: "https://www.facebook.com/swansuites/",
+    instagram: "https://www.instagram.com",
     linkedin: "",
   },
   locations: {

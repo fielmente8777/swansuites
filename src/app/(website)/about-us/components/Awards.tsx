@@ -10,12 +10,7 @@ interface Props {
 export default function Awards({ data }: Props) {
   return (
     <SectionWithContainer sectionClassName="bg-[#FFF5E6] border-t border-b border-secondary">
-        {/* <h2 className="font-primary">
-          {data.title.first}{" "}
-          <span className="text-primary font-italic">
-            {data.title.highlight}
-          </span>
-        </h2> */}
+       
         <h2 className="font-primary text-dark text-center text-6xl mb-10">
           {data.title.first}{" "}
           <span className="text-primary font-italic">
@@ -33,11 +28,7 @@ export default function Awards({ data }: Props) {
             />
           </div>
 
-          {/* <div>
-            {data.achievements.map((item, index) => (
-              <p key={index}>⭐ {item.description}</p>
-            ))}
-          </div> */}
+          
           <div className="border border-secondary rounded-2xl p-6">
             {data.achievements.map((item, index) => (
               <div key={index} className="flex items-start gap-3">

@@ -1,6 +1,7 @@
 "use client";
 
 import { GalleryProps } from "@/@types/type";
+import { Section } from "@/components/sectionComponants";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
@@ -22,7 +23,7 @@ export default function Gallery({ data }: Props) {
       : data.images.filter((img) => img.alt === selected);
 
   return (
-    <section className="bg-background">
+    <Section className="bg-background">
       <div className="max_width">
 
         <div className="lg:mb-12 mb-6 flex lg:justify-center lg:gap-8 gap-4 overflow-x-auto hide-scroll">
@@ -58,6 +59,6 @@ export default function Gallery({ data }: Props) {
         </div>
 
       </div>
-    </section>
+    </Section>
   );
 }

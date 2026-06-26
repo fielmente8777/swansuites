@@ -81,12 +81,22 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--background);
+    background-color: #fff9f1;
+    z-index: -3;
+  }
+}
+.background-color-2 {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #fff5e6;
     z-index: -3;
   }
 }
 
-.bg-image{
+.bg-image {
   position: relative;
   &::before {
     content: "";
