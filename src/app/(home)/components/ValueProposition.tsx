@@ -7,7 +7,7 @@ import Image from "next/image";
 interface ValuePropositionProps {
   tag: string;
   title: string;
-  description: string;
+  description: string[];
   image: string;
   actions: {
     label: string;
@@ -54,7 +54,13 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
               className="object-contain"
             />
           </div>
-          <p className="">{description}</p>
+          <div className="space-y-3">
+            {description.map((d, i) => (
+              <p key={i} className=" text-dark">
+                {d}
+              </p>
+            ))}
+          </div>
           <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center">
             {actions.map((button, i) => (
               <li key={i} className="max-md:w-full">
