@@ -69,7 +69,7 @@ const Gallery: React.FC<GalleryProps> = ({
             ))}
           </div>
 
-          <div className="lg:col-span-1 w-full space-y-4 p-6 rounded-2xl text-black">
+          <div className="lg:col-span-1 w-full space-y-4 text-black">
             <ul className="flex flex-col gap-4 lg:text-[1.1rem]">
               {list.map((item, index) => (
                 <li key={index} className="flex  gap-2">

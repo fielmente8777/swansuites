@@ -147,7 +147,7 @@ export const webSiteFooterData: WebSiteFooterData = {
         },
         {
           label: "Contact Us",
-          href: "/contact",
+          href: "/contact-us",
         },
       ],
     },

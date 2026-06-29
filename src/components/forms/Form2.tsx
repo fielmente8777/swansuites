@@ -1,7 +1,6 @@
 "use client";
 import useBookingForm from "@/hooks/useBookingForm";
-import { CalendarIcon, CallIcon, MailIcon, UserIcon } from "@/utils/formIcons";
-import { BookingCalenderIcon } from "@/utils/icons";
+import { CallIcon, MailIcon, UserIcon } from "@/utils/formIcons";
 import React from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import { IoIosArrowDown } from "react-icons/io";
@@ -130,7 +129,7 @@ const Form2 = () => {
       ))}
       <button
         type="submit"
-        className=" bg-transparent w-full rounded-lg text-secondary border text-lg py-3"
+        className=" bg-transparent w-full rounded-lg text-primary border text-lg py-3"
       >
         {isSubmitting ? (
           "Submitting..."

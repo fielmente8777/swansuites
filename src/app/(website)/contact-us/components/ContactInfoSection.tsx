@@ -60,7 +60,7 @@ const ContactInfoSection: React.FC<Props> = ({ title, contacts }) => {
             </div>
           ))}
         </div>
-        <div className="border border-secondary rounded-2xl p-6 space-y-4">
+        <div className="border border-primary rounded-2xl p-6 space-y-4">
           <p className="font-primary text-3xl text-dark">Enquire Now</p>
           <Form2 />
         </div>

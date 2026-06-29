@@ -8,7 +8,7 @@ const WebsiteFooter = () => {
   return (
     <footer className="max_screen_width background-color-1">
       <Container>
-        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1.1fr_1fr_1.8fr] gap-4 md:gap-4">
+        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.1fr_1fr_1.5fr] gap-4 md:gap-4">
           {/* logo */}
           <div className="lg:max-w-70  space-y-4">
             <div
@@ -29,7 +29,7 @@ const WebsiteFooter = () => {
           </div>
           {webSiteFooterData.lists.slice(1, 4).map((list, index) => (
             <div key={index}>
-              <h2 className="md:text-2xl font-primary font-light uppercase text-xl mb-4">
+              <h2 className="md:text-2xl font-primary text-xl mb-4">
                 {list.title}
               </h2>
               <ul className={`flex flex-col gap-2`}>

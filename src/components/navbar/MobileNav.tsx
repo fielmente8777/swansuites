@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { WebsiteNavData } from "./navData";
 import { FillDropDownIcon } from "@/utils/icons";
+import { MdClose } from "react-icons/md";
 
 const MobileNav: React.FC = () => {
   const [openDropDown, setOpenDropDown] = useState<number | null>(null);
@@ -26,16 +27,16 @@ const MobileNav: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-screen pointer-events-none z-[9999] bg-black/60 transition-all duration-300 ${isOpenNavBar ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed top-0 left-0 w-full h-dvh pointer-events-none z-9999 bg-black/60 transition-all duration-300 ${isOpenNavBar ? "translate-x-0" : "-translate-x-full"}`}
     >
-      <div className="w-[80%] h-full relative pointer-events-auto">
-        <div className="w-full h-full bg-background py-4 ps-4">
+      <div className=" h-full relative pointer-events-auto">
+        <div className=" h-full bg-background py-4 ps-4">
           <nav className="flex flex-col gap-2 h-full w-full  font-semibold text-primary">
-            <div className="mb-4">
+            <div className="mb-4 relative">
               <Link
                 href={"/"}
                 onClick={() => setIsOpenNavBar(false)}
-                className="flex items-center relative w-40 aspect-4/1.5"
+                className="flex items-center relative w-35 aspect-4/1.5"
               >
                 <Image
                   src="/logo.png"
@@ -45,8 +46,14 @@ const MobileNav: React.FC = () => {
                   fill
                 />
               </Link>
+              <button
+                onClick={() => setIsOpenNavBar(false)}
+                className="absolute top-4 right-8 text-3xl"
+              >
+                <MdClose />
+              </button>
             </div>
-            <ul className="flex flex-col gap-4 h-[100vh] overflow-y-scroll pe-3">
+            <ul className="flex flex-col gap-4 h-dvh overflow-y-scroll pe-3">
               {WebsiteNavData.links.map((link, index) => {
                 return (
                   <li key={index} className="flex flex-col ">

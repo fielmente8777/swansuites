@@ -14,7 +14,7 @@ const AccordionLinks: React.FC<ContactInfo> = ({ title, links }) => {
         onClick={() => setOpen((prev) => !prev)}
         className="w-full flex items-center justify-between text-left"
       >
-        <p className="md:text-xl text-xl font-primary font-light uppercase text-dark">
+        <p className="md:text-2xl font-primary text-xl text-dark">
           {title}
         </p>
 
