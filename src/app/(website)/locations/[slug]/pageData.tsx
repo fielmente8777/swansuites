@@ -8,7 +8,7 @@ export const LocationPageData = [
     metaData: {
       title: "Gachibowli Hotel - Swan Suites",
       description:
-        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
+        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli.",
       keyWords: "",
     },
 
@@ -28,7 +28,7 @@ export const LocationPageData = [
     },
 
     description:
-      "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+      "Hyderabad’s Renowed Hotels. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
 
     accommodations: {
       title: "Our Accommodation",
