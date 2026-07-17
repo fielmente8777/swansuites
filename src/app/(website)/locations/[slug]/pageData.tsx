@@ -44,7 +44,6 @@ export const LocationPageData = [
             "/King1.jpg",
             "/King2.jpg",
             "/King3.jpg",
-            "/King.jpg",
           ],
           title: "Premium - King",
           amenities: [
@@ -90,7 +89,6 @@ export const LocationPageData = [
             "/Twin1.jpg",
             "/Twin2.jpg",
             "/Twin3.jpg",
-            "/Twin4.jpg",
           ],
           title: "Premium - Twin",
           amenities: [
@@ -132,6 +130,7 @@ export const LocationPageData = [
         },
       ],
     },
+    
     titles: [
       "Business Conference/ Meetings Facilities",
       "Coffee Shop",
