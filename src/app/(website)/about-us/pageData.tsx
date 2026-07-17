@@ -10,14 +10,14 @@ export const pageData = {
     title: {
       first: "Swan Suites",
       highlightOne: "Hotels",
-      middle: "and Service",
-      highlightTwo: "Apartment!",
+      // middle: "and Service",
+      // highlightTwo: "Apartment!",
     },
 
     topDescription: [
-      "Swan Suites Hotels and Service Apartment is a preferred choice of corporates for the last 15 years for their short and long stays. Over the years Swansuites has evolved over multiple properties in the IT Hub of Hyderabad.",
+      "Swan Suites Hotels  is a preferred choice of corporates for the last 15 years for their short and long stays. Over the years Swansuites has evolved over multiple properties in the IT Hub of Hyderabad.",
 
-      "Located in the IT-Hub of Hyderabad, Swan Suites Hotel and Service Apartments consists of 120 fully comfortably furnished, equipped, well appointed, tastefully decorated serviced Suites that are sure to make your stay a pleasurable one. Graciously blending into the commercial and luxurious lifestyle, and embodying corporate flair, it is the last stop for long stay.",
+      "Located in the IT-Hub of Hyderabad, Swan Suites Hotel consists of 120 fully comfortably furnished, equipped, well appointed, tastefully decorated serviced Suites that are sure to make your stay a pleasurable one. Graciously blending into the commercial and luxurious lifestyle, and embodying corporate flair, it is the last stop for long stay.",
     ],
 
     image: "/aboutbg.jpg",
@@ -25,13 +25,13 @@ export const pageData = {
     bottomDescription: [
       "Swan Suites Gachibowli is a Modern Business Hotel in the midst of the new CBD – Gachibowli. Opened in April 2021, it has a unique proposition. Smart Android TVs with a dedicated fibre optic 1000 mbps internet and Co-Working Lounge. Work and stay go hand in hand.",
 
-      "Experience the privileges of being in close proximity to the city's business center, as well as one of the most luxurious and lively locales. Discover innumerable comforts that make it an ideal choice for the traveler, offering the best of both worlds – business and leisure. Its easy accessibility to the International Airport gives the location an edge for business travellers. Situated in the heart of Hyderabad, Swan Suites Hotel and Service Apartment is surrounded by various fine-dine restaurants, shopping vistas and an exuberant nightlife.",
+      "Experience the privileges of being in close proximity to the city's business center, as well as one of the most luxurious and lively locales. Discover innumerable comforts that make it an ideal choice for the traveler, offering the best of both worlds – business and leisure. Its easy accessibility to the International Airport gives the location an edge for business travellers. Situated in the heart of Hyderabad, Swan Suites Hotel is surrounded by various fine-dine restaurants, shopping vistas and an exuberant nightlife.",
     ],
   },
 
   whyUs: {
     topText:
-      "We offer you great choices to stay. A premium Business Hotel in Gachibowli, a luxurious and spacious Serviced Apartment in Madhapur or simply a private Room.",
+      "We offer you great choices to stay. A premium Business Hotel in Gachibowli",
 
     image: "/aboutbg.jpg",
 

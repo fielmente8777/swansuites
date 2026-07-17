@@ -36,10 +36,10 @@ export const WebsiteNavData: websiteNavLink = {
           label: "Gachibowli Hotel",
           href: "/locations/gachibowli-hotel/",
         },
-        {
-          label: " Madhapur Apartment",
-          href: "/locations/madhapur-apartment/",
-        },
+        // {
+        //   label: " Madhapur Apartment",
+        //   href: "/locations/madhapur-apartment/",
+        // },
       ],
     },
     { label: "Gallery", href: "/gallery/" },

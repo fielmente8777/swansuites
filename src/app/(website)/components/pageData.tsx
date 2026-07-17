@@ -37,7 +37,7 @@ export const HomePageData = {
       { label: "Know More About Us", href: "/about-us" },
     ],
     paragraph:
-      "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+      "Hyderabad’s Renowed Hotels. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
   },
 
   features: {
@@ -97,23 +97,23 @@ export const HomePageData = {
           { label: "Explore Hotel", href: "/locations/gachibowli-hotel/" },
         ],
       },
-      {
-        location: "Madhapur, Hyderabad",
-        images: ["/2nd.jpg"],
-        title: "Madhapur Apartment",
-        amenities: [
-          { icon: <TreeIcon /> },
-          { icon: <BedIcon /> },
-          { icon: <InternetIcon /> },
-        ],
+      // {
+      //   location: "Madhapur, Hyderabad",
+      //   images: ["/2nd.jpg"],
+      //   title: "Madhapur Apartment",
+      //   amenities: [
+      //     { icon: <TreeIcon /> },
+      //     { icon: <BedIcon /> },
+      //     { icon: <InternetIcon /> },
+      //   ],
 
-        actions: [
-          {
-            label: "Explore Apartment",
-            href: "/locations/madhapur-apartment/",
-          },
-        ],
-      },
+      //   actions: [
+      //     {
+      //       label: "Explore Apartment",
+      //       href: "/locations/madhapur-apartment/",
+      //     },
+      //   ],
+      // },
     ],
   },
   gallery: {

@@ -158,10 +158,10 @@ export const webSiteFooterData: WebSiteFooterData = {
           label: "Gachibowli Hotel",
           href: "/locations/gachibowli-hotel/",
         },
-        {
-          label: " Madhapur Apartment",
-          href: "/locations/madhapur-apartment/",
-        },
+        // {
+        //   label: " Madhapur Apartment",
+        //   href: "/locations/madhapur-apartment/",
+        // },
       ],
     },
   ],
@@ -201,26 +201,26 @@ export const contactInfos: ContactInfo[] = [
       },
     ],
   },
-  {
-    title: contact.locations.gachibowli.location,
-    links: [
-      {
-        label: contact.locations.madhapur.address,
-        href: contact.locations.madhapur.addressLink,
-        icon: <FillLocationIcon />,
-      },
-      {
-        label: contact.phone[0],
-        href: "tel:" + contact.phone[0],
-        icon: <FillCallIcon />,
-      },
-      {
-        label: contact.email[0],
-        href: "mailto:" + contact.email[0],
-        label2: contact.email[1],
-        href2: "mailto:" + contact.email[1],
-        icon: <FillMailIcon />,
-      },
-    ],
-  },
+  // {
+  //   title: contact.locations.madhapur.location,
+  //   links: [
+  //     {
+  //       label: contact.locations.madhapur.address,
+  //       href: contact.locations.madhapur.addressLink,
+  //       icon: <FillLocationIcon />,
+  //     },
+  //     {
+  //       label: contact.phone[0],
+  //       href: "tel:" + contact.phone[0],
+  //       icon: <FillCallIcon />,
+  //     },
+  //     {
+  //       label: contact.email[0],
+  //       href: "mailto:" + contact.email[0],
+  //       label2: contact.email[1],
+  //       href2: "mailto:" + contact.email[1],
+  //       icon: <FillMailIcon />,
+  //     },
+  //   ],
+  // },
 ];
