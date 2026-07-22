@@ -15,12 +15,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Swan Suites",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Luxury Serviced Apartments in Hyderabad | Swan Suites",
-    description:
-      "Stay smarter in Hitech City & Gachibowli. Spacious apartments, premium amenities, flexible booking, and exceptional value for business travelers.",
-  },
+  
   
   robots: {
     index: true,
