@@ -6,12 +6,12 @@ import { contactPageData } from "./components/pagedata";
 export const metadata: Metadata = {
   title: "Contact - Swan Suites",
   description:
-    "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
+    "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli.",
 
   openGraph: {
     title: "About Us - Swan Suites",
     description:
-      "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
+      "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli.",
     type: "website",
     locale: "en_IN",
     siteName: "Swan Suites",

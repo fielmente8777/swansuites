@@ -215,7 +215,7 @@ export const LocationPageData = [
     metaData: {
       title: "Madhapur Apartment - Swan Suites",
       description:
-        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli, Serviced Apartments Madhapur, Guest House in Madhapur.",
+        "Hotel near AIG Hospital Gachibowli, Hotel in Gachibowli.",
       keyWords: "",
     },
 

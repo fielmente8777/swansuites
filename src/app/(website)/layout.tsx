@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://swansuites.com"),
   title: "Swan Suites | Hotel in Gachibowlis",
   description:
-    "Hotel near AIG HOSPITAL GACHIBOWLI, hotel in Gachibowli, Serviced apartments Madhapur, guest house Madhapur.",
+    "Hotel near AIG HOSPITAL GACHIBOWLI, hotel in Gachibowli",
   openGraph: {
     title: "Swan Suites | Hotel in Gachibowli",
     description:
-      "Hotel near AIG HOSPITAL GACHIBOWLI, hotel in Gachibowli, Serviced apartments Madhapur, guest house Madhapur.",
+      "Hotel near AIG HOSPITAL GACHIBOWLI, hotel in Gachibowli",
     type: "website",
     locale: "en_IN",
     siteName: "Swan Suites",

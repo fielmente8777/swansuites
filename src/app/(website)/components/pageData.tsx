@@ -64,12 +64,12 @@ export const HomePageData = {
         description:
           "Professional housekeeping with our signature service-with-a-smile, every single day.",
       },
-      {
-        icon: <DailyHousekeepingIcon />,
-        title: "Spacious Apartment",
-        description:
-          "Experience 2800 sq. ft. of thoughtfully designed living with all the comforts of home.",
-      },
+      // {
+      //   icon: <DailyHousekeepingIcon />,
+      //   title: "Spacious Apartment",
+      //   description:
+      //     "Experience 2800 sq. ft. of thoughtfully designed living with all the comforts of home.",
+      // },
     ],
     actions: [
       { label: "Chat With Us", href: contact.WhatsappCta },
@@ -77,7 +77,7 @@ export const HomePageData = {
   },
 
   accommodations: {
-    title: "EXPLORE OUR LOCATIONS",
+    title: "EXPLORE OUR LOCATION",
     subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
     description:
       "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
