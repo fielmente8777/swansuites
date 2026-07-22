@@ -44,8 +44,8 @@ export interface AboutIntroProps {
   title: {
     first: string;
     highlightOne: string;
-    middle: string;
-    highlightTwo: string;
+    middle?: string;
+    highlightTwo?: string;
   };
 
   topDescription: string[];
