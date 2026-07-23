@@ -26,7 +26,7 @@ export const HomePageData = {
     description: [
       "Since the last 15 years Swan Suites is one of the biggest provider of Suites to the Corporates in the Hitech City, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
 
-      "We offer you great choices to stay. A premium Business Hotel in Gachibowli.",
+      "We offer you great choice to stay. A premium Business Hotel in Gachibowli.",
 
       "Swan Suites is a professionally managed company, offering temporary housing, extended stay, and short long term accommodation. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel business. Companies and individuals save upto 50% on their hotel bill by choosing to accommodate their guests at Swan Suites.",
 
