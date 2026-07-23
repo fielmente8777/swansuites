@@ -9,13 +9,13 @@ export const pageData = {
 
     title: {
       first: "Swan Suites",
-      highlightOne: "Hotels",
+      highlightOne: "Hotel",
       // middle: "and Service",
       // highlightTwo: "Apartment!",
     },
 
     topDescription: [
-      "Swan Suites Hotels  is a preferred choice of corporates for the last 15 years for their short and long stays. Over the years Swansuites has evolved over multiple properties in the IT Hub of Hyderabad.",
+      "Swan Suites Hotel  is a preferred choice of corporates for the last 15 years for their short and long stays. Over the years Swansuites has evolved over multiple properties in the IT Hub of Hyderabad.",
 
       "Located in the IT-Hub of Hyderabad, Swan Suites Hotel consists of 120 fully comfortably furnished, equipped, well appointed, tastefully decorated serviced Suites that are sure to make your stay a pleasurable one. Graciously blending into the commercial and luxurious lifestyle, and embodying corporate flair, it is the last stop for long stay.",
     ],
@@ -31,7 +31,7 @@ export const pageData = {
 
   whyUs: {
     topText:
-      "We offer you great choices to stay. A premium Business Hotel in Gachibowli",
+      "We offer you great a choice to stay. A premium Business Hotel in Gachibowli",
 
     image: "/aboutbg.jpg",
 
@@ -42,7 +42,7 @@ export const pageData = {
     title: "15 Years of <i class='text-primary'>Hospitality</i> Excellence",
 
     description: [
-      "Since the past 15 years Swan Suites is one of the largest provider of Suites to the Corporates in Hitech City, Gachibowli and Madhapur, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
+      "Since the past 15 years Swan Suites is one of the largest provider of Suites to the Corporates in Hitech City, Gachibowli, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
 
       "Conveniently located near to AIG HOSPITAL GACHIBOWLI, Hyderabad we provide our services to guests and Patients undergoing treatment at AIG HOSPITAL GACHIBOWLI.",
 

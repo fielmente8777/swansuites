@@ -26,7 +26,7 @@ export default function Gallery({ data }: Props) {
     <Section className="bg-background">
       <div className="max_width">
 
-        <div className="lg:mb-12 mb-6 flex lg:justify-center lg:gap-8 gap-4 overflow-x-auto hide-scroll">
+        {/* <div className="lg:mb-12 mb-6 flex lg:justify-center lg:gap-8 gap-4 overflow-x-auto hide-scroll">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -40,7 +40,7 @@ export default function Gallery({ data }: Props) {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredImages.map((image, index) => (

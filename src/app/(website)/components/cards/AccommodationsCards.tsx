@@ -40,7 +40,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           </div>
         )}
       />
-      <div className="py-5 px-4 flex flex-col gap-4">
+      {/* <div className="py-5 px-4 flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <h3 className="text-2xl lg:text-2xl font-semibold font-primary">
             {title}
@@ -53,23 +53,21 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <ul className="grid grid-cols-1">
+        {/* <ul className="grid grid-cols-1">
           {actions?.map((button, i) => (
             <li key={i}>
               <LinkButton
                 {...button}
                 rel="noopener noreferrer"
                 className=" border-primary text-nowrap capitalize! text-primary rounded-lg py-3 justify-center w-full px-4"
-                whatsAppIcon={i === 1}
-                // callIcon={i === 0}
-                calendarIcon={i === 2}
+                
               />
             </li>
           ))}
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
     </div>
   );
 };

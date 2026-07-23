@@ -26,11 +26,11 @@ export const HomePageData = {
     description: [
       "Since the last 15 years Swan Suites is one of the biggest provider of Suites to the Corporates in the Hitech City, Hyderabad with its well known motto of SERVICE WITH A SMILE.",
 
-      "We offer you great choices to stay. A premium Business Hotel in Gachibowli, a luxurious and spacious Serviced Apartment in Madhapur or simply a private Room.",
+      "We offer you great choices to stay. A premium Business Hotel in Gachibowli.",
 
       "Swan Suites is a professionally managed company, offering temporary housing, extended stay, and short long term accommodation. Our clients include many Fortune 500 companies, MNC’s, Banks, IT and ITeS, etc. We also cater to retail and business travel business. Companies and individuals save upto 50% on their hotel bill by choosing to accommodate their guests at Swan Suites.",
 
-      "Easily accessible, both the properties are prominently located in the IT hub of Hyderabad.",
+      "Easily accessible and located in the IT hub of Hyderabad.",
     ],
     image: "/about-img.png",
     actions: [
@@ -77,8 +77,8 @@ export const HomePageData = {
   },
 
   accommodations: {
-    title: "EXPLORE OUR LOCATION",
-    subtitle: "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+    title: "EXPLORE OUR HOTEL IN GACHIBOWLI",
+    subtitle: "Luxury Stay that Lives like <i class='text-primary'>Home!</i>",
     description:
       "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
 

@@ -29,7 +29,7 @@ export const WebsiteNavData: websiteNavLink = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
     {
-      label: "Locations",
+      label: "Location",
       href: "/locations/",
       subLinks: [
         {

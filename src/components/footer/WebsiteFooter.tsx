@@ -80,11 +80,11 @@ const WebsiteFooter = () => {
               </ul>
             </div>
           ))}
-          <div className="">
+          {/* <div className="">
             {contactInfos.map((list, index) => (
               <AccordionLinks key={index} {...list} />
             ))}
-          </div>
+          </div> */}
         </div>
       </Container>
       <div className="border-t border-white bg-dark">

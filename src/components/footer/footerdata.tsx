@@ -164,6 +164,30 @@ export const webSiteFooterData: WebSiteFooterData = {
         // },
       ],
     },
+    {
+      title: "Contact Us",
+      links: [
+        {
+          icon: <FillLocationIcon />,
+          label: "Address: " + contact.address,
+          href: contact.addressLink,
+        },
+        {
+          icon: <FillCallIcon />,
+          label: contact.phone[0],
+          href: "tel:" + contact.phone[0],
+          // label2: contact.phone[1],
+          // href2: "tel:" + contact.phone[1],
+        },
+        {
+          icon: <FillMailIcon />,
+          label: contact.email[0],
+          href: "mailto:" + contact.email[0],
+          label2: contact.email[1],
+          href2: "mailto:" + contact.email[1],
+        },
+      ],
+    },
   ],
 };
 
