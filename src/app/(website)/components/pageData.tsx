@@ -2,9 +2,12 @@ import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
   BedIcon,
+  CoffeeIcon,
   DailyHousekeepingIcon,
   InternetIcon,
+  TelevisionIcon,
   TreeIcon,
+  WifiIcon,
   WorkAbodeLoungeIcon,
 } from "@/utils/icons";
 
@@ -13,7 +16,7 @@ export const HomePageData = {
     images: ["/banner.png"],
     badge: "Award-winning HOTEL",
     title:
-      "All <i class='text-primary'>Amenities</i> You Need From A Home Away From <i class='text-primary'>Home!</i>",
+      "All <i class=''>Amenities</i> You Need From A Home Away From <i class=''>Home!</i>",
     description:
       "Modern rooms, thoughtful amenities, and the warmth of Swan hospitality designed for business and leisure travelers.",
     bookingBenefits:
@@ -32,10 +35,8 @@ export const HomePageData = {
 
       "Easily accessible and located in the IT hub of Hyderabad.",
     ],
-    image: "/about-img.png",
-    actions: [
-      { label: "Know More About Us", href: "/about-us" },
-    ],
+    image: "/home-page-about.png",
+    actions: [{ label: "Know More About Us", href: "/about-us" }],
     paragraph:
       "Hyderabad’s Renowed Hotels. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
   },
@@ -71,60 +72,144 @@ export const HomePageData = {
       //     "Experience 2800 sq. ft. of thoughtfully designed living with all the comforts of home.",
       // },
     ],
-    actions: [
-      { label: "Chat With Us", href: contact.WhatsappCta },
-    ],
+    actions: [{ label: "Chat With Us", href: contact.WhatsappCta }],
   },
-
   accommodations: {
-    title: "EXPLORE OUR HOTEL IN GACHIBOWLI",
-    subtitle: "Luxury Stay that Lives like <i class='text-primary'>Home!</i>",
-    description:
-      "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+      title: "Our Accommodation",
+      subtitle:
+        "Luxury Stays that Lives like <i class='text-primary'>Home!</i>",
+      description:
+        "Swan Suites offers all the conveniences of a modern design with the traditional service oriented living.",
 
-    rooms: [
-      {
-        location: "Gachibowli, Hyderabad",
-        images: ["/1st.jpg"],
-        title: "Gachibowli Hotel",
-        amenities: [
-          { icon: <TreeIcon /> },
-          { icon: <BedIcon /> },
-          { icon: <InternetIcon /> },
-        ],
-
-        actions: [
-          { label: "Explore Hotel", href: "/locations/gachibowli-hotel/" },
-        ],
-      },
-      // {
-      //   location: "Madhapur, Hyderabad",
-      //   images: ["/2nd.jpg"],
-      //   title: "Madhapur Apartment",
-      //   amenities: [
-      //     { icon: <TreeIcon /> },
-      //     { icon: <BedIcon /> },
-      //     { icon: <InternetIcon /> },
-      //   ],
-
-      //   actions: [
-      //     {
-      //       label: "Explore Apartment",
-      //       href: "/locations/madhapur-apartment/",
-      //     },
-      //   ],
-      // },
+      rooms: [
+        {
+          images: [
+            "/room-2.png",
+            "/King1.jpg",
+            "/King2.jpg",
+            "/King3.jpg",
+          ],
+          title: "Premium - King",
+          amenities: [
+            { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
+            { name: "Television", icon: <TelevisionIcon /> },
+            { name: "Wifi", icon: <WifiIcon /> },
+          ],
+          popUpAmenities: [
+            { name: "Air Conditioning (Split ACs - COVID Safe)" },
+            { name: "Large Screen SMART/Android LED TV" },
+            { name: "24 Hrs Hot/Cold Water" },
+            { name: "Packaged Drinking Water (Complimentary)" },
+            { name: "Electronic Key Card" },
+            { name: "Housekeeping Service (Once Daily)" },
+            { name: "Onsite Laundrette (Complimentary)" },
+            { name: "Intercom" },
+            { name: "Ergonomic Chair with Study Desk" },
+            { name: "Lobby Seating Area" },
+            { name: "Public Telephone with Operator Assistance" },
+            { name: "Mini Fridge" },
+            { name: "Iron and Iron Board" },
+            { name: "Hair Dryer" },
+            { name: "Modern Wardrobe and Storage" },
+            { name: "8 Charging Points" },
+            { name: "Mobility Accessible Rooms" },
+            { name: "First Aid Supplies" },
+            { name: "Valet Dry-Cleaning (Outsourced)" },
+            { name: "Anti-Allergic Pillows" },
+            { name: "CCTV Surveillance" },
+            { name: "24-Hour Security" },
+            { name: "Newspaper (On Request)" },
+            { name: "Luggage Assistance (On Request)" },
+            { name: "Thermal Screening" },
+            { name: "Personal Hand Sanitizers" },
+            { name: "Doctor on Call" },
+          ],
+          description:
+            "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
+        },
+        {
+          images: [
+            "/room-3.jpg",
+            "/Twin1.jpg",
+            "/Twin2.jpg",
+            "/Twin3.jpg",
+          ],
+          title: "Premium - Twin",
+          amenities: [
+            { name: "Tea/Coffee Maker", icon: <CoffeeIcon /> },
+            { name: "Television", icon: <TelevisionIcon /> },
+            { name: "Wifi", icon: <WifiIcon /> },
+          ],
+          popUpAmenities: [
+            { name: "Air Conditioning (Split ACs - COVID Safe)" },
+            { name: "Large Screen SMART/Android LED TV" },
+            { name: "24 Hrs Hot/Cold Water" },
+            { name: "Packaged Drinking Water (Complimentary)" },
+            { name: "Electronic Key Card" },
+            { name: "Housekeeping Service (Once Daily)" },
+            { name: "Onsite Laundrette (Complimentary)" },
+            { name: "Intercom" },
+            { name: "Ergonomic Chair with Study Desk" },
+            { name: "Lobby Seating Area" },
+            { name: "Public Telephone with Operator Assistance" },
+            { name: "Mini Fridge" },
+            { name: "Iron and Iron Board" },
+            { name: "Hair Dryer" },
+            { name: "Modern Wardrobe and Storage" },
+            { name: "8 Charging Points" },
+            { name: "Mobility Accessible Rooms" },
+            { name: "First Aid Supplies" },
+            { name: "Valet Dry-Cleaning (Outsourced)" },
+            { name: "Anti-Allergic Pillows" },
+            { name: "CCTV Surveillance" },
+            { name: "24-Hour Security" },
+            { name: "Newspaper (On Request)" },
+            { name: "Luggage Assistance (On Request)" },
+            { name: "Thermal Screening" },
+            { name: "Personal Hand Sanitizers" },
+            { name: "Doctor on Call" },
+          ],
+          description:
+            "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
+        },
+      ],
+    },
+ titles: [
+      "Business Conference/ Meetings Facilities",
+      "Coffee Shop",
+      "1000 mbps internet access points throughout the property",
+      "Complimentary Breakfast",
     ],
-  },
+  // accommodations: {
+  //   title: "EXPLORE OUR HOTEL IN GACHIBOWLI",
+  //   subtitle: "Luxury Stay that Lives like <i class='text-primary'>Home!</i>",
+  //   description:
+  //     "Discover Swan Suites in Hyderabad's prime locations, close to IT hubs, business districts, shopping, and entertainment. Experience premium comfort and convenience at every stay.",
+
+  //   rooms: [
+  //     {
+  //       location: "Gachibowli, Hyderabad",
+  //       images: ["/1st.jpg"],
+  //       title: "Gachibowli Hotel",
+  //       amenities: [
+  //         { icon: <TreeIcon /> },
+  //         { icon: <BedIcon /> },
+  //         { icon: <InternetIcon /> },
+  //       ],
+
+  //       actions: [
+  //         { label: "Explore Hotel", href: "/locations/gachibowli-hotel/" },
+  //       ],
+  //     },
+  //   ],
+  // },
   gallery: {
-    
     images: [
       "/gallery-1.png",
       "/gallery-2.png",
       "/gallery-4.png",
       "/gallery-3.png",
     ],
-    
   },
 
   clients: {
@@ -149,13 +234,6 @@ export const HomePageData = {
     ],
   },
 
-  titles: [
-    "Business Conference/ Meetings Facilities",
-    "Coffee Shop",
-    "1000 mbps internet access points throughout the property",
-    "Complimentary Breakfast",
-    "WORABODE Co Working space (Optional)",
-  ],
   testimonials: {
     title: "Guest stories",
     subtitle: "Loved by long-stay <i class='text-primary'>travellers</i>",

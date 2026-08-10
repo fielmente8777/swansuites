@@ -26,15 +26,15 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
 }) => {
   return (
     <>
-      <SectionWithContainer sectionClassName="lg:mt-20">
+      <SectionWithContainer sectionClassName="bg-[#FFF9F1]">
         <div className="grid lg:grid-cols-2 gap-10 grid-cols-1 items-center">
-          <div className="w-full relative aspect-[4/2.84] lg:block hidden">
+          <div className="w-full relative aspect-[4/4.8] lg:block hidden">
             <Image
               src={image}
               alt={title}
               fill
               sizes="100vw"
-              className="object-contain"
+              className="object-cover rounded-2xl"
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -48,7 +48,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
               </p>
               <SectionHeading title={title} />
             </div>
-            <div className="w-full relative aspect-[4/2.84] lg:hidden block">
+            <div className="w-full relative aspect-[4/3.84] lg:hidden block">
               <Image
                 src={image}
                 alt={title}

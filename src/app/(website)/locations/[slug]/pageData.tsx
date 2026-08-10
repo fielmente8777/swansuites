@@ -136,7 +136,6 @@ export const LocationPageData = [
       "Coffee Shop",
       "1000 mbps internet access points throughout the property",
       "Complimentary Breakfast",
-      "WORABODE Co Working space (Optional)",
     ],
 
     Gallery: {
@@ -229,7 +228,7 @@ export const LocationPageData = [
       tag: "ABOUT SWAN SUITES Madhapur Apartment",
       title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
       description:
-        "Swan Suites Ten Madhapur can be rated as one of the most luxurious in the Hitech City area. The apartment is a spacious 2,800 sq feet 3 bedroom, 4 baths, 2 large open balconies, a spacious open kitchen with separate living and lounge areas. Luxurious interiors with Italian marble flooring, noise cancelling french doors and windows, veneered interiors with unbelievable location.",
+        "Swan Suites Ten Madhapur can be rated as one of the most luxurious in the Hitech City area. The apartment is a spacious 2,800 sq feet 3 bedroom, 4 baths, 2 large open balconies, a spacious open kitchen with separate living areas. Luxurious interiors with Italian marble flooring, noise cancelling french doors and windows, veneered interiors with unbelievable location.",
       image: "/about-img.png",
       actions: [{ label: "CHAT WITH US", href: contact.WhatsappCta }],
     },
@@ -338,7 +337,6 @@ export const LocationPageData = [
       "Coffee Shop",
       "1000 mbps internet access points throughout the property",
       "Complimentary Breakfast",
-      "WORABODE Co Working space (Optional)",
     ],
 
     Gallery: {

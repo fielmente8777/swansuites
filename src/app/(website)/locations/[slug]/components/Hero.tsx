@@ -20,9 +20,9 @@ const Hero: React.FC<ImageBannerProps> = ({ images, bookingBenefits }) => {
         className="object-cover max-lg:object-left"
         sizes="100vw"
       />
-      <div className="absolute inset-0 z-10 bg-black/40" />
+      {/* <div className="absolute inset-0 z-10 bg-black/40" /> */}
       <div className="absolute inset-x-4 top-4 h-full max-lg:h-[96%] border-x border-t border-white z-10"></div>
-      <div className="absolute inset-x-0  -bottom-30 z-20 flex items-end pb-10 justify-center">
+      {/* <div className="absolute inset-x-0  -bottom-30 z-20 flex items-end pb-10 justify-center">
         <div
           className="bg-background max-lg:hidden py-5 px-1.5 border-10 border-dark rounded-[20px] mt-8 flex flex-col gap-5 max-w-6xl w-full mx-auto"
           id="form"
@@ -33,7 +33,7 @@ const Hero: React.FC<ImageBannerProps> = ({ images, bookingBenefits }) => {
             dangerouslySetInnerHTML={{ __html: bookingBenefits }}
           />
         </div>
-      </div>
+      </div> */}
     </Section>
   );
 };

@@ -29,32 +29,22 @@ const Banner: React.FC<ImageBannerProps> = ({
         className="object-cover max-lg:object-left"
         sizes="100vw"
       />
-      <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80  to-black/10" />
-      <div className="absolute inset-x-0  lg:top-95 max-lg:inset-0 z-20 flex items-end pb-10 justify-center">
-        <Container>
-          <p className="flex items-center mb-2 max-md:text-sm justify-center gap-2.5 px-3.75 tracking-widest py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
-            <span>
-              <Foo />
-            </span>{" "}
-            {badge}
-          </p>
-          <h1
-            className="text-white font-primary font-light lg:text-6xl text-4xl max-w-3xl mx-auto  text-center"
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-          <p className="text-white/70 md:text-xl mt-3 max-w-3xl text-center mx-auto">
-            {description}
-          </p>
-          <div
-            className="bg-background py-5 max-lg:hidden px-1.5 border-10 border-dark rounded-[20px] mt-8 flex flex-col gap-5 max-w-6xl w-full mx-auto"
-            id="form"
-          >
-            <Form1 />
-            <p
-              className="text-sm text-light max-w-3xl text-center mx-auto"
-              dangerouslySetInnerHTML={{ __html: bookingBenefits }}
+      {/* <div className="absolute inset-0 z-10 bg-linear-to-t from-black/40  to-black/0" /> */}
+      <div className="absolute inset-x-0  lg:bottom-5 max-lg:inset-0 z-20 ">
+        <Container className=" ">
+          <div className="bg-black/5 backdrop-blur-xs p-4 rounded-2xl w-fit">
+            <p className="flex items-center mb-2 max-md:text-sm  gap-2.5 px-3.75 tracking-widest py-1 rounded-full border border-white uppercase backdrop-blur-2xl text-white w-fit">
+              <span>
+                <Foo />
+              </span>{" "}
+              {badge}
+            </p>
+            <h1
+              className="text-white font-primary font-light lg:text-6xl text-4xl max-w-3xl"
+              dangerouslySetInnerHTML={{ __html: title }}
             />
           </div>
+          {/*  */}
         </Container>
       </div>
     </Section>

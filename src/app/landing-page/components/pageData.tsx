@@ -245,7 +245,6 @@ export const swanSuitesPageData = {
     "Coffee Shop",
     "1000 mbps internet access points throughout the property",
     "Complimentary Breakfast",
-    "WORABODE Co Working space (Optional)",
   ],
   testimonials: {
     title: "Guest stories",

@@ -28,20 +28,20 @@ export const WebsiteNavData: websiteNavLink = {
   links: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
-    {
-      label: "Location",
-      href: "/locations/",
-      subLinks: [
-        {
-          label: "Gachibowli Hotel",
-          href: "/locations/gachibowli-hotel/",
-        },
-        // {
-        //   label: " Madhapur Apartment",
-        //   href: "/locations/madhapur-apartment/",
-        // },
-      ],
-    },
+    // {
+    //   label: "Location",
+    //   href: "/locations/",
+    //   subLinks: [
+    //     {
+    //       label: "Gachibowli Hotel",
+    //       href: "/locations/gachibowli-hotel/",
+    //     },
+    //     // {
+    //     //   label: " Madhapur Apartment",
+    //     //   href: "/locations/madhapur-apartment/",
+    //     // },
+    //   ],
+    // },
     { label: "Gallery", href: "/gallery/" },
     { label: "Contact", href: "/contact-us/" },
   ],

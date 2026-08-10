@@ -56,7 +56,8 @@ const WebsiteFooter = () => {
                         {item.title}
                       </span>
                     )}
-                    <Link
+                    <span className="grid lg:grid-cols-[1fr_auto_1fr] grid-cols-1 gap-0.5">
+                      <Link
                       target={item.href.includes("https") ? "_blank" : "_self"}
                       rel="noopener noreferrer"
                       href={item.href}
@@ -64,17 +65,18 @@ const WebsiteFooter = () => {
                     >
                       <span className="">{item.label}</span>
                     </Link>
-                    {item.label2 && <span className="-ml-1">,</span>}
+                    {item.label2 && <span className="max-md:hidden">,</span>}
                     {item.label2 && item.href2 && (
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
                         href={item.href2}
-                        className="flex gap-2 max-md:ml-8"
+                        className="flex gap-2"
                       >
                         <span>{item.label2}</span>
                       </Link>
                     )}
+                    </span>
                   </li>
                 ))}
               </ul>
