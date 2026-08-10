@@ -23,7 +23,7 @@ export const pageData = {
     image: "/aboutbg.jpg",
 
     bottomDescription: [
-      "Swan Suites Gachibowli is a Modern Business Hotel in the midst of the new CBD – Gachibowli. Opened in April 2021, it has a unique proposition. Smart Android TVs with a dedicated fibre optic 1000 mbps internet and Co-Working Lounge. Work and stay go hand in hand.",
+      "Swan Suites Gachibowli is a Modern Business Hotel in the midst of the new CBD – Gachibowli. Opened in April 2021, it has a unique proposition. Smart Android TVs with a dedicated fibre optic 1000 mbps internet connection. Work and stay go hand in hand.",
 
       "Experience the privileges of being in close proximity to the city's business center, as well as one of the most luxurious and lively locales. Discover innumerable comforts that make it an ideal choice for the traveler, offering the best of both worlds – business and leisure. Its easy accessibility to the International Airport gives the location an edge for business travellers. Situated in the heart of Hyderabad, Swan Suites Hotel is surrounded by various fine-dine restaurants, shopping vistas and an exuberant nightlife.",
     ],

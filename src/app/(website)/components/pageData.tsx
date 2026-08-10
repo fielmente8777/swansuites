@@ -1,14 +1,11 @@
 import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
-  BedIcon,
   CoffeeIcon,
   DailyHousekeepingIcon,
-  InternetIcon,
   TelevisionIcon,
-  TreeIcon,
   WifiIcon,
-  WorkAbodeLoungeIcon,
+  WorkAbodeLoungeIcon
 } from "@/utils/icons";
 
 export const HomePageData = {
