@@ -36,11 +36,7 @@ const BookingBar = ({ gridView }: Props) => {
     setError("");
   };
 
-  /**
-   * Only job here is to block an invalid submit. When the dates are
-   * good we do NOT preventDefault — the browser posts the form to
-   * eZee and opens it in a new tab, exactly like the WP site.
-   */
+ 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!checkIn || !checkOut) {
       e.preventDefault();

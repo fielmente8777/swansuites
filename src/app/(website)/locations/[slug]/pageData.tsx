@@ -234,7 +234,7 @@ export const LocationPageData = [
     },
 
     description:
-      "Hyderabad’s Renowed Hotels & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+      "Hyderabad’s Renowed  & Service Apartments. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
 
     accommodations: {
       title: "Our Accommodation",

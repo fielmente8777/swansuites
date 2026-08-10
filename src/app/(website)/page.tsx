@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <Banner {...HomePageData.hero} />
       <SectionWithContainer
-        sectionClassName="bg-background"
+        sectionClassName="bg-dark"
         defaultPadding={false}
         containerClassName=" py-4"
       >

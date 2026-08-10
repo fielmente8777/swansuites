@@ -141,10 +141,7 @@ export const webSiteFooterData: WebSiteFooterData = {
           label: "About Us",
           href: "/about-us",
         },
-        {
-          label: "Gallery",
-          href: "/gallery",
-        },
+       
         {
           label: "Contact Us",
           href: "/contact-us",
@@ -155,8 +152,8 @@ export const webSiteFooterData: WebSiteFooterData = {
       title: "Explore",
       links: [
         {
-          label: "Gachibowli Hotel",
-          href: "/locations/gachibowli-hotel/",
+          label: "Gallery",
+          href: "/gallery",
         },
         // {
         //   label: " Madhapur Apartment",

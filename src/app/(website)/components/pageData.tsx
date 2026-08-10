@@ -38,7 +38,7 @@ export const HomePageData = {
     image: "/home-page-about.png",
     actions: [{ label: "Know More About Us", href: "/about-us" }],
     paragraph:
-      "Hyderabad’s Renowed Hotels. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
+      "Hyderabad’s Renowed Hotel. Homely comfort with Best in Class Facilities Located in Hyderabad’s IT Hub.",
   },
 
   features: {

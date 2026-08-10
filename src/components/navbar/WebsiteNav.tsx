@@ -28,7 +28,7 @@ const WebsiteNav = () => {
             <li className=" relative nav" key={index}>
               <Link
                 href={item.href}
-                className={`text-dark font-semibold flex items-center gap-2 p-2 uppercase `}
+                className={`text-dark font-semibold tracking-wider  gap-2 p-2 uppercase `}
               >
                 {item.label}
                 <span

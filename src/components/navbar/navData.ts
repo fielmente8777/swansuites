@@ -27,7 +27,7 @@ export const WebsiteNavData: websiteNavLink = {
   logo: "/logo.png",
   links: [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about-us/" },
+    { label: "About Us", href: "/about-us/" },
     // {
     //   label: "Location",
     //   href: "/locations/",
@@ -43,7 +43,7 @@ export const WebsiteNavData: websiteNavLink = {
     //   ],
     // },
     { label: "Gallery", href: "/gallery/" },
-    { label: "Contact", href: "/contact-us/" },
+    { label: "Contact Us", href: "/contact-us/" },
   ],
   buttons: [{ label: "BOOK NOW", href: contact.WhatsappCta }],
 };
