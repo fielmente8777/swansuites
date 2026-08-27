@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "../sectionComponants";
-import { contactInfos, webSiteFooterData } from "./footerdata";
-import AccordionLinks from "./AccordionLinks";
+import { webSiteFooterData } from "./footerdata";
 
 const WebsiteFooter = () => {
   return (
     <footer className="max_screen_width background-color-1">
       <Container>
-        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.1fr_1fr_1.5fr] gap-4 md:gap-4">
+        <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.1fr_1fr_1.5fr] gap-4 md:gap-4 lg:py-20">
           {/* logo */}
           <div className="lg:max-w-70  space-y-4">
             <div
@@ -56,12 +55,12 @@ const WebsiteFooter = () => {
                         {item.title}
                       </span>
                     )}
-                    <span className="grid lg:grid-cols-[1fr_auto_1fr] grid-cols-1 gap-0.5">
+                    <span className={`grid ${item.href2 ? "lg:grid-cols-[1fr_auto_1fr]" : "lg:grid-cols-[1fr_auto]"} grid-cols-1 gap-0.5`}>
                       <Link
                       target={item.href.includes("https") ? "_blank" : "_self"}
                       rel="noopener noreferrer"
                       href={item.href}
-                      className="flex gap-2"
+                      className={`flex gap-2 ${!item.href2 ? "w-full" : ""}`}
                     >
                       <span className="">{item.label}</span>
                     </Link>

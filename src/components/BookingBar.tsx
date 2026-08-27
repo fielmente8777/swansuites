@@ -64,8 +64,8 @@ const BookingBar = ({ gridView }: Props) => {
       target="_blank"
       onSubmit={handleSubmit}
       className={`${
-        gridView ? "flex flex-col gap-3" : "grid md:grid-cols-3 items-end gap-3.5"
-      } font-body px-4 bg-transparent`}
+        gridView ? "flex flex-col gap-3" : "grid md:grid-cols-3 items-end justify-center gap-3.5"
+      } w-full font-body px-4 bg-transparent text-center`}
     >
       {/* eZee's expected payload — names are theirs, don't rename */}
       <input type="hidden" name="select_hotel" value={HOTEL_ID} />
@@ -85,11 +85,11 @@ const BookingBar = ({ gridView }: Props) => {
       <input type="hidden" name="eZ_room" value="1" />
       <input type="hidden" name="calformat" value="dd-mm-yy" />
 
-      <div className="flex flex-col gap-1.5 w-full">
+      <div className="flex flex-col items-center gap-1.5 w-full">
         <label htmlFor="checkIn" className={labelClass}>
           Check In
         </label>
-        <div className={fieldWrap}>
+        <div className={`${fieldWrap} justify-center w-full`}>
           <span className="text-secondary shrink-0">
             <CalendarIcon />
           </span>
@@ -103,17 +103,17 @@ const BookingBar = ({ gridView }: Props) => {
             placeholderText="DD-MM-YYYY"
             calendarClassName="!z-[99999]"
             popperClassName="!z-[99999]"
-            className="pointer-events-auto placeholder:text-secondarya outline-none w-full h-full bg-transparent text-base text-secondarya"
+            className="pointer-events-auto placeholder:text-secondarya outline-none w-full h-full bg-transparent text-base text-secondarya text-center"
             wrapperClassName="w-full h-full !flex items-center"
           />
         </div>
       </div>
 
-      <div className="flex flex-col gap-1.5 w-full">
+      <div className="flex flex-col items-center gap-1.5 w-full">
         <label htmlFor="checkOut" className={labelClass}>
           Check Out
         </label>
-        <div className={fieldWrap}>
+        <div className={`${fieldWrap} justify-center w-full`}>
           <span className="text-secondary shrink-0">
             <CalendarIcon />
           </span>
@@ -127,7 +127,7 @@ const BookingBar = ({ gridView }: Props) => {
             placeholderText="DD-MM-YYYY"
             calendarClassName="!z-[99999]"
             popperClassName="!z-[99999]"
-            className="pointer-events-auto placeholder:text-secondarya outline-none w-full h-full bg-transparent text-base text-secondarya"
+            className="pointer-events-auto placeholder:text-secondarya outline-none w-full h-full bg-transparent text-base text-secondarya text-center"
             wrapperClassName="w-full h-full !flex items-center"
           />
         </div>
@@ -135,7 +135,7 @@ const BookingBar = ({ gridView }: Props) => {
 
       <button
         type="submit"
-        className="bg-primary w-full rounded-lg text-white text-lg py-3.5 hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="bg-primary w-full rounded-lg text-white text-lg py-3 hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         Check Availability
       </button>
