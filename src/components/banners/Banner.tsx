@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Form1 from "../forms/Form1";
 import { Container, Section } from "../sectionComponants";
 
 interface ImageBannerProps {
@@ -14,8 +13,6 @@ const Banner: React.FC<ImageBannerProps> = ({
   title,
   images,
   badge,
-  description,
-  bookingBenefits,
 }) => {
   return (
     <Section
@@ -30,7 +27,7 @@ const Banner: React.FC<ImageBannerProps> = ({
         sizes="100vw"
       />
       {/* <div className="absolute inset-0 z-10 bg-linear-to-t from-black/40  to-black/0" /> */}
-      <div className="absolute inset-x-0  lg:bottom-5 max-lg:inset-0 z-20 ">
+      <div className="absolute inset-x-0  bottom-5 z-20 ">
         <Container className=" ">
           <div className="bg-black/5 backdrop-blur-xs p-4 rounded-2xl w-fit">
             <p className="flex items-center mb-2 max-md:text-sm  gap-2.5 px-3.75 tracking-widest py-1 rounded-full border border-white uppercase backdrop-blur-2xl text-white w-fit">

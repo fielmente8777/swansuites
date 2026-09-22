@@ -39,7 +39,7 @@ export default function WebLayout({ children }: { children: React.ReactNode }) {
       <WebsiteNav />
       {children}
       {/* call link */}
-      <Link href={contact.callCta} className="fixed right-0 top-1/4 bg-white px-2 py-1 rounded-lg shadow-lg">Call Us {contact.phone[0]} </Link>
+      <Link href={contact.callCta} className="fixed right-0 top-24 bg-white px-2 py-1 rounded-lg shadow-lg">Call Us {contact.phone[0]} </Link>
       <WebsiteFooter />
     </>
   );
