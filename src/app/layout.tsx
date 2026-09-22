@@ -1,16 +1,15 @@
-import LandingFooter from "@/components/footer/LandingFooter";
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 import ImagePopup from "@/components/pop-up/ImagePopup";
+import PopUpForm from "@/components/pop-up/PopUpForm";
+import { WebProvider } from "@/context-api/WebContext";
+import { contact } from "@/utils/constent";
 import type { Metadata } from "next";
-import { Open_Sans, Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Open_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
-import Script from "next/script";
-import { WebProvider } from "@/context-api/WebContext";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
-import { contact } from "@/utils/constent";
-import Call from "@/components/ContactButton/Call";
-import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
-import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -30,45 +29,7 @@ const cormorant_garamond = Cormorant_Garamond({
 //   weight: ["400", "500", "600", "700"],
 // });
 
-export const metadata: Metadata = {
-  title:
-    "Luxury Serviced Apartments in Hitech City & Gachibowli Hyderabad | Swan Suites",
-  description:
-    "Stay at award-winning serviced apartments in Hitech City & Gachibowli, Hyderabad. Spacious accommodations, work-friendly amenities, daily housekeeping, free cancellation, and direct booking discounts.",
-  
-  openGraph: {
-    title: "Your Corporate Stay, Perfected | Swan Suites Hyderabad",
-    description:
-      "Experience spacious serviced apartments in Hyderabad's business district. Premium comfort, coworking facilities, dining, housekeeping, and exclusive direct booking benefits.",
-    type: "website",
-    locale: "en_IN",
-    siteName: "Swan Suites",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Luxury Serviced Apartments in Hyderabad | Swan Suites",
-    description:
-      "Stay smarter in Hitech City & Gachibowli. Spacious apartments, premium amenities, flexible booking, and exceptional value for business travelers.",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-};
+
 
 export default function RootLayout({
   children,
@@ -108,7 +69,6 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <WebProvider>
           {children}
-          <LandingFooter />
           <ImagePopup />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <Call callNumber={contact.phone[0]} />

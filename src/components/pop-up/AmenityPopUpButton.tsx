@@ -20,7 +20,7 @@ const AmenityPopUpButton: React.FC<AmenityPopUpButtonProps> = ({
   ) => {
     setOpenAmenityModal(true);
 
-    setAmenityModalArray(amenities);
+    setAmenityModalArray(amenities || []);
   };
 
   return (
