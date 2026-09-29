@@ -46,7 +46,7 @@ export const footerData: FooterData = {
   cta: [
     { label: "CALL NOW", href: contact.callCta },
     { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-    { label: "BOOK  NOW", href: "#form" },
+    { label: "BOOK  NOW", href: contact.bookingLink },
   ],
   lists: [
     {

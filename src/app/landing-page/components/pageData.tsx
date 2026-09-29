@@ -32,7 +32,7 @@ export const swanSuitesPageData = {
     actions: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -65,7 +65,7 @@ export const swanSuitesPageData = {
     actions: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -116,7 +116,7 @@ export const swanSuitesPageData = {
         actions: [
           { label: "CALL NOW", href: contact.callCta },
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
       {
@@ -161,7 +161,7 @@ export const swanSuitesPageData = {
         actions: [
           { label: "CALL NOW", href: contact.callCta },
           { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-          { label: "BOOK NOW", href: "#form" },
+          { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
     ],
@@ -193,7 +193,7 @@ export const swanSuitesPageData = {
     actions: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -217,7 +217,7 @@ export const swanSuitesPageData = {
     actions: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -287,7 +287,7 @@ export const swanSuitesPageData = {
     actions: [
       { label: "CALL NOW", href: contact.callCta },
       { label: "ENQUIRE NOW", href: contact.WhatsappCta },
-      { label: "BOOK NOW", href: "#form" },
+      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 };
