@@ -7,7 +7,7 @@ Please share room availability and best offers.
 Thank you.`);
 
 export const contact = {
-  bookingLink:"https://letsbook.me/booking/property57?checkin=2026-09-29&checkout=2026-09-30&adults=1&children=0",
+  bookingLink:"https://bookings.swansuites.com/?propertyId=12426",
   email: ["bookings@swansuites.com ", " swansuites@gmail.com"],
   mapUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1658189756754!2d78.3666466!3d17.43535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9397d994815f%3A0x6f1af95f92b4b017!2sSwan%20Suites%20Gachibowli!5e1!3m2!1sen!2sin!4v1780822837324!5m2!1sen!2sin",

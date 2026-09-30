@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Container, Section } from "../sectionComponants";
-
 interface ImageBannerProps {
   images: string[];
   badge: string;
