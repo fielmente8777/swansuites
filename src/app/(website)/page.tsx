@@ -8,13 +8,13 @@ import Gallery from "./components/Gallery";
 import ValueProposition from "./components/ValueProposition";
 import { HomePageData } from "./components/pageData";
 import Accommodations from "./locations/[slug]/components/Accommodations";
-import BookingBar from "@/components/BookingBar";
+// import BookingBar from "@/components/BookingBar";
 
 export default function Home() {
   return (
     <main>
       <Banner {...HomePageData.hero} />
-      <SectionWithContainer
+      {/* <SectionWithContainer
         sectionClassName="bg-dark"
         defaultPadding={false}
         containerClassName=" py-4"
@@ -23,14 +23,10 @@ export default function Home() {
           className=" py-5  px-1.5  flex flex-col gap-5 max-w-6xl w-full mx-auto"
           id="form"
         >
-          {/* <Form1 /> */}
           <BookingBar/>
-          {/* <p
-            className="text-sm text-light max-w-3xl text-center mx-auto"
-            dangerouslySetInnerHTML={{ __html: HomePageData.hero.bookingBenefits }}
-          /> */}
+        
         </div>
-      </SectionWithContainer>
+      </SectionWithContainer> */}
       <ValueProposition {...HomePageData.valueProposition} />
       {/* <Features {...HomePageData.features} /> */}
       {/* <Accommodations {...HomePageData.accommodations} /> */}
