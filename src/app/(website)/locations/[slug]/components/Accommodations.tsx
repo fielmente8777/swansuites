@@ -35,7 +35,9 @@ const Accommodations: React.FC<AccommodationsProps> = ({
         ))}
       </div>
       <Link
-        href={contact.WhatsappCta}
+        href={contact.bookingLink}
+        target="_blank"
+        rel="noopener noreferrer"
         className="lg:flex items-center gap-2 rounded-lg bg-transparent w-fit mx-auto border px-4 md:px-6 py-2 md:py-3  text-primary transition-all hover:scale-x-105  xl hidden "
       >
         <span>
