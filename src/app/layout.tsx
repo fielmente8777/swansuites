@@ -70,7 +70,7 @@ export default function RootLayout({
         <WebProvider>
           {children}
           <ImagePopup />
-          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <Whatsapp whatsAppNumber={contact.phone[1]} />
           <Call callNumber={contact.phone[0]} />
           <AmenitiesPopup />
           <PopUpForm />
