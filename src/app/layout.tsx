@@ -29,8 +29,6 @@ const cormorant_garamond = Cormorant_Garamond({
 //   weight: ["400", "500", "600", "700"],
 // });
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,6 +37,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-D7D4NW2NPS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-D7D4NW2NPS');
+          `}
+        </Script>
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm"
