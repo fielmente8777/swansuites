@@ -23,9 +23,7 @@ export const swanSuitesPageData = {
     tag: "ABOUT SWAN SUITES",
     title: "A Smart Way to  <i class='text-primary'>Stay!</i>",
     description: [
-      "With over 20 years of experience in delivering exceptional guest services, Swan Suites Gachibowli is a professionally managed 3-star business hotel in Hyderabad, making it one of the best hotels near Gachibowli for both business and leisure travelers. Conveniently located, we are a preferred hotel near Gachibowli and an ideal choice for guests searching for hotel rooms near Gachibowli, hotels near Gachibowli area, or a 3-star hotel near me.",
-      "Our spacious rooms are designed with modern comforts, featuring 1000 Mbps dedicated high-speed internet, Smart Android TVs, premium high-thread-count white linens, and all the amenities expected from a premium business hotel. Whether you're looking for three-star hotels near me, a reliable business hotel near me, or corporate hotels near me, Swan Suites offers the perfect blend of comfort, convenience, and productivity.",
-      "Our unique WORKABODE co-working concept sets us apart as a futuristic business hotel, providing an ideal workspace for professionals and corporate travelers. Trusted by Fortune 500 companies, multinational corporations (MNCs), banks, IT, and ITeS organizations, we proudly serve corporate guests as well as retail and business travelers seeking a comfortable stay in Gachibowli.",
+      "Swan Suites is a 3-star hotel in Gachibowli, Hyderabad, for business and leisure stays. Guests can unwind in spacious rooms with smart TVs and 1,000 Mbps internet, or work from the WORKABODE coworking space."
     ],
     image: "/about-img.png",
   },
