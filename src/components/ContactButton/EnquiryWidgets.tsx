@@ -10,7 +10,7 @@ export default function EnquiryWidgets() {
   const pathname = usePathname();
 
   if (pathname.replace(/\/$/, "") === "/landing-page") {
-    return null;
+    return <Whatsapp whatsAppNumber={contact.phone[1]} />;
   }
 
   return (

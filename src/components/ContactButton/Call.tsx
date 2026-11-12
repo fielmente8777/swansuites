@@ -8,17 +8,17 @@ function Call({ callNumber }: { callNumber: string }) {
   const pathName = usePathname();
   const onLandingPage = pathName.replace(/\/$/, "") === "/landing-page";
 
-  if (onLandingPage || pathName === "/thank-you/") {
+  if (pathName === "/thank-you/") {
     return null;
   }
 
   return (
     <div
-      className={`fixed bottom-10 lg:left-3  left-4 z-20 cursor-pointer`}
+      className={`fixed bottom-10 z-20 cursor-pointer ${onLandingPage ? "right-4 lg:right-3" : "left-4 lg:left-3"}`}
     >
       <Link
         href={`tel:${(callNumber || "+911234567890").replace(/\s+/g, "")}`}
-        target="_blank"
+        target={onLandingPage ? undefined : "_blank"}
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-blue-700 hover:bg-primary/95 hover:shadow-2xl transition-all"
       >
