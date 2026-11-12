@@ -2,6 +2,7 @@
 import { contact } from "@/utils/constent";
 import Image from "next/image";
 import Link from "next/link";
+import LandingCallButton from "../buttons/LandingCallButton";
 import LazyLoadedMap from "../map/LazyLoadedMap";
 import { Container } from "../sectionComponants";
 import { footerData } from "./footerdata";
@@ -29,6 +30,7 @@ const LandingFooter = () => {
                 className="object-contain"
               />
             </div>
+            <LandingCallButton label="Call Reservations" className="mx-auto max-md:w-full" />
           </div>
 
           {footerData.lists.map((list, index) => (

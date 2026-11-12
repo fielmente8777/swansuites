@@ -1,3 +1,4 @@
+import LandingCallButton from "@/components/buttons/LandingCallButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -29,6 +30,7 @@ const Attractions: React.FC<AttractionsProps> = ({
             <SectionHeading title={subtitle} />
           </div>
           <p className="">{description}</p>
+          <LandingCallButton className="max-md:w-full" />
         </div>
         <ul className="flex flex-col gap-4 lg:text-[1.1rem]">
           {list.map((item, index) => (

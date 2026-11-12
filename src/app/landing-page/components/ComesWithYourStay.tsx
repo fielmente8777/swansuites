@@ -1,3 +1,4 @@
+import LandingCallButton from "@/components/buttons/LandingCallButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import Image from "next/image";
@@ -53,6 +54,7 @@ const ComesWithYourStay: React.FC<ComesWithYourStayProps> = ({
           ))}
         </div>
       </div>
+      <LandingCallButton className="mx-auto max-md:w-full" />
     </SectionWithContainer>
   );
 };

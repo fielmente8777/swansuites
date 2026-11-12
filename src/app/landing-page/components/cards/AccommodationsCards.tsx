@@ -1,6 +1,7 @@
 "use client";
 
 import { AccommodationsProps } from "@/@types/type";
+import LandingCallButton from "@/components/buttons/LandingCallButton";
 import AmenityPopUpButton from "@/components/pop-up/AmenityPopUpButton";
 import Amenities from "@/components/sliders/Amenities";
 import SwiperCarousel from "@/components/sliders/SwiperCarousel";
@@ -60,6 +61,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           <Amenities items={amenities} />
         </div>
         {/* <p className="lg:text-lg">{description}</p> */}
+        <LandingCallButton label="Call for Rates" className="max-md:w-full" />
       </div>
     </div>
   );

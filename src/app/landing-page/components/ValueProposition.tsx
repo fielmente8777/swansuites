@@ -1,3 +1,4 @@
+import LandingCallButton from "@/components/buttons/LandingCallButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -55,6 +56,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
               </p>
             ))}
           </div>
+          <LandingCallButton className="max-md:w-full" />
         </div>
       </div>
     </SectionWithContainer>

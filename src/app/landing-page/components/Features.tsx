@@ -1,3 +1,4 @@
+import LandingCallButton from "@/components/buttons/LandingCallButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -49,6 +50,7 @@ const Features: React.FC<FeaturesProps> = ({
           </div>
         ))}
       </div>
+      <LandingCallButton className="mx-auto max-md:w-full" />
     </SectionWithContainer>
   );
 };
