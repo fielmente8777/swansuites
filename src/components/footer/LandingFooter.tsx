@@ -36,11 +36,10 @@ const LandingFooter = () => {
                   label={item.label}
                   href={item.href}
                   key={index}
-                  target="_blank"
+                  target={index === 0 ? undefined : "_blank"}
                   rel="noopener noreferrer"
                   callIcon={index === 0 && true}
-                  whatsAppIcon={index === 1 && true}
-                  calendarIcon={index === 2 && true}
+                  calendarIcon={index === 1}
                   className={`rounded-sm justify-center text-nowrap max-md:w-full border-none uppercase tracking-widest text-xs bg-primary text-white`}
                 />
               ))}
@@ -85,7 +84,7 @@ const LandingFooter = () => {
                     )} */}
                     <span className="flex max-lg:flex-col gap-2">
                       <Link
-                        target="_blank"
+                        target={item.href.startsWith("tel:") ? undefined : "_blank"}
                         rel="noopener noreferrer"
                         href={item.href}
                         className="flex gap-2 "

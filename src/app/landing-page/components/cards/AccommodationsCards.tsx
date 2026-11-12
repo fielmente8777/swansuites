@@ -62,18 +62,15 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           <Amenities items={amenities} />
         </div>
         {/* <p className="lg:text-lg">{description}</p> */}
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {actions?.map((button, i) => (
             <li key={i}>
               <LinkButton
                 {...button}
-                {...button}
-                target={i !== 2 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="bg-primary text-white border-none rounded-lg py-3 justify-center w-full px-4"
-                whatsAppIcon={i === 1}
                 callIcon={i === 0}
-                calendarIcon={i === 2}
+                calendarIcon={i === 1}
               />
             </li>
           ))}

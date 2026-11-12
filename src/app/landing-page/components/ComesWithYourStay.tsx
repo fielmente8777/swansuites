@@ -64,12 +64,10 @@ const ComesWithYourStay: React.FC<ComesWithYourStayProps> = ({
           <li key={i} className="w-full md:w-auto">
             <LinkButton
               {...button}
-              target={i !== 2 ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="bg-primary text-white border-none max-md:w-full justify-center rounded-lg py-3 px-4"
-              whatsAppIcon={i === 1}
               callIcon={i === 0}
-              calendarIcon={i === 2}
+              calendarIcon={i === 1}
             />
           </li>
         ))}

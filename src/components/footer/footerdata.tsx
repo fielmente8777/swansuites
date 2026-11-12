@@ -45,7 +45,6 @@ export const footerData: FooterData = {
   logo: "/logo.png",
   cta: [
     { label: "CALL NOW", href: contact.callCta },
-    { label: "ENQUIRE NOW", href: contact.WhatsappCta },
     { label: "BOOK  NOW", href: contact.bookingLink },
   ],
   lists: [
@@ -60,7 +59,7 @@ export const footerData: FooterData = {
         {
           icon: <FillCallIcon />,
           label: contact.phone[0],
-          href: "tel:" + contact.phone[0],
+          href: contact.callCta,
           // label2: contact.phone[1],
           // href2: "tel:" + contact.phone[1],
         },

@@ -31,7 +31,6 @@ export const swanSuitesPageData = {
     image: "/about-img.png",
     actions: [
       { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -64,7 +63,6 @@ export const swanSuitesPageData = {
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -115,7 +113,6 @@ export const swanSuitesPageData = {
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
           { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
@@ -160,7 +157,6 @@ export const swanSuitesPageData = {
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
           { label: "CALL NOW", href: contact.callCta },
-          { label: "ENQUIRE NOW", href: contact.WhatsappCta },
           { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
@@ -192,7 +188,6 @@ export const swanSuitesPageData = {
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -216,7 +211,6 @@ export const swanSuitesPageData = {
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -286,7 +280,6 @@ export const swanSuitesPageData = {
     ],
     actions: [
       { label: "CALL NOW", href: contact.callCta },
-      { label: "ENQUIRE NOW", href: contact.WhatsappCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },

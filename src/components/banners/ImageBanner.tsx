@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { contact } from "@/utils/constent";
+import LinkButton from "../buttons/LinkButton";
 import { Container, Section } from "../sectionComponants";
-import Form1 from "../forms/Form1";
 import LandingNavbar from "../navbar/LandingNavbar";
 
 interface ImageBannerProps {
@@ -20,7 +21,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
   return (
     <Section
       defaultPadding={false}
-      className="relative w-full lg:aspect-[16/7.7] aspect-4/9.5"
+      className="relative flex min-h-[min(36rem,100svh)] w-full flex-col justify-end lg:aspect-[16/7.7]"
     >
       <div className="inset-x-0 absolute z-30 ">
         <LandingNavbar />
@@ -33,7 +34,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
         sizes="100vw"
       />
       <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80  to-black/10" />
-      <div className="absolute inset-0  z-20 flex items-end pb-10 justify-center">
+      <div className="relative z-20 flex justify-center pt-22 pb-10">
         <Container>
           <p className="flex items-center mb-2 max-md:text-sm justify-center gap-2.5 px-3.75 tracking-widest py-1 rounded-full border border-secondary uppercase backdrop-blur-2xl text-white w-fit mx-auto">
             <span>
@@ -49,7 +50,12 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
             {description}
           </p>
           <div className="bg-background py-6 px-1.5 rounded-[20px] mt-8 flex flex-col gap-5 max-w-6xl w-full mx-auto" id="form">
-            <Form1 />
+            <LinkButton
+              href={contact.callCta}
+              label={`Call Now · ${contact.phone[0].trim()}`}
+              callIcon
+              className="mx-auto min-h-12 justify-center rounded-lg border-none bg-[#a43e14] px-5 font-semibold text-white"
+            />
             <p
               className="text-sm text-light max-w-3xl text-center mx-auto"
               dangerouslySetInnerHTML={{ __html: bookingBenefits }}

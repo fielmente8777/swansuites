@@ -1,8 +1,7 @@
 import Call from "@/components/ContactButton/Call";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
+import EnquiryWidgets from "@/components/ContactButton/EnquiryWidgets";
 import AmenitiesPopup from "@/components/pop-up/AmenitiesPopup";
 import ImagePopup from "@/components/pop-up/ImagePopup";
-import PopUpForm from "@/components/pop-up/PopUpForm";
 import { WebProvider } from "@/context-api/WebContext";
 import { contact } from "@/utils/constent";
 import type { Metadata } from "next";
@@ -82,10 +81,9 @@ export default function RootLayout({
         <WebProvider>
           {children}
           <ImagePopup />
-          <Whatsapp whatsAppNumber={contact.phone[1]} />
           <Call callNumber={contact.phone[0]} />
           <AmenitiesPopup />
-          <PopUpForm />
+          <EnquiryWidgets />
         </WebProvider>
 
         {/* <Script id="whatsapp-config" strategy="afterInteractive">
@@ -101,19 +99,6 @@ export default function RootLayout({
 
         <Script src="https://whatsapp-widget-tau.vercel.app/widget/whatsapp.js"></Script> */}
 
-        {/* <!-- Eazbot Script (Next.js) --> */}
-        <Script id="chatbot-config" strategy="afterInteractive">
-          {`
-            window.eazbotConfig = {
-              ndid: "6393ca3a-941d-4189-b0df-807c8de5a34c",
-              hid: "21497405",
-            };
-          `}
-        </Script>
-        <Script
-          src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
-          strategy="afterInteractive"
-        />
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zbn7ovcq43");`}
         </Script>
