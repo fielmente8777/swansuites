@@ -36,10 +36,9 @@ const LandingFooter = () => {
                   label={item.label}
                   href={item.href}
                   key={index}
-                  target={index === 0 ? undefined : "_blank"}
+                  target="_blank"
                   rel="noopener noreferrer"
-                  callIcon={index === 0 && true}
-                  calendarIcon={index === 1}
+                  calendarIcon
                   className={`rounded-sm justify-center text-nowrap max-md:w-full border-none uppercase tracking-widest text-xs bg-primary text-white`}
                 />
               ))}
@@ -83,22 +82,26 @@ const LandingFooter = () => {
                       </span>
                     )} */}
                     <span className="flex max-lg:flex-col gap-2">
-                      <Link
-                        target={item.href.startsWith("tel:") ? undefined : "_blank"}
-                        rel="noopener noreferrer"
-                        href={item.href}
-                        className="flex gap-2 "
-                      >
-                        <span
-                          className={`${
-                            index === 1
-                              ? " font-mont text-2xl my-auto"
-                              : "  inline-block"
-                          }`}
+                      {item.href.startsWith("tel:") ? (
+                        <span>{item.label}</span>
+                      ) : (
+                        <Link
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={item.href}
+                          className="flex gap-2 "
                         >
-                          {item.label}
-                        </span>
-                      </Link>
+                          <span
+                            className={`${
+                              index === 1
+                                ? " font-mont text-2xl my-auto"
+                                : "  inline-block"
+                            }`}
+                          >
+                            {item.label}
+                          </span>
+                        </Link>
+                      )}
                       {item.label2 && <span className=" -ml-1 max-lg:hidden">|</span>}
                       {item.label2 && item.href2 && (
                         <Link

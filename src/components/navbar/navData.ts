@@ -3,7 +3,6 @@ import { contact } from "@/utils/constent";
 export const navData = {
   logo: "/logo.png",
 
-  buttons: [{ label: "BOOK NOW", href: contact.bookingLink }],
 };
 
 

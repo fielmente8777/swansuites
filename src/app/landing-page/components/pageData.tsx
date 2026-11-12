@@ -30,7 +30,6 @@ export const swanSuitesPageData = {
     ],
     image: "/about-img.png",
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -62,7 +61,6 @@ export const swanSuitesPageData = {
       },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -112,7 +110,6 @@ export const swanSuitesPageData = {
         description:
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
           { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
@@ -156,7 +153,6 @@ export const swanSuitesPageData = {
         description:
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
         actions: [
-          { label: "CALL NOW", href: contact.callCta },
           { label: "BOOK NOW", href: contact.bookingLink },
         ],
       },
@@ -187,7 +183,6 @@ export const swanSuitesPageData = {
       },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -210,7 +205,6 @@ export const swanSuitesPageData = {
       "1.5 km to IKEA",
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
@@ -279,7 +273,6 @@ export const swanSuitesPageData = {
       },
     ],
     actions: [
-      { label: "CALL NOW", href: contact.callCta },
       { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },

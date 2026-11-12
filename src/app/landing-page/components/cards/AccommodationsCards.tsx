@@ -69,8 +69,7 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
                 {...button}
                 rel="noopener noreferrer"
                 className="bg-primary text-white border-none rounded-lg py-3 justify-center w-full px-4"
-                callIcon={i === 0}
-                calendarIcon={i === 1}
+                calendarIcon
               />
             </li>
           ))}

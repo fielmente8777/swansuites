@@ -44,7 +44,6 @@ interface WebsiteFooterData {
 export const footerData: FooterData = {
   logo: "/logo.png",
   cta: [
-    { label: "CALL NOW", href: contact.callCta },
     { label: "BOOK  NOW", href: contact.bookingLink },
   ],
   lists: [

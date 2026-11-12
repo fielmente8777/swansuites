@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navData } from "./navData";
-import { BookingCalenderIcon } from "@/utils/icons";
+import { contact } from "@/utils/constent";
+import LinkButton from "../buttons/LinkButton";
 
 const LandingNavbar = () => {
   return (
@@ -22,26 +23,13 @@ const LandingNavbar = () => {
             </div>
           </Link>
 
-          {/* BUTTON */}
-          <ul className="flex items-center gap-2">
-            {navData.buttons.map((link, index) => (
-              <li key={index} className="flex items-center gap-2">
-                <Link
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-sm bg-primary px-2 md:px-6 py-2 md:py-3  text-white transition-all hover:opacity-90"
-                >
-                  <span className="">
-                    <BookingCalenderIcon />
-                  </span>
-                  <span className="lg:block text-base hidden">
-                    {link.label}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <LinkButton
+            href={contact.callCta}
+            label="Call Now"
+            aria-label={`Call Swan Suites at ${contact.phone[0].trim()}`}
+            callIcon
+            className="min-h-12 shrink-0 whitespace-nowrap rounded-lg border-none bg-[#a43e14] font-semibold text-white"
+          />
         </div>
       </nav>
     </header>

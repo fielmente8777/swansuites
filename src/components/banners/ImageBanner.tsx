@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { contact } from "@/utils/constent";
-import LinkButton from "../buttons/LinkButton";
 import { Container, Section } from "../sectionComponants";
 import LandingNavbar from "../navbar/LandingNavbar";
 
@@ -23,7 +21,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
       defaultPadding={false}
       className="relative flex min-h-[min(36rem,100svh)] w-full flex-col justify-end lg:aspect-[16/7.7]"
     >
-      <div className="inset-x-0 absolute z-30 ">
+      <div className="absolute inset-x-0 top-0 z-30">
         <LandingNavbar />
       </div>
       <Image
@@ -50,12 +48,6 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
             {description}
           </p>
           <div className="bg-background py-6 px-1.5 rounded-[20px] mt-8 flex flex-col gap-5 max-w-6xl w-full mx-auto" id="form">
-            <LinkButton
-              href={contact.callCta}
-              label={`Call Now · ${contact.phone[0].trim()}`}
-              callIcon
-              className="mx-auto min-h-12 justify-center rounded-lg border-none bg-[#a43e14] px-5 font-semibold text-white"
-            />
             <p
               className="text-sm text-light max-w-3xl text-center mx-auto"
               dangerouslySetInnerHTML={{ __html: bookingBenefits }}

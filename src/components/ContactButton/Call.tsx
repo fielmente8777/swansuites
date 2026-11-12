@@ -7,17 +7,18 @@ import { IoCall } from "react-icons/io5";
 function Call({ callNumber }: { callNumber: string }) {
   const pathName = usePathname();
   const onLandingPage = pathName.replace(/\/$/, "") === "/landing-page";
-  
-    if (pathName === "/thank-you/") {
-      return null;
-    }
+
+  if (onLandingPage || pathName === "/thank-you/") {
+    return null;
+  }
+
   return (
     <div
       className={`fixed bottom-10 lg:left-3  left-4 z-20 cursor-pointer`}
     >
       <Link
         href={`tel:${(callNumber || "+911234567890").replace(/\s+/g, "")}`}
-        target={onLandingPage ? undefined : "_blank"}
+        target="_blank"
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-blue-700 hover:bg-primary/95 hover:shadow-2xl transition-all"
       >
