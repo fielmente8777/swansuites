@@ -1,4 +1,3 @@
-import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import Image from "next/image";
@@ -11,10 +10,6 @@ interface ComesWithYourStayProps {
     name: string;
     src: string;
   }[];
-  actions: {
-    label: string;
-    href: string;
-  }[];
 }
 
 const ComesWithYourStay: React.FC<ComesWithYourStayProps> = ({
@@ -22,7 +17,6 @@ const ComesWithYourStay: React.FC<ComesWithYourStayProps> = ({
   description,
   image,
   images,
-  actions,
 }) => {
   return (
     <SectionWithContainer containerClassName="md:space-y-12 space-y-8 ">
@@ -59,18 +53,6 @@ const ComesWithYourStay: React.FC<ComesWithYourStayProps> = ({
           ))}
         </div>
       </div>
-      <ul className="flex flex-wrap items-center justify-center lg:gap-4 gap-3">
-        {actions.map((button, i) => (
-          <li key={i} className="w-full md:w-auto">
-            <LinkButton
-              {...button}
-              rel="noopener noreferrer"
-              className="bg-primary text-white border-none max-md:w-full justify-center rounded-lg py-3 px-4"
-              calendarIcon
-            />
-          </li>
-        ))}
-      </ul>
     </SectionWithContainer>
   );
 };

@@ -1,4 +1,3 @@
-import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -13,17 +12,12 @@ interface FeaturesProps {
     title: string;
     description: string;
   }[];
-  actions: {
-    label: string;
-    href: string;
-  }[];
 }
 const Features: React.FC<FeaturesProps> = ({
   title,
   subtitle,
   description,
   items,
-  actions,
 }) => {
   return (
     <SectionWithContainer containerClassName="md:space-y-10 space-y-5">
@@ -55,18 +49,6 @@ const Features: React.FC<FeaturesProps> = ({
           </div>
         ))}
       </div>
-      <ul className="flex flex-wrap items-center justify-center lg:gap-4 gap-3">
-        {actions.map((button, i) => (
-          <li key={i} className="w-full md:w-auto">
-            <LinkButton
-              {...button}
-              rel="noopener noreferrer"
-              className="bg-primary text-white border-none max-md:w-full justify-center rounded-lg py-3 px-4"
-              calendarIcon
-            />
-          </li>
-        ))}
-      </ul>
     </SectionWithContainer>
   );
 };

@@ -1,4 +1,3 @@
-import { contact } from "@/utils/constent";
 import {
   AllDayDinningIcon,
   CoffeeIcon,
@@ -29,9 +28,6 @@ export const swanSuitesPageData = {
       "Our unique WORKABODE co-working concept sets us apart as a futuristic business hotel, providing an ideal workspace for professionals and corporate travelers. Trusted by Fortune 500 companies, multinational corporations (MNCs), banks, IT, and ITeS organizations, we proudly serve corporate guests as well as retail and business travelers seeking a comfortable stay in Gachibowli.",
     ],
     image: "/about-img.png",
-    actions: [
-      { label: "BOOK NOW", href: contact.bookingLink },
-    ],
   },
 
   features: {
@@ -59,9 +55,6 @@ export const swanSuitesPageData = {
         description:
           "Professional housekeeping with our signature service-with-a-smile, every single day.",
       },
-    ],
-    actions: [
-      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -109,9 +102,6 @@ export const swanSuitesPageData = {
         ],
         description:
           "Unwind in a spacious Premium King Room featuring a plush king-size bed, elegant interiors, and modern amenities designed for ultimate comfort.",
-        actions: [
-          { label: "BOOK NOW", href: contact.bookingLink },
-        ],
       },
       {
         images: ["/room-3.jpg", "/Twin1.jpg", "/Twin2.jpg", "/Twin3.jpg"],
@@ -152,9 +142,6 @@ export const swanSuitesPageData = {
         ],
         description:
           "Designed for colleagues, friends, or family travelers, the Premium Twin Room features two comfortable single beds and thoughtfully curated modern amenities.",
-        actions: [
-          { label: "BOOK NOW", href: contact.bookingLink },
-        ],
       },
     ],
   },
@@ -182,9 +169,6 @@ export const swanSuitesPageData = {
         src: "/In-house-Car-Parking.png",
       },
     ],
-    actions: [
-      { label: "BOOK NOW", href: contact.bookingLink },
-    ],
   },
 
   images: ["/1.png", "/2.png", "/3.png", "/4.png"],
@@ -203,9 +187,6 @@ export const swanSuitesPageData = {
       "200m to CARE Hospitals",
       "300m to Cyberabad Police Commissionerate",
       "1.5 km to IKEA",
-    ],
-    actions: [
-      { label: "BOOK NOW", href: contact.bookingLink },
     ],
   },
 
@@ -272,8 +253,6 @@ export const swanSuitesPageData = {
         author: "Rohit Dubey",
       },
     ],
-    actions: [
-      { label: "BOOK NOW", href: contact.bookingLink },
-    ],
+    actions: [],
   },
 };

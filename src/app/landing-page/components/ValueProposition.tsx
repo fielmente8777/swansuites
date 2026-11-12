@@ -1,4 +1,3 @@
-import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -9,10 +8,6 @@ interface ValuePropositionProps {
   title: string;
   description: string[];
   image: string;
-  actions: {
-    label: string;
-    href: string;
-  }[];
 }
 
 const ValueProposition: React.FC<ValuePropositionProps> = ({
@@ -20,7 +15,6 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
   title,
   description,
   image,
-  actions,
 }) => {
   return (
     <SectionWithContainer sectionClassName="bg-image">
@@ -61,19 +55,6 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
               </p>
             ))}
           </div>
-          <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center">
-            {actions.map((button, i) => (
-              <li key={i} className="max-md:w-full">
-                <LinkButton
-                  href={button.href}
-                  label={button.label}
-                  rel="noopener noreferrer"
-                  className="bg-primary text-white border-none max-md:w-full justify-center rounded-lg py-3 px-4"
-                  calendarIcon
-                />
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </SectionWithContainer>

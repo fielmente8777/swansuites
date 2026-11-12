@@ -1,4 +1,3 @@
-import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { Foo } from "@/utils/icons";
@@ -8,17 +7,12 @@ interface AttractionsProps {
   subtitle: string;
   description: string;
   list: string[];
-  actions: {
-    label: string;
-    href: string;
-  }[];
 }
 const Attractions: React.FC<AttractionsProps> = ({
   title,
   subtitle,
   description,
   list,
-  actions,
 }) => {
   return (
     <SectionWithContainer>
@@ -35,19 +29,6 @@ const Attractions: React.FC<AttractionsProps> = ({
             <SectionHeading title={subtitle} />
           </div>
           <p className="">{description}</p>
-          <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center">
-            {actions.map((button, i) => (
-              <li key={i} className="max-md:w-full">
-                <LinkButton
-                  href={button.href}
-                  label={button.label}
-                  rel="noopener noreferrer"
-                  className="bg-primary text-white border-none max-md:w-full justify-center rounded-lg py-3 px-4"
-                  calendarIcon
-                />
-              </li>
-            ))}
-          </ul>
         </div>
         <ul className="flex flex-col gap-4 lg:text-[1.1rem]">
           {list.map((item, index) => (

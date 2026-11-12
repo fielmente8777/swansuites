@@ -1,7 +1,6 @@
 "use client";
 
 import { AccommodationsProps } from "@/@types/type";
-import LinkButton from "@/components/buttons/LinkButton";
 import AmenityPopUpButton from "@/components/pop-up/AmenityPopUpButton";
 import Amenities from "@/components/sliders/Amenities";
 import SwiperCarousel from "@/components/sliders/SwiperCarousel";
@@ -9,7 +8,6 @@ import Image from "next/image";
 import { Autoplay, Navigation } from "swiper/modules";
 
 const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
-  actions,
   amenities,
   description,
   images,
@@ -62,18 +60,6 @@ const AccommodationsCards: React.FC<AccommodationsProps["rooms"][0]> = ({
           <Amenities items={amenities} />
         </div>
         {/* <p className="lg:text-lg">{description}</p> */}
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {actions?.map((button, i) => (
-            <li key={i}>
-              <LinkButton
-                {...button}
-                rel="noopener noreferrer"
-                className="bg-primary text-white border-none rounded-lg py-3 justify-center w-full px-4"
-                calendarIcon
-              />
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import Link from "next/link";
 import LazyLoadedMap from "../map/LazyLoadedMap";
 import { Container } from "../sectionComponants";
 import { footerData } from "./footerdata";
-import LinkButton from "../buttons/LinkButton";
 import { usePathname } from "next/navigation";
 
 const LandingFooter = () => {
@@ -29,19 +28,6 @@ const LandingFooter = () => {
                 sizes="280px"
                 className="object-contain"
               />
-            </div>
-            <div className="flex max-md:flex-col md:gap-4 gap-2 items-center justify-center">
-              {footerData.cta.map((item, index) => (
-                <LinkButton
-                  label={item.label}
-                  href={item.href}
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  calendarIcon
-                  className={`rounded-sm justify-center text-nowrap max-md:w-full border-none uppercase tracking-widest text-xs bg-primary text-white`}
-                />
-              ))}
             </div>
           </div>
 

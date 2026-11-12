@@ -5,10 +5,6 @@ import { JSX } from "react";
 
 interface FooterData {
   logo: string;
-  cta: {
-    label: string;
-    href: string;
-  }[];
   lists: {
     title?: string;
     links: {
@@ -43,9 +39,6 @@ interface WebsiteFooterData {
 
 export const footerData: FooterData = {
   logo: "/logo.png",
-  cta: [
-    { label: "BOOK  NOW", href: contact.bookingLink },
-  ],
   lists: [
     {
       title: "Contact Us",
